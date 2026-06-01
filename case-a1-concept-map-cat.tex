@@ -78,7 +78,8 @@
 
 \node[state_abnormal] (S6) at (5.8,-7) {
     S6 Stuck in a loop\\
-    Observed: LCD = Display 5 (Info)\\
+    Observed: LCD = INFO\\
+    
     (Hypothesis: Live View routing inactive,\\
     display routed to INFO\_ONLY)
 };
@@ -199,19 +200,19 @@
 \draw[normal, line width=1.5pt, blue!90!black]
     (S6) .. controls (-9.2,-13.7) and (-4,-4) ..
     node[label_style, pos=0.256, sloped]
-    {DISP button\\Disable Display 5\\Reset}
+    {Reset\\DISP button (if assigned)}
     (S1);
 
 \draw[abnormal]
     (S7) .. controls (-1.0,-9.6) and (-3.0,-8) ..
     node[label_style, pos=0.11, sloped]
-    {\\DISP button\\LCD Open}
+    {DISP button\\LCD Open}
     (S6);
 
 \draw[critical, line width=1.5pt, purple!70!black]
     (S6) .. controls (-6.8,-10.8) and (-3.2,-7.0) ..
     node[label_style, pos=0.32, sloped]
-    {DISP button\\(if assigned)}
+    {DISP button}
     (S6);
 
 % --------------------------------------------------
