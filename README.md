@@ -40,13 +40,13 @@ This behavior and terminology remained consistently documented through multiple 
 However, beginning around the launch period of the Nikon Z system (2018), explicit documentation describing how to dismiss the Info display disappeared from Nikon manuals.
 At the same time, mirrorless Z-series cameras integrated the former Info display into the DISP display-cycle system.
 
-| Era       | Info access method                     | Manual                                         | Actual behavior        |
-| --------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
-| D3–D3500  | Dedicated INFO/R button                | “Info can be turned off” explicitly documented | half-press clears Info |
-| Z7/Z6     | Integrated into DISP cycle             | documentation removed                          | unknown                |
-| D780      | Dedicated INFO/R button                | documentation removed                          | unknown                |
-| D6        | Dedicated INFO/R button                | documentation removed                          | half-press still works |
-| Z9/Z8/Zf  | Integrated into DISP cycle (Display 5) | documentation removed                          | Display5 persistence   |
+| Era                  | Info access method                     | Manual                                         | Actual behavior        |
+| -------------------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
+| D3–D3500             | Dedicated INFO/R button                | “Info can be turned off” explicitly documented | half-press clears Info |
+| Z7/Z6(EXPEED 6)      | Integrated into DISP cycle             | documentation removed                          | unknown                |
+| D780 (EXPEED 6)      | Dedicated INFO/R button                | documentation removed                          | unknown                |
+| D6 (EXPEED 6)        | Dedicated INFO/R button                | documentation removed                          | half-press still works |
+| Z9/Z8/Zf (EXPEED 7)  | Integrated into DISP cycle <br> (Display 5) | documentation removed                          | Display5 persistence   |
 
 This repository does not attempt to infer Nikon’s internal design intentions.
 However, the observed transition in documentation and device behavior appears to coincide with the introduction of the Z system and may be historically significant.
