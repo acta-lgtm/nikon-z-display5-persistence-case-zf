@@ -81,12 +81,12 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 ## Phase 1: Definition A (Coarse-grained)
 - [DA README](./docs/DA/README.md)
-- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md): Initial observational archive published
-- [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md): Initial observational archive published
+- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md)
+- [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md)
 
 ### Phase 2: Definition B (Fine-grained)
 - [DB README](./docs/DB/README.md)
-- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md): Initial observational archive published
+- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md)
 - [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)
 - [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md): Work in progress
 
