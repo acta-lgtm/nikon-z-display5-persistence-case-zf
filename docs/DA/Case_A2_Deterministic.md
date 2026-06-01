@@ -142,7 +142,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 ---
 ### Observational Notes
 
-#### Steps 1–15
+#### ▼ Steps 1–15
 
 These steps observe the transition into persistent fixation and subsequent recovery under the factory-default display configuration:
 
@@ -154,7 +154,7 @@ Unlike Case A1, recovery by pressing the DISP button was possible even while the
 
 It should be noted that, under this context, when the eye is away from the EVF, the LCD monitor is normally expected to remain in an active shooting-display state.
 
-#### Steps 16–37
+#### ▼ Steps 16–37
 
 These steps continue from the fixation state observed in Step 15. The camera was then switched to:
 
@@ -191,7 +191,5 @@ under at least some tested conditions:
   [CUSTOM SETTINGS MENU] >
   [d19 Custom monitor shooting display]
 - Initializing camera settings
-
-
 
 
