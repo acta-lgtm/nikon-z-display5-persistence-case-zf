@@ -12,6 +12,9 @@ Although I am a complete layman in the field of systems engineering, I hold a de
 
 As this analysis was conducted independently by a non-specialist, some terminology or interpretations may be incomplete.
 
+*In this repository, the term “fixation” is used operationally to describe a state in which the camera remains on, or repeatedly returns to, the Info display despite ordinary shooting-recovery operations.*
+
+*The term does not by itself imply a conclusion regarding Nikon’s internal firmware intent. It reflects behavior that appears unnatural from the standpoint of long-standing Nikon shooting-operation expectations, particularly the expectation that shutter-button half-press should promptly restore a shooting-ready view.*
 
 ---
 
@@ -35,12 +38,12 @@ Introduced prominently during the DSLR era (e.g., Nikon D3 generation), the Info
 This behavior and terminology remained consistently documented through multiple DSLR generations.
 
 However, beginning around the launch period of the Nikon Z system (2018), explicit documentation describing how to dismiss the Info display disappeared from Nikon manuals.
-At the same time, mirrorless Z-series cameras integrated the former Info display into the DISP display-cycle system (“Display 5”).
+At the same time, mirrorless Z-series cameras integrated the former Info display into the DISP display-cycle system.
 
 | Era       | Info access method                     | Manual                                         | Actual behavior        |
 | --------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
 | D3–D3500  | Dedicated INFO/R button                | “Info can be turned off” explicitly documented | half-press clears Info |
-| Z7/Z6     | Integrated into DISP cycle (Display 5) | documentation removed                          | unknown                |
+| Z7/Z6     | Integrated into DISP cycle             | documentation removed                          | unknown                |
 | D780      | Dedicated INFO/R button                | documentation removed                          | unknown                |
 | D6        | Dedicated INFO/R button                | documentation removed                          | half-press still works |
 | Z9/Z8/Zf  | Integrated into DISP cycle (Display 5) | documentation removed                          | Display5 persistence   |
@@ -115,32 +118,40 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 ## 5. Appendix: Reference Definitions
 
-### Display Control Contexts
-- **Context A**
-  - [Monitor mode] = Prioritize viewfinder (1 or 2)
-  - [Automatic monitor display switch] = On (when monitor docked)
-- **Context B**
-  - [Monitor mode] = Automatic display switch
-  - [Automatic monitor display switch] = On
-  - Factory default configuration
-- **Context C**
-  - [Monitor mode] = Monitor only
-- **Context D**
-  - [Monitor mode] = Prioritize viewfinder (1 or 2)
-  - LCD monitor inactive due to EVF priority activation
-- **Context E**
-  - [Monitor mode] = Automatic display switch
-  - [Automatic monitor display switch] = On (when monitor docked)
+### Display Control Context Notation
 
-> [!NOTE]
-> **Context D** represents a temporary display-routing condition in which Live View is assigned to the EVF and the LCD monitor becomes inactive due to EVF-priority behavior. Under this condition, previously observed Info persistence behavior was not maintained while Live View routing remained EVF-active.
+Contexts are written in the following form:
+
+`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`
+
+> MonitorMode
+ 
+>- `PV` = Prioritize viewfinder (1 or 2)
+>- `AS` = Automatic display switch
+>- `MO` = Monitor only
+
+> AutoSwitch
+
+>- `O` = Automatic monitor display switch: On
+>- `OD` = Automatic monitor display switch: On (when monitor docked)
+>- `-` = Not applicable or not changed in this context
+
+> DP1-4, DP5
+
+>- `DP1-4=1,2,3,4` means Display 1 through Display 4 are enabled in [d19 Custom monitor shooting display].
+>- `DP1-4=1` means only Display 1 is enabled.
+>- `DP1-4=none` means none of Display 1 through Display 4 is enabled.
+>- `DP5=ON/OFF` indicates whether Display 5 (“Info”) is enabled.
+
+
+Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 
 <a id="assessment-codes"></a>
 ### Assessment Codes
 
 - **E** = Expected
 - **N** = Not Expected
-- **M** = Mechanically consistent, but operationally Not Expected
+- **M** = Mechanically consistent, but operationally/semantically notable
 
 The assessment labels used in this repository are primarily based on operational expectations historically associated with Nikon DSLR cameras, particularly the long-established behavior in which half-pressing the shutter button immediately restores a shooting-ready state from the Info display.
 
