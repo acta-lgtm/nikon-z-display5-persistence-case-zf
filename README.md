@@ -1,3 +1,5 @@
+> Published: 2026-05-17 | Last Updated: 2026-06-02
+
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
 Originally initiated as an investigation into unusual “Info” persistence on my personal Nikon Z f, this repository gradually expanded into a broader observational analysis of Display 5 (“Info”) behavior across Nikon Z-series cameras.
