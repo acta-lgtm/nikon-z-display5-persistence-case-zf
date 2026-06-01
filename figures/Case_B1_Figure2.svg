@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1026pt" height="524pt" viewBox="0.00 0.00 1026.00 524.00">
+<svg width="1026pt" height="524pt" viewBox="0.00 0.00 1026.00 524.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 519.8)">
 <title>B1_Figure2</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-519.8 1021.7,-519.8 1021.7,4 -4,4"/>
-<text xml:space="preserve" text-anchor="middle" x="225.37" y="-499.2" font-family="Times,serif" font-size="14.00">Figure B1-2. Case B1: Display 5 Enabled and Persistent Fixation (Context B)</text>
+<text xml:space="preserve" text-anchor="middle" x="312.01" y="-499.2" font-family="Times,serif" font-size="14.00">Figure B1-2. Case B1: Display 5 Enabled and Persistent Fixation (Context AS(-; DP1-4=1,2,3,4; DP5=ON))</text>
 <g id="clust3" class="cluster">
 <title>cluster_legend</title>
 <polygon fill="none" stroke="gray" points="8,-244 8,-483 224.12,-483 224.12,-244 8,-244"/>

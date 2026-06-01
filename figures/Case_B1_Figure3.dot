@@ -1,5 +1,5 @@
 digraph B1_Figure3 {
-label="Figure B1-3. Case B1: Display 5 Disabled and Normalized Recovery (Context B)";
+label="Figure B1-3. Case B1: Display 5 Disabled and Normalized Recovery (Context AS(-; DP1-4=1,2,3,4; DP5=OFF))";
     labelloc="t";
     labeljust="l";
     rankdir=LR;

@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="827pt" height="315pt" viewBox="0.00 0.00 827.00 315.00">
+<svg width="827pt" height="315pt" viewBox="0.00 0.00 827.00 315.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 310.8)">
 <title>B1_Figure3</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-310.8 823.5,-310.8 823.5,4 -4,4"/>
-<text xml:space="preserve" text-anchor="middle" x="236.62" y="-290.2" font-family="Times,serif" font-size="14.00">Figure B1-3. Case B1: Display 5 Disabled and Normalized Recovery (Context B)</text>
+<text xml:space="preserve" text-anchor="middle" x="326" y="-290.2" font-family="Times,serif" font-size="14.00">Figure B1-3. Case B1: Display 5 Disabled and Normalized Recovery (Context AS(-; DP1-4=1,2,3,4; DP5=OFF))</text>
 <g id="clust2" class="cluster">
 <title>cluster_legend</title>
 <polygon fill="none" stroke="gray" points="8,-98 8,-175 216.87,-175 216.87,-98 8,-98"/>

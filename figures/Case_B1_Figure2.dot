@@ -1,5 +1,5 @@
 digraph B1_Figure2 {
-label="Figure B1-2. Case B1: Display 5 Enabled and Persistent Fixation (Context B)";
+label="Figure B1-2. Case B1: Display 5 Enabled and Persistent Fixation (Context AS(-; DP1-4=1,2,3,4; DP5=ON))";
     labelloc="t";
     labeljust="l";
     rankdir=LR;
