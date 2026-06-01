@@ -7,6 +7,7 @@
 | 1.1 | 2026-05-05 | Added Thought experiment. |
 | 1.2 | 2026-05-06 | Added states. Refined the title to more accurately reflect the inevitable progression from factory settings to the inescapable state. |
 | 1.3 | 2026-05-14 | Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. 
+| 1.4 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
 
 ---
 
@@ -40,25 +41,35 @@ This figure focuses on the first half of Case A2, where Info-display persistence
 ---
 
 ## 3. Experimental Contexts
-### Display Control Contexts
-- **Context A**
-  - [Monitor mode] = Prioritize viewfinder (1 or 2)
-  - [Automatic monitor display switch] = On (when monitor docked)
-- **Context B**
-  - [Monitor mode] = Automatic display switch
-  - [Automatic monitor display switch] = On
-  - Factory default configuration
-- **Context C**
-  - [Monitor mode] = Monitor only
-- **Context D**
-  - [Monitor mode] = Prioritize viewfinder (1 or 2)
-  - LCD monitor inactive due to EVF priority activation
-- **Context E**
-  - [Monitor mode] = Automatic display switch
-  - [Automatic monitor display switch] = On (when monitor docked)
 
-> [!NOTE]
-> **Context D** represents a temporary display-routing condition in which Live View is assigned to the EVF and the LCD monitor becomes inactive due to EVF-priority behavior. Under this condition, previously observed Info persistence behavior was not maintained while Live View routing remained EVF-active.
+### Display Control Context Notation
+
+Contexts are written in the following form:
+
+`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`
+
+> MonitorMode
+ 
+>- `PV` = Prioritize viewfinder (1 or 2)
+>- `AS` = Automatic display switch
+>- `MO` = Monitor only
+
+> AutoSwitch
+
+>- `O` = Automatic monitor display switch: On
+>- `OD` = Automatic monitor display switch: On (when monitor docked)
+>- `-` = Not applicable or not changed in this context
+
+> DP1-4, DP5
+
+>- `DP1-4=1,2,3,4` means Display 1 through Display 4 are enabled in [d19 Custom monitor shooting display].
+>- `DP1-4=1` means only Display 1 is enabled.
+>- `DP1-4=none` means none of Display 1 through Display 4 is enabled.
+>- `DP5=ON/OFF` indicates whether Display 5 (“Info”) is enabled.
+
+
+Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
+
 
 ### Assessment Codes
 > For details on the evaluation ratings (E / N / M), please refer to the [Assessment Codes](../../README.md#assessment-codes) in the main README.
@@ -86,9 +97,9 @@ This figure focuses on the first half of Case A2, where Info-display persistence
 
 
 
-| Step | Current State | Operation                                                     | Next State | LCD Status                                  | EVF Status          | My Assessment | Your Assessment             |
-| :--- | :------------ | :------------------------------------------------------------ | :--------- | :------------------------------------------ | :------------------ | :------------ | :------------- |
-| Context B                                                                                                                                |            |                                                                                               |                   |                                              |                   |                              |                 |
+| Step | Current State | Operation                                                     | Next State | LCD Status                                  | EVF Status | My Assessment | Your Assessment             |
+| :--- | :------------ | :------------------------------------------------------------ | :--------- | :------------------------------------------ | :------------------ | :----- | :-------- |
+| ▼ |  **Context** | **AS (O; DP1-4=1,2,3,4; DP5=ON)**                                    |            |                                                                                               |                   |                                              |                   |
 | 1    | S0            | Power on                                                      | S17        | Live View display                           | Off                 |   E   | E / N / M |
 | 2    | S17           | Press DISP button repeatedly until Info display is shown      | S7         | Info display                                | Off                 |   E   | E / N / M |
 | 3    | S7            | Power off, then on                                            | S7         | Info display                                | Off                 | **N** | E / N / M |
@@ -104,7 +115,7 @@ This figure focuses on the first half of Case A2, where Info-display persistence
 | 13   | S17           | Power off, then on                                            | S17        | Live View display                           | Off                 |   E   | E / N / M |
 | 14   | S17           | Press DISP button repeatedly until Info display is shown      | S7         | Info display                                | Off                 |   E   | E / N / M |
 | 15   | S7            | Power off, then on                                            | S7         | Info display                                | Off                 | **N** | E / N / M |
-| Context C                                                                                         |            |                                                                                               |                   |                                              |                   |                              |                 |
+| ▼ |  **Context** | **MO (-; DP1-4=1,2,3,4; DP5=ON)**                                    |            |                                                                                               |                   |                                              |                   |
 | 16   | S7            | In [SETUP MENU] > [Limit monitor mode selection], <br>select ONLY "Monitor only", then exit | S7 | Info display                                | Off                 | **N** | E / N / M |
 | 17   | S7            | In [CUSTOM SETTINGS MENU] > [f2 Custom controls (shooting)], <br>set DISP button  to "OFF None", then exit| S7 | Info display                                | Off                 | **N** | E / N / M |
 | 18   | S7            | Power off, then on                                            | S7         | Info display                                | Off                 | **N** | E / N / M |
@@ -130,7 +141,38 @@ This figure focuses on the first half of Case A2, where Info-display persistence
 
 ---
 ### Observational Notes
-Work in progress.
+
+#### Steps 1–15
+
+These steps observe the transition into persistent fixation and subsequent recovery under the factory-default display configuration:
+
+`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`
+
+The observations indicate that, immediately after power-on, operating the DISP button while the LCD monitor is docked can lead to persistent Info fixation (Steps 3, 4, and 6).
+
+Unlike Case A1, recovery by pressing the DISP button was possible even while the LCD monitor remained docked (Step 10).
+
+It should be noted that, under this context, when the eye is away from the EVF, the LCD monitor is normally expected to remain in an active shooting-display state.
+
+#### Steps 16–37
+
+These steps continue from the fixation state observed in Step 15. The camera was then switched to:
+
+`Context MO(-; DP1-4=1,2,3,4; DP5=ON)`
+
+In addition, the DISP button function was disabled. Under this context, the EVF is unavailable.
+
+Several recovery attempts were then tested, but none successfully restored a usable Live View shooting display:
+
+* shutter-button half-press (Steps 19 and 23)
+* moving the eye away from the EVF (Step 21)
+* DISP button operation (Steps 25 and 27)
+* Fn button operation (Step 30)
+* power cycling (Step 31)
+* battery removal for 10 minutes (Step 36)
+
+Because the DISP button function had been disabled in this context, a quick and reliable recovery from the fixation state would likely be extremely difficult in practical shooting situations.
+
 
 
 ---
@@ -149,3 +191,7 @@ under at least some tested conditions:
   [CUSTOM SETTINGS MENU] >
   [d19 Custom monitor shooting display]
 - Initializing camera settings
+
+
+
+
