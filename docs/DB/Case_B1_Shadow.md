@@ -494,7 +494,7 @@ Mainly Steps 127–155 and 197–207.
 With DP5 disabled, persistent fixation was not observed. However, even though the displayed Info screen was not Display 5, returning from the Info display to Live View appeared to reset the Live View display mode to Display 1 rather than restoring the display mode active before entering Info. This behavior is noted in Step 153 and related observations.
 
 
-
+---
 
 
 ### Observed Recovery Paths
