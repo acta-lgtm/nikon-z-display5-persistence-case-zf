@@ -173,7 +173,8 @@ Several recovery attempts were then tested, but none successfully restored a usa
 
 Because the DISP button function had been disabled in this context, a quick and reliable recovery from the fixation state would likely be extremely difficult in practical shooting situations.
 
-
+No warning was displayed by the camera when the DISP button function was disabled. 
+Furthermore, based on the documentation I reviewed, I could not find any explanation or caution indicating that disabling the DISP button could make recovery from this display state difficult.
 
 ---
 
