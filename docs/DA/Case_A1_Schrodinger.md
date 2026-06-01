@@ -293,13 +293,13 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 
 ### Observational Notes
 
-#### Steps 1–6
+#### ▼ Steps 1–6
 
 These steps examine the behavior of the MENU screen when the LCD monitor is opened or closed.
 
 The observed behavior is consistent with long-standing Nikon operational expectations: opening or closing the LCD monitor does not by itself dismiss the MENU screen. This suggests that preserving the MENU screen across LCD monitor movement is likely consistent with Nikon’s intended display behavior.
 
-#### Steps 7–16 and Steps 160–176
+#### ▼ Steps 7–16 and Steps 160–176
 
 These steps examine the phenomenon that originally motivated this repository: under certain conditions, the camera cannot exit the Info display on the LCD by shutter-button half-press, and Live View is not restored.
 
@@ -309,7 +309,7 @@ However, Step 176 suggests that shutter-button half-press may be only one trigge
 
 Under `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`, opening the LCD monitor should normally activate the LCD shooting display and restore Live View. Instead, the Info display remains. This suggests that the transition from docked LCD to active LCD may be a critical point at which the Info display becomes persistently retained.
 
-#### Steps 17–74 and Steps 135–146
+#### ▼ Steps 17–74 and Steps 135–146
 
 These steps record multiple attempts to escape after the persistent Info state had appeared.
 
@@ -335,19 +335,19 @@ By contrast, when the LCD monitor is docked, the LCD is not normally in an activ
 
 Because this DISP operation with the LCD monitor open was the only reliable recovery method observed in this sequence, it is used several times later in the table to proceed to subsequent observations.
 
-#### Steps 75–90
+####  ▼ Steps 75–90
 
 These steps examine whether the transition into persistent fixation depends on operation timing.
 
 The results suggest that the observed fixation behavior is not merely a timing artifact. Changing the interval between operations did not appear to prevent the transition into the persistent Info state.
 
-#### Steps 91–134
+#### ▼ Steps 91–134
 
 These steps examine whether standby / sleep behavior affects recovery from the persistent Info state.
 
 The observations suggest that returning from standby does not by itself clear the persistent Info state. The fixation remains after sleep and wake sequences under several tested timings.
 
-#### Notes on Steps 5, 28, 163, and 176
+#### ▼ Notes on Steps 5, 28, 163, and 176
 
 Steps 5 and 28 are especially important because they appear visually identical from the user’s perspective: in both cases, under the same settings, the LCD monitor is open and the MENU screen is displayed. However, shutter-button half-press produces different results.
 
@@ -355,6 +355,7 @@ Similarly, Steps 163 and 176 appear visually identical from the user’s perspec
 
 These observations indicate that the visible display state alone is not sufficient to predict the next transition. Prior display-routing history affects subsequent behavior, even when the current visible state appears identical.
 
+---
 
 ### Observed Recovery Paths
 
