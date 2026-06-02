@@ -123,7 +123,7 @@ Ultimately, this repository is not merely a collection of transition tables, but
 *Note: A short GIF clipped from the reference video showing the key steps for Case B2.*
 
 - [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
-　- [Download PDF version](https://github.com/acta-lgtm/nikon-zf-info-display-analysis/releases/download/pdf/case-a1-concept-map-cat.pdf)
+　- [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260602/case-a1-concept-map-cat.pdf)
 
 ---
 
