@@ -83,17 +83,25 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 ## 2. Structure of Data 
 
-
-## Phase 1: Definition A (Coarse-grained)
+### Phase 1: Definition A (Coarse-grained)
 - [DA README](./docs/DA/README.md)
-- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md)
-- [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md)
+- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md)  
+  This case records the initial observations that motivated the repository: shutter-button half-press did not always restore Live View, and visually identical states could produce different outcomes depending on prior display history.
+
+- [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md)  
+  This case records how a minimal operation under factory-default settings can transition the camera into persistent Info-display behavior, and how subsequent customization can unintentionally disable simple recovery routes without warning.
 
 ### Phase 2: Definition B (Fine-grained)
 - [DB README](./docs/DB/README.md)
-- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md)
-- [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)
-- [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md): Work in progress
+- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md)  
+  This case examines multiple activation pathways into visually similar Info displays, including Display 5 as configured under [d19 Custom monitor shooting display] and non-Display 5 routes. It compares their behavior and identifies pathways that lead to persistent display states.
+
+- [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)  
+  While earlier cases focus mainly on pre-shooting display states, this case examines behavior during shooting operations. It records observations in which Info-display persistence remains active even during continuous shooting, depending on the display configuration.
+
+- [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md): Work in progress  
+  This case investigates boundary conditions of the persistent Info behavior, including LCD activation thresholds, overlay routes, Display 5 ON/OFF differences, and cases where prior display history reappears through later recovery behavior.
+
 
 
 
