@@ -1,14 +1,12 @@
-> Published: 2026-05-17 | Last Updated: 2026-06-02
+> Published: 2026-05-17 | Last Updated: 2026-06-03
 
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
 Originally initiated as an investigation into unusual “Info” persistence on my personal Nikon Z f, this repository gradually expanded into a broader observational analysis of Display 5 (“Info”) behavior across Nikon Z-series cameras.
 
-With this particular camera, pressing the shutter button halfway at times failed to immediately ready the camera for shooting. This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities.
-Furthermore, under default settings, the LCD could remain locked on the Information Display even during continuous shooting. To uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
+With this particular camera, pressing the shutter button halfway at times failed to immediately ready the camera for shooting. This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities. Furthermore, under default settings, the LCD could remain locked on the Information Display even during continuous shooting. To uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
 
-I hypothesize that the phenomena observed here are closely tied to the "Information Display (Info)"—a feature inherited from the D-series DSLRs—and may represent a visible manifestation of the coexistence between legacy and modern system logic.
-
+I hypothesize that the phenomena observed here are closely tied to the “Information Display (Info)”—a feature inherited from the D-series DSLRs—and may represent a visible manifestation of the coexistence between legacy and modern system logic.
 
 Although I am a complete layman in the field of systems engineering, I hold a deep interest in user interfaces and the integration of legacy and modern technology. I share this report in the hope that it will spark meaningful discussions among experts and specialists in the community.
 
@@ -16,7 +14,10 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 
 *In this repository, the term “fixation” is used operationally to describe a state in which the camera remains on, or repeatedly returns to, the Info display despite ordinary shooting-recovery operations.*
 
-*The term does not by itself imply a conclusion regarding Nikon’s internal firmware intent. It reflects behavior that appears unnatural from the standpoint of long-standing Nikon shooting-operation expectations, particularly the expectation that shutter-button half-press should promptly restore a shooting-ready view.*
+*The term does not by itself imply a conclusion regarding Nikon’s internal firmware intent. It reflects behavior that appears unnatural from the standpoint of consistency with long-standing Nikon shooting-operation expectations—particularly the expectation that a shutter-button half-press should promptly restore a shooting-ready view—as well as from the behavior of MENU screen transitions.*
+
+*At the same time, this “fixation” does not necessarily always cause practical problems. For example, on models such as the Z f that lack a top-plate LCD, having the Info display appear immediately after power-on can be useful. Therefore, this repository also explores possible ways to coexist effectively with the new role of the Info display.*
+
 
 ---
 
