@@ -18,6 +18,8 @@
 
 * **Core Issue:**
     A minimal operation can transition the system from a factory-default state into a persistent Info-display loop. Furthermore, it was verified that this persistent state can degrade into an effectively inescapable loop even under configuration profiles different from those observed in Case A1.
+    
+    
 
 ### Figure 
 
@@ -106,9 +108,9 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 4    | S7            | Half-press shutter button                                     | S7         | Info display                                | Off                 | **N** | E / N / M |
 | 5    | S7            | Look into the EVF                                             | S8         | Nothing display                             | Live View display   |   E   | E / N / M |
 | 6    | S8            | Move eye away from EVF                                        | S7         | Info display                                | Off                 | **N** | E / N / M |
-| 7    | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N** | E / N / M |
+| 7    | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **M** | E / N / M |
 | 8    | S6            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N** | E / N / M |
-| 9    | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N** | E / N / M |
+| 9    | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M** | E / N / M |
 | 10   | S7            | Press the DISP button                                         | S17        | Live View display                           | Off                 |   E   | E / N / M |
 | 11   | S17           | Open LCD monitor                                              | S1         | Live View display                           | Off                 |   E   | E / N / M |
 | 12   | S1            | Close LCD monitor                                             | S17        | Live View display                           | Off                 |   E   | E / N / M |
@@ -122,13 +124,13 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 19   | S7            | Half-press shutter button                                     | S7         | Info display                                | Off                 | **N** | E / N / M |
 | 20   | S7            | Look into the EVF                                             | S7         | Info display                                | Off                 |   E   | E / N / M |
 | 21   | S7            | Move eye away from EVF                                        | S7         | Info display                                | Off                 | **N** | E / N / M |
-| 22   | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N** | E / N / M |
+| 22   | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **M** | E / N / M |
 | 23   | S6            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N** | E / N / M |
-| 24   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N** | E / N / M |
+| 24   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M** | E / N / M |
 | 25   | S7            | Press the DISP button                                         | S7         | Info display                                | Off                 | **M** | E / N / M |
-| 26   | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N** | E / N / M |
+| 26   | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **M** | E / N / M |
 | 27   | S6            | Press the DISP button                                         | S6         | Info display                                | Off                 | **M** | E / N / M |
-| 28   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N** | E / N / M |
+| 28   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M** | E / N / M |
 | 29   | S7            | Press and hold the Fn button                                  | S12        | WB adjustment displayed          | Off                 |   E   | E / N / M |
 | 30   | S12           | Release the Fn button                                         | S7         | Info display                                | Off                 | **N** | E / N / M |
 | 31   | S7            | Power off, then on                                            | S7         | Info display                                | Off                 | **N** | E / N / M |
