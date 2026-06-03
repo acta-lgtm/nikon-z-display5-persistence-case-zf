@@ -13,7 +13,7 @@
 | 1.7  | 2026-05-19 | Added Operational Notes. 
 | 1.8  | 2026-05-20 | Partial correction of the table. 
 | 1.9  | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
-| 2.0  | 2026-06-01 | Added Steps 157–176
+| 2.0  | 2026-06-01 | Added Steps 157–176, observational Notes.
 
 
 ---
@@ -24,7 +24,9 @@
     - A shutter button half-press frequently fails to return the system to Live View, leaving the LCD locked on the Info screen.
     - The state persists across power cycles and long-term battery removal (10+ minutes).
 *   **Core Issue:** 
-    The Info screen appears to enter a “reject” state for standard operational inputs. Escape routes are limited and may be unintentionally disabled through user customization without warning.
+      The Info screen appears to enter a “reject” state for standard operational inputs based on traditional Nikon DSLR muscle memory. 
+      Without prior knowledge, this state persists as immediate escape is difficult.
+      Furthermore, even if the outward appearance is identical, the operational results may differ depending on the history of actions leading up to that state. 
 
 
 ### Figure 
@@ -121,35 +123,35 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 7    | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 8    | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 9    | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 10   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 10   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 11   | S7            | Power off; wait 3 s, then turn on and wait 10 s               | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 12   | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 13   | S4            | Press [i] button                                              | S7         | Info display                                | Off                 |   E    | E / N / M |
 | 14   | S7            | Open LCD monitor                                              | S6         | Info display                                | Off                 |   E    | E / N / M |
 | 15   | S6            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 16   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 16   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 17   | S7            | Look into the EVF                                             | S8         | Nothing display                             | Live View display   |   E    | E / N / M |
 | 18   | S8            | Move eye away from EVF                                        | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 19   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 20   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 20   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 21   | S7            | Half-press shutter button                                     | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 22   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 23   | S6            | Open LCD monitor to selfie position                           | S9         | Live View display (Selfie)                  | Off                 |   E    | E / N / M |
 | 24   | S9            | Move LCD monitor back to less than 180 degrees                | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 25   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 25   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 26   | S7            | Press [MENU] button                                           | S2         | Menu display                                | Off                 |   E    | E / N / M |
 | 27   | S2            | Open LCD monitor                                              | S3         | Menu display                                | Off                 |   E    | E / N / M |
 | 28   | S3            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 29   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 29   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 30   | S7            | Power off; wait 10 s, then turn on and wait 10 s              | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 31   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 32   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 32   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 33   | S7            | Press playback button                                         | S10        | Images stored on the memory card displayed  | Off                 |   E    | E / N / M |
 | 34   | S10           | Press playback button                                         | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 35   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 36   | S6            | Press playback button                                         | S11        | Images stored on the memory card displayed  | Off                 |   E    | E / N / M |
 | 37   | S11           | Press playback button                                         | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 38   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 38   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 39   | S7            | Half-press shutter button                                     | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 40   | S0            | Press and hold the Fn button                                  | S12        | White balance adjustment displayed          | Off                 |   E    | E / N / M |
 | 41   | S12           | Release the Fn button                                         | S7         | Info display                                | Off                 | **N**  | E / N / M |
@@ -157,10 +159,10 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 43   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 44   | S6            | Press and hold the Fn button                                  | S13        | White balance adjustment displayed          | Off                 | **M**  | E / N / M |
 | 45   | S13           | Release the Fn button                                         | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 46   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 46   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 47   | S7            | Power off -> battery removal -> wait 10 min -> reinstall -> Power on            | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 48   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 49   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 49   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 50   | S7            | Power off, then on; wait 10 s                                 | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 51   | S0            | Press and hold the Fn button                                  | S12        | White balance adjustment displayed          | Off                 |   E    | E / N / M |
 | 52   | S12           | Release the Fn button                                         | S7         | Info display                                | Off                 | **N**  | E / N / M |
@@ -175,7 +177,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 61   | S0            | Press [i] button                                              | S4         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 62   | S4            | Open LCD monitor                                              | S5         | Info display with [i] menu overlay          | Off                 |   E    | E / N / M |
 | 63   | S5            | Half-press shutter button                                     | S6         | Info display                                | Off                 | **N**  | E / N / M |
-| 64   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **N**  | E / N / M |
+| 64   | S6            | Close LCD monitor                                             | S7         | Info display                                | Off                 | **M**  | E / N / M |
 | 65   | S7            | Press the DISP button                                         | S0         | Nothing display                             | Off                 |   E    | E / N / M |
 | 66   | S0            | Open LCD monitor                                              | S6         | Info display                                | Off                 | **N**  | E / N / M |
 | 67   | S6            | Press the DISP button                                         | S1         | Live View display                           | Off                 |   E    | E / N / M |
@@ -371,9 +373,5 @@ under at least some tested conditions:
   [CUSTOM SETTINGS MENU] >
   [d19 Custom monitor shooting display]
 - Initializing camera settings
-
-
-
-
 
 
