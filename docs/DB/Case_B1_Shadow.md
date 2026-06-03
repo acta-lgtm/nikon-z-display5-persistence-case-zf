@@ -11,7 +11,7 @@
 | 1.5 | 2026-05-21 | Added state definitions S37 and S38, and revised S6, S7, S21, and S25. Concurrently updated the relevant tables. |
 | 1.6 | 2026-05-22 | Added state definitions S39 and S42, and revised S6, S7, S21, S37 and S38. Concurrently updated the relevant tables. Added Steps 252–277|
 | 1.7 | 2026-05-25 | Added state definitions S43-S46. Concurrently updated the relevant tables.|
-| 1.8 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
+| 1.8 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables. Added observational Notes|
 
 ---
 
@@ -22,8 +22,8 @@
 *   **Phenomenon:**
     - The full-screen Info display can be shown by operating the [DISP] button. However, visually similar Info displays can also appear through other routes, independent of the photographer’s explicit intention to select Display 5.
     - Even when the [DISP] button is used, the number of required button presses and the resulting behavior may differ depending on the LCD monitor state. This suggests that the Info display has multiple activation pathways.
-    - Under certain display routes, the LCD may become locked on the Info display. Once this occurs, shutter-button half-press and power cycling may fail to restore Live View.
-    - This case focuses on the behavior of Info as Display 5, as defined in [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display], and compares it with visually similar Info displays reached through non-Display 5 routes.
+    - Regardless of the pathway, under certain display routes, the LCD may become locked on the Info display. Once this occurs, shutter-button half-press and power cycling may fail to restore Live View.
+    - Disabling Info as Display 5, as defined in [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display], prevents the display from persisting. However, it was also observed that after passing through the Info screen, the system resets to Display 1.
     
 *   **Core Issue:**
     The Info display has multiple activation pathways. Some of these pathways appear to convert the Info display into a persistent display state, making subsequent shutter-button recovery and Live View restoration difficult or unpredictable from the user’s perspective.
@@ -192,11 +192,11 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 21   | S17            | Press the DISP button                                                        | S18         | Live View (with DP2)                          | Off                                        |   E   | E / N / M |
 | 22   | S18            | Power off -> battery removal -> wait 10 min -> reinstall -> Power on         | S18         | Live View (with DP2)                          | Off                                        |   E   | E / N / M |
 | 23   | S18            | Press DISP button repeatedly until Display 5=Info is shown                   | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
-| 24   | S21            | Power off -> battery removal -> wait 10 min -> reinstall -> Power on         | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
+| 24   | S21            | Power off -> battery removal -> wait 10 min -> reinstall -> Power on         | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
 | 25   | S37            | Half-press shutter button                                                    | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 26   | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 26   | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 27   | S38            | Half-press shutter button                                                    | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 28   | S38            | Close LCD monitor                                                            | S37         |  Info display (persistent fixation)           | Off                                        | **N** | E / N / M |
+| 28   | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 29   | S37            | Press the DISP button                                                        | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 30   | S17            | Power off, then on                                                           | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 31   | S17            | Press and hold the Fn button                                                 | S32         | Live View with the WB adjustment overlay      | Off                                        |   E   | E / N / M |
@@ -244,8 +244,8 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 73   | S8             | Move eye away from EVF                                                       | S18         | Live View (with DP2)                          | Off                                        |   E   | E / N / M |
 | 74   | S18            | Press DISP button repeatedly until Display 5 is shown                        | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 75   | S21            | Press [i] button                                                             | S33         | Info display (explicit DP5 route; DP5 ON) <br> with [i] menu | Off                         |   E   | E / N / M |
-| 76   | S33            | Press [i] button                                                             | S21         | Info display (explicit DP5 route; DP5 ON)     || Off                                       |   E   | E / N / M |
-| 77   | S21            | Open LCD monitor                                                             | S25         | Info display (explicit DP5 route; DP5 ON)     || Off                                       |   E   | E / N / M |
+| 76   | S33            | Press [i] button                                                             | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
+| 77   | S21            | Open LCD monitor                                                             | S25         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 78   | S25            | Press [i] button                                                             | S34         | Info display (explicit DP5 route; DP5 ON) <br>  with [i] menu | Off                        |   E   | E / N / M |
 | 79   | S34            | Press [i] button                                                             | S25         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 80   | S25            | Close LCD monitor                                                            | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
@@ -340,7 +340,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 165  | S7             | Open LCD monitor                                                             | S6          | Info display (non-DP5 route; DP5 ON)          | Off                                        |   E   | E / N / M |
 | 166  | S6             | Half-press shutter button                                                    | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
 | 167  | S38            | Power off, then on                                                           | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 168  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 168  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 169  | S37            | Look into the EVF                                                            | S8          | Nothing display                               | Live View (with DP1)                       |   E   | E / N / M |
 | 170  | S8             | Move eye away from EVF                                                       | S0          | Nothing display                               | Off                                        |   E   | E / N / M |
 | 171  | S0             | Power off, then on                                                           | S0          | Nothing display                               | Off                                        |   E   | E / N / M |
@@ -397,8 +397,8 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 218  | S25            | Close LCD monitor                                                            | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E    | E / N / M |
 | 219  | S21            | Half-press shutter button                                                    | S0          | Nothing display                               | Off                                        |   E   | E / N / M |
 | 220  | S0             | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 221  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 222  | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 221  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
+| 222  | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 223  | S38            | Press the DISP button                                                        | S1          | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 224  | S1             | Close LCD monitor                                                            | S0          | Nothing display                               | Off                                        |   E   | E / N / M |
 | 225  | S0             | Power off, then on                                                           | S0          | Nothing display                               | Off                                        |   E   | E / N / M |
@@ -408,26 +408,26 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 228  | S17            | Press DISP button repeatedly until Display 5=Info is shown                   | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 229  | S21            | Open LCD monitor                                                             | S25         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 230  | S25            | Half-press shutter button                                                    | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 231  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 231  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 232  | S37            | Press the DISP button                                                        | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 233  | S17            | Power off, then on                                                           | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 234  | S17            | Press DISP button repeatedly until Display 5=Info is shown                   | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 235  | S21            | Half-press shutter button                                                    | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 236  | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 237  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 236  | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
+| 237  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 238  | S37            | Press the DISP button                                                        | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 239  | S17            | Power off, then on                                                           | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 240  | S17            | Press DISP button repeatedly until Display 5=Info is shown                   | S21         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 241  | S21            | Power off, then on                                                           | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 242  | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 242  | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 243  | S38            | Half-press shutter button                                                    | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 244  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 244  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 245  | S37            | Press the DISP button                                                        | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 246  | S17            | Power off, then on                                                           | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 247  | S17            | Open LCD monitor                                                             | S1          | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 248  | S1             | Press DISP button repeatedly until Display 5=Info is shown                   | S25         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
 | 249  | S25            | Half-press shutter button                                                    | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 250  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 250  | S38            | Close LCD monitor                                                            | S37         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 251  | S37            | Press the DISP button                                                        | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 252  | S17            | Power off, Open LCD monitor, then on                                         | S1          | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 255  | S1             | Press DISP button repeatedly until Display 5=Info is shown                   | S25         | Info display (explicit DP5 route; DP5 ON)     | Off                                        |   E   | E / N / M |
@@ -494,7 +494,7 @@ Mainly Steps 127–155 and 197–207.
 With DP5 disabled, persistent fixation was not observed. However, even though the displayed Info screen was not Display 5, returning from the Info display to Live View appeared to reset the Live View display mode to Display 1 rather than restoring the display mode active before entering Info. This behavior is noted in Step 153 and related observations.
 
 
----
+
 
 
 ### Observed Recovery Paths
