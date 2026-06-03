@@ -9,7 +9,7 @@
 | 1.3 | 2026-05-19 | Added Operational Notes.|
 | 1.4 | 2026-05-21 | Added state definitions S37 and S38, and revised S6, S7, S21, and S25. Concurrently updated the relevant tables. |
 | 1.5 | 2026-05-22 | Added state definitions S39 and S42, and revised S6, S7, S21, S37 and S38. Concurrently updated the relevant tables. |
-| 1.6 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
+| 1.6 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables. Added Observational Notes.|
 
 ---
 
@@ -146,7 +146,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 | 15   | S37            | Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds | S8          | Nothing display          | Live View (with DP1)                       |   E   | E / N / M |
 | 16   | S8             | Lift finger from the shutter button                                          | S8          | Nothing display                               | Live View (with DP1)                       |   E   | E / N / M |
 | 17   | S8             | Move eye away from EVF                                                       | S37         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
-| 18   | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **N** | E / N / M |
+| 18   | S37            | Open LCD monitor                                                             | S38         | Info display (persistent fixation)            | Off                                        | **M** | E / N / M |
 | 19   | S38            | Press the DISP button                                                        | S1          | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 20   | S1             | Close LCD monitor                                                            | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
 | 21   | S17            | In [PHOTO SHOOTING MENU] > [Release mode], select Single frame, then exit    | S17         | Live View (with DP1)                          | Off                                        |   E   | E / N / M |
