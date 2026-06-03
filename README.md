@@ -100,7 +100,7 @@ Ultimately, this repository is not merely a collection of transition tables, but
 - [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)  
   While earlier cases focus mainly on pre-shooting display states, this case examines behavior during shooting operations. It records observations in which Info-display persistence remains active even during continuous shooting, depending on the display configuration.
 
-- [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md): Work in progress  
+- [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md)  
   This case investigates boundary conditions of the persistent Info behavior, including LCD activation thresholds, overlay routes, Display 5 ON/OFF differences, and cases where prior display history reappears through later recovery behavior.
 
 
