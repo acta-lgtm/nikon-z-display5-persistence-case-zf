@@ -1,4 +1,4 @@
-> Published: 2026-05-17 | Last Updated: 2026-06-04
+> Published: 2026-05-17 | Last Updated: 2026-06-06
 
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
@@ -125,6 +125,15 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 - [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
 　- [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260602/case-a1-concept-map-cat.pdf)
+
+
+### Supplementary Z9 Observation
+
+A supplementary check using a particular Nikon Z9 showed the same core Display 5 (“Info”) behavior observed on the Nikon Z f. The Info display could remain visible even during continuous shooting.
+
+- [![Reference Video for a particular Z9](https://youtu.be/Gdb0QP-LCc4)](https://youtu.be/Gdb0QP-LCc4)
+- 
+![Z9 burst shooting with Info display](./z9-burst-info.gif)
 
 ---
 
