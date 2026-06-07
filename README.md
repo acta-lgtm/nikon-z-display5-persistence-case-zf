@@ -131,7 +131,7 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 A supplementary check using a particular Nikon Z9 showed the same core Display 5 (“Info”) behavior observed on the Nikon Z f. The Info display could remain visible even during continuous shooting.
 
-- [![Reference Video for a particular Z9](https://youtu.be/Gdb0QP-LCc4)](https://youtu.be/Gdb0QP-LCc4)
+- [![Reference Video for a particular Z9](https://youtu.be/_l8WBW9vs6I)](https://youtu.be/_l8WBW9vs6I)
 - 
 ![Z9 burst shooting with Info display](./z9-burst-info.gif)
 
