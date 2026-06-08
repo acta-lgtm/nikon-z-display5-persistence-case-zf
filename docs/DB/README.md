@@ -266,6 +266,7 @@ During ongoing observation, it became evident that the "Info display" and the "I
   Menu displayed in the EVF
 
 
+
 ***
 
 
