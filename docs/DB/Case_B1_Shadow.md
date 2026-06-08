@@ -148,7 +148,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 
 > [!NOTE]
 > For detailed distinctions between visually similar Info states,
-> see "[Info-State Classification](README.md###info-state-classification)"in the DB README.
+> see "[Info-State Classification](README.md#info-state-classification)"in the DB README.
 
 ### Operational Notes
 
