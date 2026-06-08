@@ -265,8 +265,6 @@ During ongoing observation, it became evident that the "Info display" and the "I
   Nothing displayed on the LCD monitor \
   Menu displayed in the EVF
 
-
-   
 ---
 
 ### Info-State Classification
