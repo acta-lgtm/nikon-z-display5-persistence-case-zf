@@ -1,15 +1,6 @@
 # Case B2: In the Fray of the Focus (Firmware Ver. 3.01)
 
-## Revision History
-| Rev. | Date | Description |
-| :--- | :--- | :--- |
-| 1.0 | 2026-05-11 | Initial report. |
-| 1.1 | 2026-05-14 | Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. |
-| 1.2 | 2026-05-17 | Added Figure 1, Observational Notes.|
-| 1.3 | 2026-05-19 | Added Operational Notes.|
-| 1.4 | 2026-05-21 | Added state definitions S37 and S38, and revised S6, S7, S21, and S25. Concurrently updated the relevant tables. |
-| 1.5 | 2026-05-22 | Added state definitions S39 and S42, and revised S6, S7, S21, S37 and S38. Concurrently updated the relevant tables. |
-| 1.6 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables. Added Observational Notes.|
+> Created: 2026-05-11 | Published: 2026-05-17 | Last Updated: 2026-06-14
 
 ---
 
