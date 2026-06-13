@@ -1,20 +1,6 @@
 # Case A1: Schrödinger's Sisyphean Loop (Firmware Ver. 3.01)
 
-## Revision History
-| Rev. | Date | Description |
-| :--- | :--- | :--- |
-| 1.0  | 2026-04-20 | Initial report. 
-| 1.1  | 2026-04-29 | Added verification that DISP button cannot restore the display while the LCD is closed (docked). 
-| 1.2  | 2026-04-29 | Strictly distinguished between "[i] menu" and "Information display" in all test steps. Fixed inconsistency in Step 67. 
-| 1.3  | 2026-04-30 | Clarified "Close" definition and removed redundant S0 reference in Setup to clarify state transitions. Changed the expression "Display [i] menu" to "Press [i] button". Added Steps 11 to 16. 
-| 1.4  | 2026-05-01 | Title Update: Renamed the anomaly to "Schrödinger’s Sisyphean Loop".This better characterizes the non-deterministic nature of the UI: the return-path from the S3 (Menu) remains in a "superposition" of S1 (Live View) and S6 (Info-display), which collapses into an endless Sisyphean return to the Info-display once a setting is changed.
-| 1.5  | 2026-05-04 | Added State S17, 18. Introduced the "Next State" column to all steps to better visualize unexpected state transitions and provide a more rigorous tracking of the Sisyphean loop. Refined the state definitions in the state transition table.
-| 1.6  | 2026-05-14 |  Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. 
-| 1.7  | 2026-05-19 | Added Operational Notes. 
-| 1.8  | 2026-05-20 | Partial correction of the table. 
-| 1.9  | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
-| 2.0  | 2026-06-01 | Added Steps 157–176, observational Notes.
-
+> Created: 2026-04-20 | Published: 2026-05-17 | Last Updated: 2026-06-14
 
 ---
 
