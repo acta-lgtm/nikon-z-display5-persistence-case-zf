@@ -1,23 +1,8 @@
 # Case B3: Cornering the Shadow: A Trace from the Past (Firmware Ver. 3.01)
 
-
-Case B1 classified multiple visually similar Info states by route, Display 5 configuration, persistence, and overlay status. Case B3 builds on that classification and examines how those hidden route histories reappear through LCD activation thresholds, overlay transitions, and Live View display-index recovery.
-
-Case B3 examines how prior display-route history remains hidden behind visually similar states and reappears through LCD activation thresholds, overlay transitions, and recovery behavior.
-
-
-## Revision History
-| Rev. | Date | Description |
-| :--- | :--- | :--- |
-| 1.0 | 2026-05-13 | Initial report. |
-| 1.1 | 2026-05-14 | Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. ¥
-| 1.2 | 2026-05-21 | Added state definitions S37 and S38, and revised S6, S7, S21, and S25. Concurrently updated the relevant tables. |
-| 1.3 | 2026-05-22 | Added state definitions S39 and S42, and revised S6, S7, S21, S37 and S38. Concurrently updated the relevant tables. Added Steps 113–183.|
-| 1.4 | 2026-05-25 | Added state definitions S43-S46. Concurrently updated the relevant tables.Added Steps 184–234.|
-| 1.5 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
+> Created: 2026-05-13 | Published: 2026-05-17 | Last Updated: 2026-06-14
 
 ---
-
 
 ### 1. Core Observation
 
