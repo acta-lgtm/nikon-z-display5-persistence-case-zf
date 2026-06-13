@@ -1,13 +1,6 @@
 # Case A2: Deterministic Loop: Immediate Transition from Default Settings (Firmware Ver. 3.01)
 
-## Revision History
-| Rev. | Date | Description |
-| :--- | :--- | :--- |
-| 1.0 | 2026-05-04 | Initial report. |
-| 1.1 | 2026-05-05 | Added Thought experiment. |
-| 1.2 | 2026-05-06 | Added states. Refined the title to more accurately reflect the inevitable progression from factory settings to the inescapable state. |
-| 1.3 | 2026-05-14 | Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. 
-| 1.4 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables.|
+> Created: 2026-05-04 | Published: 2026-05-17 | Last Updated: 2026-06-14
 
 ---
 
