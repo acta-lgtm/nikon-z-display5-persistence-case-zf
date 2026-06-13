@@ -1,21 +1,8 @@
 # Case B1: The Shadow Double (Firmware Ver. 3.01)
 
-## Revision History
-| Rev. | Date | Description |
-| :--- | :--- | :--- |
-| 1.0 | 2026-05-07 | Initial report. |
-| 1.1 | 2026-05-08 | Refined the state definitions in the state transition table. |
-| 1.2 | 2026-05-09 | Added State S35-S36, Steps 185–251, and "Preparation and Settings" Item 9. |
-| 1.3 | 2026-05-11 | Added "Preparation and Settings" Item 10. |
-| 1.4 | 2026-05-14 | Refined operational assessment criteria (E/N/M) and added display-control context definitions to distinguish user-observable behavior from inferred display-control consistency. |
-| 1.5 | 2026-05-21 | Added state definitions S37 and S38, and revised S6, S7, S21, and S25. Concurrently updated the relevant tables. |
-| 1.6 | 2026-05-22 | Added state definitions S39 and S42, and revised S6, S7, S21, S37 and S38. Concurrently updated the relevant tables. Added Steps 252–277|
-| 1.7 | 2026-05-25 | Added state definitions S43-S46. Concurrently updated the relevant tables.|
-| 1.8 | 2026-05-31 | Introduced structured display-control context notation:`Context <MonitorMode>(<AutoSwitch>; DP1-4=<enabled displays>; DP5=<ON/OFF>)`.<br> The change was made to better describe later observations involving Display 5 persistence, Live View display-index retention, and context-dependent recovery behavior.<br> Concurrently updated the relevant tables. Added observational Notes|
+> Created: 2026-05-07 | Published: 2026-05-17 | Last Updated: 2026-06-14
 
 ---
-
-
 
 ### 1. Core Observation
 
