@@ -693,5 +693,20 @@ Case B3 suggests that persistent Info fixation is closely associated with moment
 These observations suggest that Display 5 fixation and Display-layer reset should be treated as related but distinct issues.
 
 
+---
 
+### Additional Note: A Temporary Live View Bypass That Does Not Reset the Underlying State
+Under `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`, an additional bypass-like behavior was observed when the Fn button retained its default white-balance function.
+
+If the LCD monitor is closed and the Fn button is pressed and held, then the LCD monitor is opened while the Fn button remains held down, Live View appears underneath the white-balance adjustment overlay. Releasing the Fn button then provides a usable Live View display.
+
+However, this behavior does not appear to reset the underlying persistent Info / Display 5 state. If the LCD monitor is then closed and opened normally, the camera returns to the Info display. Repeating the same operation — closing the LCD monitor, holding the Fn button, and opening the LCD monitor while the Fn button remains held — can again produce Live View underneath the white-balance overlay.
+
+This bypass is therefore not a stable recovery path.
+
+Moreover, if a photograph is taken from this temporarily obtained Live View state, the image is recorded, but Live View then disappears. The LCD shows only the Display 1 overlay against a dark background. Exposure-related indicators remain active, but the through-image is no longer displayed.
+
+After this occurs, subsequent shooting, LCD opening/closing, power cycling, and repeating the Fn-held LCD-opening operation do not restore the through-image. The display remains in a Display 1 overlay state without Live View.
+
+For this reason, this behavior is best understood not as a recovery method, but as a one-shot bypass that temporarily exposes a Live View rendering path without clearing the underlying display-state problem.
 
