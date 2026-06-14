@@ -706,7 +706,7 @@ This bypass is therefore not a stable recovery path.
 
 Moreover, if a photograph is taken from this temporarily obtained Live View state, the image is recorded, but Live View then disappears. The LCD shows only the Display 1 overlay against a dark background. Exposure-related indicators remain active, but the through-image is no longer displayed.
 
-After this occurs, subsequent shooting, LCD opening/closing, power cycling, and repeating the Fn-held LCD-opening operation do not restore the through-image. The display remains in a Display 1 overlay state without Live View.
+After this occurs, subsequent shooting, and repeating the Fn-held LCD-opening operation do not restore the through-image. The display remains in a Display 1 overlay state without Live View.
 
 For this reason, this behavior is best understood not as a recovery method, but as a one-shot bypass that temporarily exposes a Live View rendering path without clearing the underlying display-state problem.
 
