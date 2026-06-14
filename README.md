@@ -116,16 +116,14 @@ Ultimately, this repository is not merely a collection of transition tables, but
 ---
 
 ## 4. Visual Appendix
+
+### Zf observation: Case B2
 - [![Reference Video for Case B2](https://www.youtube.com/watch?v=Linzjau-Ucg)](https://www.youtube.com/watch?v=Linzjau-Ucg)
 *Note: This video does not completely reproduce the steps for Case B2.*
 
 - ![Animated illustration of Case B2](./Case_B2_mov1.gif)
   
 *Note: A short GIF clipped from the reference video showing the key steps for Case B2.*
-
-- [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
-　- [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260602/case-a1-concept-map-cat.pdf)
-
 
 ### Supplementary Z9 Observation
 
@@ -134,6 +132,10 @@ A supplementary check using a particular Nikon Z9 showed the same core Display 5
 - [![Reference Video for a particular Z9](https://youtu.be/_l8WBW9vs6I)](https://youtu.be/_l8WBW9vs6I)
 - 
 ![Z9 burst shooting with Info display](./z9-burst-info.gif)
+
+### Extra Visualization
+- [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
+　- [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260602/case-a1-concept-map-cat.pdf)
 
 ---
 
