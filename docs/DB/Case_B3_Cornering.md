@@ -708,5 +708,7 @@ Moreover, if a photograph is taken from this temporarily obtained Live View stat
 
 After this occurs, subsequent shooting, and repeating the Fn-held LCD-opening operation do not restore the through-image. The display remains in a Display 1 overlay state without Live View.
 
+This state is particularly revealing because the Display 1 overlay remains active while the through-image itself is absent. This suggests that the Live View image pipeline and the shooting-display overlay layer can become separated.
+
 For this reason, this behavior is best understood not as a recovery method, but as a one-shot bypass that temporarily exposes a Live View rendering path without clearing the underlying display-state problem.
 
