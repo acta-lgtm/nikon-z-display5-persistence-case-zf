@@ -135,7 +135,7 @@ A supplementary check using a particular Nikon Z9 showed the same core Display 5
 
 ### Extra Visualization
 - [Extra Visualization (Concept Map)](./case-a1-concept-map-cat.svg)
-　- [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260602/case-a1-concept-map-cat.pdf)
+　- [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf)
 
 ---
 
