@@ -1,0 +1,202 @@
+
+digraph Case_B3_Figure1 {
+  rankdir=LR;
+  compound=true;
+  newrank=true;
+
+  graph [
+    fontname="Helvetica",
+    labelloc="t",
+    fontsize=18,
+    label="Figure B3-1. Info Display × LCD-Active State and Fixation"
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="Helvetica",
+    fillcolor="white",
+    color="black"
+  ];
+
+  edge [
+    fontname="Helvetica"
+  ];
+
+  // --------------------------------------------------
+  // Bottom: Info + LCD-active overlap / fixation route
+  // --------------------------------------------------
+  subgraph cluster_bottom {
+    label="Info + LCD-active overlap / fixation route (Steps 8–11 precursor; Steps 16–20, 329–335 fixation)";
+    fontsize=16;
+    color="black";
+
+    b_S0  [label="S0"];
+    b_S22 [label="S22", color="purple", penwidth=3.0];
+
+    // S25: Info is displayed while LCD remains in an active shooting context.
+    // This is the key overlap condition.
+    b_S25 [
+      label="S25",
+      color="purple",
+      fillcolor="#d9d9d9",
+      penwidth=3.0
+    ];
+
+    // S7: Info is displayed, but LCD is closed.
+    // Persistence through close/open alone is shown as precursor, not fixation by itself.
+    b_S7 [
+      label="S7",
+      fillcolor="#d9d9d9"
+    ];
+
+    // Fixation states
+    b_S38 [
+      label="S38",
+      color="red",
+      fillcolor="#ffe6e6",
+      penwidth=3.0
+    ];
+
+    b_S37 [
+      label="S37",
+      color="red",
+      fillcolor="#ffe6e6",
+      penwidth=3.0
+    ];
+
+    // Keep S25 and S7 vertically aligned in the same time/context region
+    { rank=same; b_S25; b_S7; }
+
+    // Main route to Info + LCD-active overlap
+    b_S0  -> b_S22 [label="open", color="purple"];
+    b_S22 -> b_S25 [label="DISP to Info", color="purple"];
+
+    // Precursor route: close/open persistence alone is not classified here as fixation
+    b_S25 -> b_S7 [
+      label="close",
+      style=dashed,
+      color="gray40",
+      fontcolor="gray40"
+    ];
+
+    b_S7 -> b_S25 [
+      label="open",
+      style=dashed,
+      color="purple",
+      fontcolor="purple"
+    ];
+
+    // Half-press after Info + LCD-active overlap leads to fixation
+    b_S25 -> b_S38 [
+      label="Half-press",
+      color="red",
+      fontcolor="red",
+      penwidth=3.0
+    ];
+
+    b_S38 -> b_S37 [
+      label="close",
+      color="red",
+      fontcolor="red",
+      penwidth=3.0
+    ];
+
+    b_S37 -> b_S38 [
+      label="open",
+      color="red",
+      fontcolor="red",
+      penwidth=3.0
+    ];
+
+    // Note
+    b_note [
+      label="Dashed close/open route:\nInfo persistence alone is not classified here as fixation.\nHalf-press after the Info + LCD-active overlap leads to fixation.",
+      shape=note,
+      style="filled",
+      fillcolor="#fffaf0",
+      color="gray50",
+      fontname="Helvetica",
+      fontsize=11
+    ];
+
+    b_S7 -> b_note [
+      style=invis
+    ];
+
+    // Legend
+    subgraph cluster_legend_bottom {
+      label="Legend";
+      fontsize=12;
+      color="gray";
+
+      key_info_bottom [
+        label="Grey background: Info display is shown",
+        shape=plaintext
+      ];
+
+      key_LCD_bottom [
+        label="Purple border: LCD is in an active shooting context",
+        shape=plaintext
+      ];
+
+      key_fixed_bottom [
+        label="Red border/fill: Info-fixation state",
+        shape=plaintext
+      ];
+
+      key_dashed_bottom [
+        label="Dashed edge: precursor persistence, not classified by itself as fixation",
+        shape=plaintext
+      ];
+    }
+  }
+
+
+
+  // --------------------------------------------------
+  // Top: Fixation did not occur
+  // --------------------------------------------------
+  subgraph cluster_top {
+    label="Fixation did not occur (Steps 1–4, 4–8, 14–16)";
+    fontsize=16;
+    color="black";
+
+    t_S0  [label="S0"];
+    t_S22 [label="S22", color="purple", penwidth=3.0];
+    t_S30 [label="S30", color="purple", penwidth=3.0];
+
+    // Transitions
+    t_S0  -> t_S22 [label="open", color="purple"];
+    t_S22 -> t_S0  [label="close"];
+    t_S22 -> t_S22 [label="Half-press", color="purple"];
+    t_S22 -> t_S30 [label="[i]", color="purple"];
+    t_S30 -> t_S22 [label="Half-press", color="purple"];
+
+    // Legend
+    subgraph cluster_legend_top {
+      label="Legend";
+      fontsize=12;
+      color="gray";
+
+      key_LCD_top [
+        label="Purple border: LCD is in an active shooting context",
+        shape=plaintext
+      ];
+    }
+  }
+
+
+  // --------------------------------------------------
+  // Column alignment between top and bottom clusters
+  // --------------------------------------------------
+  { rank=same; t_S0;  b_S0;  }
+  { rank=same; t_S22; b_S22; }
+
+  // Invisible edge to help keep the two clusters visually related
+  t_S0 -> b_S0 [
+    style=invis,
+    weight=10
+  ];
+}
+```

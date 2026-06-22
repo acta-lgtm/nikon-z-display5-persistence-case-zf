@@ -1,0 +1,207 @@
+<svg width="1336pt" height="546pt" viewBox="0.00 0.00 1336.00 546.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 541.6)">
+<title>Case_B3_Figure1</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-541.6 1332.04,-541.6 1332.04,4 -4,4"/>
+<text xml:space="preserve" text-anchor="middle" x="664.02" y="-517.4" font-family="Helvetica,sans-Serif" font-size="18.00">Figure B3-1. Info Display × LCD-Active State and Fixation</text>
+<g id="clust1" class="cluster">
+<title>cluster_bottom</title>
+<polygon fill="none" stroke="black" points="17.16,-8 17.16,-331 1320.04,-331 1320.04,-8 17.16,-8"/>
+<text xml:space="preserve" text-anchor="middle" x="668.6" y="-312.6" font-family="Helvetica,sans-Serif" font-size="16.00">Info + LCD-active overlap / fixation route (Steps 8–11 precursor; Steps 16–20, 329–335 fixation)</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_legend_bottom</title>
+<polygon fill="none" stroke="gray" points="25.16,-16 25.16,-252 489.83,-252 489.83,-16 25.16,-16"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-237.2" font-family="Helvetica,sans-Serif" font-size="12.00">Legend</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_top</title>
+<polygon fill="none" stroke="black" points="75.91,-339 75.91,-500 778,-500 778,-339 75.91,-339"/>
+<text xml:space="preserve" text-anchor="middle" x="426.95" y="-481.6" font-family="Helvetica,sans-Serif" font-size="16.00">Fixation did not occur (Steps 1–4, 4–8, 14–16)</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_legend_top</title>
+<polygon fill="none" stroke="gray" points="83.91,-347 83.91,-421 431.08,-421 431.08,-347 83.91,-347"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-406.2" font-family="Helvetica,sans-Serif" font-size="12.00">Legend</text>
+</g>
+<!-- b_S0 -->
+<g id="node1" class="node">
+<title>b_S0</title>
+<path fill="white" stroke="black" d="M272.5,-296C272.5,-296 242.5,-296 242.5,-296 236.5,-296 230.5,-290 230.5,-284 230.5,-284 230.5,-272 230.5,-272 230.5,-266 236.5,-260 242.5,-260 242.5,-260 272.5,-260 272.5,-260 278.5,-260 284.5,-266 284.5,-272 284.5,-272 284.5,-284 284.5,-284 284.5,-290 278.5,-296 272.5,-296"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-273.8" font-family="Helvetica,sans-Serif" font-size="14.00">S0</text>
+</g>
+<!-- b_S22 -->
+<g id="node2" class="node">
+<title>b_S22</title>
+<path fill="white" stroke="purple" stroke-width="3" d="M592.51,-277C592.51,-277 562.51,-277 562.51,-277 556.51,-277 550.51,-271 550.51,-265 550.51,-265 550.51,-253 550.51,-253 550.51,-247 556.51,-241 562.51,-241 562.51,-241 592.51,-241 592.51,-241 598.51,-241 604.51,-247 604.51,-253 604.51,-253 604.51,-265 604.51,-265 604.51,-271 598.51,-277 592.51,-277"/>
+<text xml:space="preserve" text-anchor="middle" x="577.51" y="-254.8" font-family="Helvetica,sans-Serif" font-size="14.00">S22</text>
+</g>
+<!-- b_S0&#45;&gt;b_S22 -->
+<g id="edge1" class="edge">
+<title>b_S0-&gt;b_S22</title>
+<path fill="none" stroke="purple" d="M284.79,-276.43C340.83,-273.08 472.24,-265.23 537.84,-261.31"/>
+<polygon fill="purple" stroke="purple" points="538,-264.81 547.78,-260.72 537.59,-257.82 538,-264.81"/>
+<text xml:space="preserve" text-anchor="middle" x="516.17" y="-267.3" font-family="Helvetica,sans-Serif" font-size="14.00">open</text>
+</g>
+<!-- b_S25 -->
+<g id="node3" class="node">
+<title>b_S25</title>
+<path fill="#d9d9d9" stroke="purple" stroke-width="3" d="M758,-222C758,-222 728,-222 728,-222 722,-222 716,-216 716,-210 716,-210 716,-198 716,-198 716,-192 722,-186 728,-186 728,-186 758,-186 758,-186 764,-186 770,-192 770,-198 770,-198 770,-210 770,-210 770,-216 764,-222 758,-222"/>
+<text xml:space="preserve" text-anchor="middle" x="743" y="-199.8" font-family="Helvetica,sans-Serif" font-size="14.00">S25</text>
+</g>
+<!-- b_S22&#45;&gt;b_S25 -->
+<g id="edge2" class="edge">
+<title>b_S22-&gt;b_S25</title>
+<path fill="none" stroke="purple" d="M605.88,-249.79C632.64,-240.79 673.62,-227 703.63,-216.91"/>
+<polygon fill="purple" stroke="purple" points="704.75,-220.22 713.11,-213.72 702.51,-213.59 704.75,-220.22"/>
+<text xml:space="preserve" text-anchor="middle" x="660.25" y="-246.95" font-family="Helvetica,sans-Serif" font-size="14.00">DISP to Info</text>
+</g>
+<!-- b_S7 -->
+<g id="node4" class="node">
+<title>b_S7</title>
+<path fill="#d9d9d9" stroke="black" d="M758,-294C758,-294 728,-294 728,-294 722,-294 716,-288 716,-282 716,-282 716,-270 716,-270 716,-264 722,-258 728,-258 728,-258 758,-258 758,-258 764,-258 770,-264 770,-270 770,-270 770,-282 770,-282 770,-288 764,-294 758,-294"/>
+<text xml:space="preserve" text-anchor="middle" x="743" y="-271.8" font-family="Helvetica,sans-Serif" font-size="14.00">S7</text>
+</g>
+<!-- b_S25&#45;&gt;b_S7 -->
+<g id="edge3" class="edge">
+<title>b_S25-&gt;b_S7</title>
+<path fill="none" stroke="#666666" stroke-dasharray="5,2" d="M743,-223.29C743,-230.38 743,-238.57 743,-246.35"/>
+<polygon fill="#666666" stroke="#666666" points="739.5,-246.13 743,-256.13 746.5,-246.13 739.5,-246.13"/>
+<text xml:space="preserve" text-anchor="middle" x="731.6" y="-235.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#666666">close</text>
+</g>
+<!-- b_S38 -->
+<g id="node5" class="node">
+<title>b_S38</title>
+<path fill="#ffe6e6" stroke="red" stroke-width="3" d="M1044.57,-222C1044.57,-222 1014.57,-222 1014.57,-222 1008.57,-222 1002.57,-216 1002.57,-210 1002.57,-210 1002.57,-198 1002.57,-198 1002.57,-192 1008.57,-186 1014.57,-186 1014.57,-186 1044.57,-186 1044.57,-186 1050.57,-186 1056.57,-192 1056.57,-198 1056.57,-198 1056.57,-210 1056.57,-210 1056.57,-216 1050.57,-222 1044.57,-222"/>
+<text xml:space="preserve" text-anchor="middle" x="1029.57" y="-199.8" font-family="Helvetica,sans-Serif" font-size="14.00">S38</text>
+</g>
+<!-- b_S25&#45;&gt;b_S38 -->
+<g id="edge5" class="edge">
+<title>b_S25-&gt;b_S38</title>
+<path fill="none" stroke="red" stroke-width="3" d="M771.28,-204C821.32,-204 928.03,-204 987.1,-204"/>
+<polygon fill="red" stroke="red" stroke-width="3" points="986.83,-207.5 996.83,-204 986.83,-200.5 986.83,-207.5"/>
+<text xml:space="preserve" text-anchor="middle" x="819.89" y="-208.2" font-family="Helvetica,sans-Serif" font-size="14.00" fill="red">Half-press</text>
+</g>
+<!-- b_S7&#45;&gt;b_S25 -->
+<g id="edge4" class="edge">
+<title>b_S7-&gt;b_S25</title>
+<path fill="none" stroke="purple" stroke-dasharray="5,2" d="M761.79,-257.73C762.16,-257.03 762.5,-256.3 762.8,-255.57 766.45,-246.55 767.54,-241.16 765.89,-233.92"/>
+<polygon fill="purple" stroke="purple" points="769.31,-233.13 762.8,-224.77 762.68,-235.37 769.31,-233.13"/>
+<text xml:space="preserve" text-anchor="middle" x="754.4" y="-235.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="purple">open</text>
+</g>
+<!-- b_note -->
+<g id="node7" class="node">
+<title>b_note</title>
+<polygon fill="#fffaf0" stroke="#7f7f7f" points="1183.35,-295.8 869.79,-295.8 869.79,-248.2 1189.35,-248.2 1189.35,-289.8 1183.35,-295.8"/>
+<polyline fill="none" stroke="#7f7f7f" points="1183.35,-295.8 1183.35,-289.8"/>
+<polyline fill="none" stroke="#7f7f7f" points="1189.35,-289.8 1183.35,-289.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1029.57" y="-281.9" font-family="Helvetica,sans-Serif" font-size="11.00">Dashed close/open route:</text>
+<text xml:space="preserve" text-anchor="middle" x="1029.57" y="-268.7" font-family="Helvetica,sans-Serif" font-size="11.00">Info persistence alone is not classified here as fixation.</text>
+<text xml:space="preserve" text-anchor="middle" x="1029.57" y="-255.5" font-family="Helvetica,sans-Serif" font-size="11.00">Half-press after the Info + LCD-active overlap leads to fixation.</text>
+</g>
+<!-- b_S7&#45;&gt;b_note -->
+<!-- b_S37 -->
+<g id="node6" class="node">
+<title>b_S37</title>
+<path fill="#ffe6e6" stroke="red" stroke-width="3" d="M1300.04,-222C1300.04,-222 1270.04,-222 1270.04,-222 1264.04,-222 1258.04,-216 1258.04,-210 1258.04,-210 1258.04,-198 1258.04,-198 1258.04,-192 1264.04,-186 1270.04,-186 1270.04,-186 1300.04,-186 1300.04,-186 1306.04,-186 1312.04,-192 1312.04,-198 1312.04,-198 1312.04,-210 1312.04,-210 1312.04,-216 1306.04,-222 1300.04,-222"/>
+<text xml:space="preserve" text-anchor="middle" x="1285.04" y="-199.8" font-family="Helvetica,sans-Serif" font-size="14.00">S37</text>
+</g>
+<!-- b_S38&#45;&gt;b_S37 -->
+<g id="edge6" class="edge">
+<title>b_S38-&gt;b_S37</title>
+<path fill="none" stroke="red" stroke-width="3" d="M1057.97,-196.53C1098.25,-186.67 1175.65,-172.02 1240.04,-185.2 1240.99,-185.39 1241.94,-185.61 1242.9,-185.85"/>
+<polygon fill="red" stroke="red" stroke-width="3" points="1241.74,-189.15 1252.33,-188.91 1243.9,-182.49 1241.74,-189.15"/>
+<text xml:space="preserve" text-anchor="middle" x="1223.69" y="-189.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="red">close</text>
+</g>
+<!-- b_S37&#45;&gt;b_S38 -->
+<g id="edge7" class="edge">
+<title>b_S37-&gt;b_S38</title>
+<path fill="none" stroke="red" stroke-width="3" d="M1256.72,-204C1212.31,-204 1124.18,-204 1072.02,-204"/>
+<polygon fill="red" stroke="red" stroke-width="3" points="1072.24,-200.5 1062.24,-204 1072.24,-207.5 1072.24,-200.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1223.69" y="-208.2" font-family="Helvetica,sans-Serif" font-size="14.00" fill="red">open</text>
+</g>
+<!-- key_info_bottom -->
+<g id="node8" class="node">
+<title>key_info_bottom</title>
+<path fill="white" stroke="none" d="M375.67,-60C375.67,-60 139.32,-60 139.32,-60 133.32,-60 127.32,-54 127.32,-48 127.32,-48 127.32,-36 127.32,-36 127.32,-30 133.32,-24 139.32,-24 139.32,-24 375.67,-24 375.67,-24 381.67,-24 387.67,-30 387.67,-36 387.67,-36 387.67,-48 387.67,-48 387.67,-54 381.67,-60 375.67,-60"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-37.8" font-family="Helvetica,sans-Serif" font-size="14.00">Grey background: Info display is shown</text>
+</g>
+<!-- key_LCD_bottom -->
+<g id="node9" class="node">
+<title>key_LCD_bottom</title>
+<path fill="white" stroke="none" d="M411.08,-114C411.08,-114 103.91,-114 103.91,-114 97.91,-114 91.91,-108 91.91,-102 91.91,-102 91.91,-90 91.91,-90 91.91,-84 97.91,-78 103.91,-78 103.91,-78 411.08,-78 411.08,-78 417.08,-78 423.08,-84 423.08,-90 423.08,-90 423.08,-102 423.08,-102 423.08,-108 417.08,-114 411.08,-114"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-91.8" font-family="Helvetica,sans-Serif" font-size="14.00">Purple border: LCD is in an active shooting context</text>
+</g>
+<!-- key_fixed_bottom -->
+<g id="node10" class="node">
+<title>key_fixed_bottom</title>
+<path fill="white" stroke="none" d="M354.27,-168C354.27,-168 160.73,-168 160.73,-168 154.73,-168 148.73,-162 148.73,-156 148.73,-156 148.73,-144 148.73,-144 148.73,-138 154.73,-132 160.73,-132 160.73,-132 354.27,-132 354.27,-132 360.27,-132 366.27,-138 366.27,-144 366.27,-144 366.27,-156 366.27,-156 366.27,-162 360.27,-168 354.27,-168"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-145.8" font-family="Helvetica,sans-Serif" font-size="14.00">Red border/fill: Info-fixation state</text>
+</g>
+<!-- key_dashed_bottom -->
+<g id="node11" class="node">
+<title>key_dashed_bottom</title>
+<path fill="white" stroke="none" d="M469.83,-222C469.83,-222 45.16,-222 45.16,-222 39.16,-222 33.16,-216 33.16,-210 33.16,-210 33.16,-198 33.16,-198 33.16,-192 39.16,-186 45.16,-186 45.16,-186 469.83,-186 469.83,-186 475.83,-186 481.83,-192 481.83,-198 481.83,-198 481.83,-210 481.83,-210 481.83,-216 475.83,-222 469.83,-222"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-199.8" font-family="Helvetica,sans-Serif" font-size="14.00">Dashed edge: precursor persistence, not classified by itself as fixation</text>
+</g>
+<!-- t_S0 -->
+<g id="node12" class="node">
+<title>t_S0</title>
+<path fill="white" stroke="black" d="M272.5,-465C272.5,-465 242.5,-465 242.5,-465 236.5,-465 230.5,-459 230.5,-453 230.5,-453 230.5,-441 230.5,-441 230.5,-435 236.5,-429 242.5,-429 242.5,-429 272.5,-429 272.5,-429 278.5,-429 284.5,-435 284.5,-441 284.5,-441 284.5,-453 284.5,-453 284.5,-459 278.5,-465 272.5,-465"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-442.8" font-family="Helvetica,sans-Serif" font-size="14.00">S0</text>
+</g>
+<!-- t_S0&#45;&gt;b_S0 -->
+<!-- t_S22 -->
+<g id="node13" class="node">
+<title>t_S22</title>
+<path fill="white" stroke="purple" stroke-width="3" d="M592.51,-425C592.51,-425 562.51,-425 562.51,-425 556.51,-425 550.51,-419 550.51,-413 550.51,-413 550.51,-401 550.51,-401 550.51,-395 556.51,-389 562.51,-389 562.51,-389 592.51,-389 592.51,-389 598.51,-389 604.51,-395 604.51,-401 604.51,-401 604.51,-413 604.51,-413 604.51,-419 598.51,-425 592.51,-425"/>
+<text xml:space="preserve" text-anchor="middle" x="577.51" y="-402.8" font-family="Helvetica,sans-Serif" font-size="14.00">S22</text>
+</g>
+<!-- t_S0&#45;&gt;t_S22 -->
+<g id="edge9" class="edge">
+<title>t_S0-&gt;t_S22</title>
+<path fill="none" stroke="purple" d="M284.86,-451.7C330.52,-458.38 425.58,-465.68 489.83,-425 497.17,-420.35 492.31,-412.55 499.83,-408.2 511.12,-401.66 525.01,-399.95 537.84,-400.34"/>
+<polygon fill="purple" stroke="purple" points="537.49,-403.82 547.73,-401.08 538.02,-396.84 537.49,-403.82"/>
+<text xml:space="preserve" text-anchor="middle" x="516.17" y="-412.4" font-family="Helvetica,sans-Serif" font-size="14.00">open</text>
+</g>
+<!-- t_S22&#45;&gt;t_S0 -->
+<g id="edge10" class="edge">
+<title>t_S22-&gt;t_S0</title>
+<path fill="none" stroke="black" d="M549.48,-419.58C543.97,-421.71 538.13,-423.66 532.51,-425 449.87,-444.72 349.64,-447.65 296.27,-447.61"/>
+<polygon fill="black" stroke="black" points="296.52,-444.11 286.5,-447.56 296.48,-451.11 296.52,-444.11"/>
+<text xml:space="preserve" text-anchor="middle" x="516.17" y="-435.36" font-family="Helvetica,sans-Serif" font-size="14.00">close</text>
+</g>
+<!-- t_S22&#45;&gt;t_S22 -->
+<g id="edge11" class="edge">
+<title>t_S22-&gt;t_S22</title>
+<path fill="none" stroke="purple" d="M566.24,-426.26C565.01,-435.19 568.77,-443 577.51,-443 582.16,-443 585.4,-440.8 587.23,-437.39"/>
+<polygon fill="purple" stroke="purple" points="590.66,-438.15 588.58,-427.76 583.73,-437.18 590.66,-438.15"/>
+<text xml:space="preserve" text-anchor="middle" x="577.51" y="-447.2" font-family="Helvetica,sans-Serif" font-size="14.00">Half-press</text>
+</g>
+<!-- t_S30 -->
+<g id="node14" class="node">
+<title>t_S30</title>
+<path fill="white" stroke="purple" stroke-width="3" d="M758,-425C758,-425 728,-425 728,-425 722,-425 716,-419 716,-413 716,-413 716,-401 716,-401 716,-395 722,-389 728,-389 728,-389 758,-389 758,-389 764,-389 770,-395 770,-401 770,-401 770,-413 770,-413 770,-419 764,-425 758,-425"/>
+<text xml:space="preserve" text-anchor="middle" x="743" y="-402.8" font-family="Helvetica,sans-Serif" font-size="14.00">S30</text>
+</g>
+<!-- t_S22&#45;&gt;t_S30 -->
+<g id="edge12" class="edge">
+<title>t_S22-&gt;t_S30</title>
+<path fill="none" stroke="purple" d="M605.9,-393.31C611.28,-391.19 616.98,-389.33 622.51,-388.2 655.38,-381.47 665.13,-381.47 698,-388.2 699.9,-388.59 701.82,-389.06 703.74,-389.61"/>
+<polygon fill="purple" stroke="purple" points="702.59,-392.91 713.18,-392.82 704.84,-386.28 702.59,-392.91"/>
+<text xml:space="preserve" text-anchor="middle" x="660.25" y="-392.4" font-family="Helvetica,sans-Serif" font-size="14.00">[i]</text>
+</g>
+<!-- t_S30&#45;&gt;t_S22 -->
+<g id="edge13" class="edge">
+<title>t_S30-&gt;t_S22</title>
+<path fill="none" stroke="purple" d="M714.54,-407C687.87,-407 647.12,-407 617.17,-407"/>
+<polygon fill="purple" stroke="purple" points="617.39,-403.5 607.39,-407 617.39,-410.5 617.39,-403.5"/>
+<text xml:space="preserve" text-anchor="middle" x="660.25" y="-411.2" font-family="Helvetica,sans-Serif" font-size="14.00">Half-press</text>
+</g>
+<!-- key_LCD_top -->
+<g id="node15" class="node">
+<title>key_LCD_top</title>
+<path fill="white" stroke="none" d="M411.08,-391C411.08,-391 103.91,-391 103.91,-391 97.91,-391 91.91,-385 91.91,-379 91.91,-379 91.91,-367 91.91,-367 91.91,-361 97.91,-355 103.91,-355 103.91,-355 411.08,-355 411.08,-355 417.08,-355 423.08,-361 423.08,-367 423.08,-367 423.08,-379 423.08,-379 423.08,-385 417.08,-391 411.08,-391"/>
+<text xml:space="preserve" text-anchor="middle" x="257.5" y="-368.8" font-family="Helvetica,sans-Serif" font-size="14.00">Purple border: LCD is in an active shooting context</text>
+</g>
+</g>
+</svg>
