@@ -25,7 +25,7 @@ digraph Case_B3_Figure2 {
   // Bottom: Fixation occurred
   // --------------------------------------------------
   subgraph cluster_bottom {
-    label="Fixation occurred (Steps 38–43, 48–52, 57–61)";
+    label="Fixation occurred (Steps 38–43, 48–52, 57–61, 338–345, 348–355)";
     fontsize=16;
     color="black";
 
@@ -53,16 +53,19 @@ digraph Case_B3_Figure2 {
     b_S4 -> b_S7 [label="[i]"];
     b_S7 -> b_S6 [label="open", color="purple", penwidth=3.0];
 
-    // Route 2: [i] -> open => S5
+    // Route 2: [i] -> open => S5 -> [i]  => S6
     b_S4 -> b_S5 [label="open", color="purple", penwidth=3.0];
+    b_S5 -> b_S6 [label="[i]", color="purple", penwidth=3.0];
 
     // Route 3: DISP once -> open => S6
     b_S0 -> b_S7 [label="DISP once"];
-    b_backS7 -> b_S6 [label="open", color="purple", penwidth=3.0];
+    b_backS7 -> b_S6 [label="open", color="purple"];
 
     // Close after the overlap states
     b_S5 -> b_backS4 [label="close"];
+    b_backS4 -> b_S5  [label="open", color="purple"];
     b_S6 -> b_backS7 [label="close"];
+    b_backS4 -> b_backS7  [label="[i]"];
 
     // Power cycle after the overlap condition
     b_backS4 -> b_post0 [label="power"];
