@@ -1,8 +1,17 @@
-# Case B3: Cornering the Shadow: A Trace from the Past (Firmware Ver. 3.01)
+# <a id="caseb3"></a> Case B3: Cornering the Shadow: A Trace from the Past (Firmware Ver. 3.01)
 
-> Created: 2026-05-13 | Published: 2026-05-17 | Last Updated: 2026-06-14
+> Created: 2026-05-13 | Published: 2026-05-17 | Last Updated: 2026-06-22
 
 ---
+
+Case B1 classified multiple visually similar Info states by route, Display 5 configuration, persistence, and overlay status. Case B3 builds on that classification and examines how those hidden route histories reappear through LCD activation thresholds, overlay transitions, and Live View display-index recovery.
+
+Case B3 examines how prior display-route history remains hidden behind visually similar states and reappears through LCD activation thresholds, overlay transitions, and recovery behavior.
+
+
+
+---
+
 
 ### 1. Core Observation
 
@@ -92,7 +101,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 
 > [!NOTE]
 > For detailed distinctions between visually similar Info states,
-> see "Info-State Classification" in the DB README.
+> see "[Info-State Classification](README.md#info-state-classification)"in the DB README.
 
 
 ### Operational Notes
@@ -428,12 +437,12 @@ beyond the threshold at which the LCD display becomes active.
 | 300  | S22            | Close LCD monitor                                                                                                                           | S0         | Nothing display                    | Off        |   E   | E / N / M |
 | 301  | S0             | Press DISP button                                                                                                                           | S21        |Info display (explicit DP5 route; DP5 ON)    | Off        |   E   | E / N / M |
 | ▼ |  **Context** | **AS (OD; DP1-4=1,2,3,4; DP5=ON)**                                      |            |                                                                                               |                   |                                              |                   |
-| 302  | S21            | Use the Monitor mode button to set it to "Automatic display switch" (Context E)                                                             | S18         | Live View (with DP2) | Off        |   E   | E / N / M |
+| 302  | S21            | Use the Monitor mode button to set it to "Automatic display switch"                                                                         | S18         | Live View (with DP2) | Off        |   E   | E / N / M |
 | 303  | S18            | Open LCD monitor                                                                                                                            | S22         | Live View (with DP2) | Off        |   E   | E / N / M |
 | 304  | S22            | Press DISP button repeatedly until Display 1 is shown                                                                                       | S1          | Live View (with DP1) | Off        |   E   | E / N / M |
 | 305  | S1             | Close LCD monitor                                                                                                                           | S17         | Live View (with DP1) | Off        |   E   | E / N / M |
 | ▼ |  **Context** | **PV (OD; DP1-4=1,2,3,4; DP5=OFF)**                                      |            |                                                                                               |                   |                                              |                   |
-| 306  | S17            | Use the Monitor mode button to set it to "Prioritize viewfinder (1 or 2)" (Context A)                                                       | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 306  | S17            | Use the Monitor mode button to set it to "Prioritize viewfinder (1 or 2)"                                                                   | S0         | Nothing display                    | Off        |   E   | E / N / M |
 | 307  | S0             | In [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display], un-check Display 5, <br> ensure that Display  1 to 4 are checked; then exit | S0 | Nothing display                               | Off                                        |   E   | E / N / M |
 | 308  | S0             | Open LCD monitor                                                                                                                            | S1         | Live View (with DP1) | Off        |   E   | E / N / M |
 | 309  | S1             | Press DISP button                                                                                                                           | S22         | Live View (with DP2) | Off        |   E   | E / N / M |
@@ -448,14 +457,24 @@ beyond the threshold at which the LCD display becomes active.
 | 318  | S22            | Close LCD monitor                                                                                                                           | S0         | Nothing display                    | Off        |   E   | E / N / M |
 | 319  | S0             | Press DISP button                                                                                                                           | S41        |Info display (explicit DISP route; DP5 OFF)   | Off        |   E   | E / N / M |
 | ▼ |  **Context** | **AS (OD; DP1-4=1,2,3,4; DP5=OFF)**                                      |            |                                                                                               |                   |                                              |                   |
-| 320  | S41            | Use the Monitor mode button to set it to "Automatic display switch" (Context E)                                                             | S18         | Live View (with DP2) | Off        |   E   | E / N / M |
+| 320  | S41            | Use the Monitor mode button to set it to "Automatic display switch"                                                                         | S18         | Live View (with DP2) | Off        |   E   | E / N / M |
 | 321  | S18            | Open LCD monitor                                                                                                                            | S22         | Live View (with DP2) | Off        |   E   | E / N / M |
 | 322  | S22            | Press DISP button repeatedly until Display 1 is shown                                                                                       | S1          | Live View (with DP1) | Off        |   E   | E / N / M |
 | 323  | S1             | Close LCD monitor                                                                                                                           | S17         | Live View (with DP1) | Off        |   E   | E / N / M |
-
-
-
-
+| ▼ |  **Context** | **PV (OD; DP1-4=1,2,3,4; DP5=ON)**                                      |            |                                                                                               |                   |                                              |                   |
+| 324  | S17            | Use the Monitor mode button to set it to "Prioritize viewfinder (1 or 2)"                                                                    | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 325  | S0             | In [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display], <br> check Display 1 to 5 ; then exit                                     | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 326  | S0             | Open LCD monitor                                                                                                                             | S1         | Live View (with DP1) | Off        |   E   | E / N / M |
+| 327  | S1             | Press DISP button                                                                                                                            | S22        | Live View (with DP2) | Off        |   E   | E / N / M |
+| 328  | S22            | Close LCD monitor                                                                                                                            | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 329  | S0             | Open LCD monitor                                                                                                                             | S22        | Live View (with DP2) | Off        |   E   | E / N / M |
+| 330  | S22            | Press DISP button repeatedly until Display 5=Info is shown                                                                                   | S25        | Info display (explicit DP5 route; DP5 ON) | Off        |   E   | E / N / M |
+| 331  | S25            | Close LCD monitor                                                                                                                            | S7         | Info display (explicit DP5 route; DP5 ON) | Off        |   E   | E / N / M |
+| 332  | S7             | Open LCD monitor                                                                                                                             | S25        | Info display (explicit DP5 route; DP5 ON) | Off        |   E   | E / N / M |
+| 333  | S25            | Half-press shutter button                                                                                                                    | S38        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
+| 334  | S38            | Close LCD monitor                                                                                                                            | S37        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
+| 335  | S37            | Open LCD monitor                                                                                                                             | S38        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
+|
 
 
 ---
@@ -472,7 +491,7 @@ In this section, “fixation” is treated as having occurred when the Info disp
 
 #### ▼ Context PV(OD; DP1-4=1,2,3,4; DP5=ON): LCD Open → [Operations] → LCD Close → LCD Open
 
-Steps 1–20
+Steps 1–20 and 329–335
 
 **Fixation did not occur**
 
@@ -482,12 +501,23 @@ Steps 1–20
 * LCD Open → Press DISP button repeatedly until Info display (Display 5) is shown → LCD Close → LCD Open (Steps 8–11)
 
 In the last sequence, although the Info display remained visible on the LCD, the persistence caused solely by closing and reopening the LCD monitor is not classified here as fixation.
+However, fixation has been observed when half-press after this (Steps 329–335).
 
 **Fixation occurred**
 
 * LCD Open → Press DISP button repeatedly until Info display (Display 5) is shown → Half-press shutter button → LCD Close → LCD Open (Steps 16–20)
+* LCD Open → Press DISP button repeatedly until Info display (Display 5) is shown → LCD Close → LCD Open → Half-press shutter button → LCD Close → LCD Open (Steps 329–335)
 
 In this sequence, the Info display did not disappear after shutter-button half-press and remained persistent afterward. Therefore, this sequence is classified as fixation.
+
+### Figure B3-1
+
+![Figure B3-1. Info Display × LCD-Active State and Fixation](../../figures/Case_B3_Figure1.svg)
+
+Source: [`Case_B3_Figure1.dot`](../../figures/Case_B3_Figure1.dot)
+
+This figure summarizes the observed relation between the Info display and LCD-active shooting context. When these two conditions overlap, fixation may occur. By contrast, transitions that remain within the normal LCD-active shooting context, or Info persistence caused solely by LCD closing/reopening, are not by themselves classified here as fixation.
+
 
 ---
 
@@ -509,6 +539,17 @@ Steps 25–61 and 75–94
 * LCD Close → Press [i] button → Press [i] button → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 38–43)
 * LCD Close → Press [i] button → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 48–52)
 * LCD Close → Press DISP button once → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 57–61)
+
+
+![Figure B3-2. Fixation after Info/LCD-active overlap from LCD-docked states](../../figures/Case_B3_Figure2.svg)
+
+Source: [`Case_B3_Figure2.dot`](../../figures/Case_B3_Figure2.dot)
+
+This diagram shows that fixation was not observed when the Info display remained only in LCD-docked or non-LCD-active states before power cycling.
+
+By contrast, fixation occurred when the LCD monitor was opened while the Info display was present, thereby bringing the Info display into an LCD-active shooting context. After this overlap occurred, closing the LCD monitor and power cycling the camera led to a persistent Info-display state when the LCD was opened again.
+
+This suggests that the key factor is not merely the appearance of the Info display itself, but the combination of the Info display with an LCD-active shooting context.
 
 ---
 
@@ -688,14 +729,15 @@ It was also confirmed in this configuration that simply changing the monitor mod
 
 #### 【5】Summary
 
-Case B3 suggests that persistent Info fixation is closely associated with moments when the LCD monitor becomes an active shooting display, especially around the LCD opening threshold. Disabling Display 5 prevents the observed fixation, but does not fully preserve the previously active Live View display layer: after passing through Info-related routes, the camera often returns to Display 1 rather than the prior Live View display mode.
+Case B3 suggests that persistent Info fixation is closely associated with moments when the LCD monitor becomes an active shooting display, especially around the LCD opening threshold.  
+Disabling Display 5 prevents the observed fixation, but does not fully preserve the previously active Live View display layer: after passing through Info-related routes, the camera often returns to Display 1 rather than the prior Live View display mode.
 
 These observations suggest that Display 5 fixation and Display-layer reset should be treated as related but distinct issues.
-
 
 ---
 
 ### Additional Note: A Temporary Live View Bypass That Does Not Reset the Underlying State
+
 Under `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`, an additional bypass-like behavior was observed when the Fn button retained its default white-balance function.
 
 If the LCD monitor is closed and the Fn button is pressed and held, then the LCD monitor is opened while the Fn button remains held down, Live View appears underneath the white-balance adjustment overlay. Releasing the Fn button then provides a usable Live View display.
@@ -708,7 +750,7 @@ Moreover, if a photograph is taken from this temporarily obtained Live View stat
 
 After this occurs, subsequent shooting, and repeating the Fn-held LCD-opening operation do not restore the through-image. The display remains in a Display 1 overlay state without Live View.
 
-This state is particularly revealing because the Display 1 overlay remains active while the through-image itself is absent. This suggests that the Live View image pipeline and the shooting-display overlay layer can become separated.
-
 For this reason, this behavior is best understood not as a recovery method, but as a one-shot bypass that temporarily exposes a Live View rendering path without clearing the underlying display-state problem.
+
+This state is particularly revealing because the Display 1 overlay remains active while the through-image itself is absent. This suggests that the Live View image pipeline and the shooting-display overlay layer can become separated.
 
