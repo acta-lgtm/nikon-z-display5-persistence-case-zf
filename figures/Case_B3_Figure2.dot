@@ -57,7 +57,7 @@ digraph Case_B3_Figure2 {
     b_S4 -> b_S5 [label="open", color="purple", penwidth=3.0];
 
     // Route 3: DISP once -> open => S6
-    b_S0 -> b_backS7 [label="DISP once"];
+    b_S0 -> b_S7 [label="DISP once"];
     b_backS7 -> b_S6 [label="open", color="purple", penwidth=3.0];
 
     // Close after the overlap states
@@ -72,7 +72,7 @@ digraph Case_B3_Figure2 {
     b_post0 -> b_S38 [label="open", color="red", fontcolor="red", penwidth=3.0];
 
     // Fixed open/closed pair
-    b_S38 -> b_S37 [label="close", color="red", fontcolor="red", penwidth=3.0];
+    b_S38 -> b_S37 [xlabel="close", color="red", fontcolor="red", penwidth=3.0];
     b_S37 -> b_S38 [label="open", color="red", fontcolor="red", penwidth=3.0];
 
     // Note
