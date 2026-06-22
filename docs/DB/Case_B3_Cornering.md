@@ -1,8 +1,3 @@
-# <a id="caseb3"></a> Case B3: Cornering the Shadow: A Trace from the Past (Firmware Ver. 3.01)
-
-> Created: 2026-05-13 | Published: 2026-05-17 | Last Updated: 2026-06-22
-
----
 
 Case B1 classified multiple visually similar Info states by route, Display 5 configuration, persistence, and overlay status. Case B3 builds on that classification and examines how those hidden route histories reappear through LCD activation thresholds, overlay transitions, and Live View display-index recovery.
 
@@ -474,7 +469,27 @@ beyond the threshold at which the LCD display becomes active.
 | 333  | S25            | Half-press shutter button                                                                                                                    | S38        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
 | 334  | S38            | Close LCD monitor                                                                                                                            | S37        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
 | 335  | S37            | Open LCD monitor                                                                                                                             | S38        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
-|
+| 336  | S38            | Press DISP button                                                                                                                            | S1         | Live View (with DP1) | Off        |   E   | E / N / M |
+| 337  | S1             | Close LCD monitor                                                                                                                            | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 338  | S0             | Press [i] button                                                                                                                             | S4         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 339  | S4             | Open LCD monitor                                                                                                                             | S5         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 340  | S5             | Press [i] button                                                                                                                             | S6         | Info display (non-DP5 route; DP5 ON)  | Off        |   E   | E / N / M |
+| 341  | S6             | Close LCD monitor                                                                                                                            | S7         | Info display (non-DP5 route; DP5 ON)  | Off        |   E   | E / N / M |
+| 342  | S7             | Open LCD monitor                                                                                                                             | S6         | Info display (non-DP5 route; DP5 ON)  | Off        |   E   | E / N / M |
+| 343  | S6             | Close LCD monitor                                                                                                                            | S7         | Info display (non-DP5 route; DP5 ON)  | Off        |   E   | E / N / M |
+| 344  | S7             | Power off, then on; wait 10 s                                                                                                                | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 345  | S0             | Open LCD monitor                                                                                                                             | S38        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
+| 346  | S38            | Press DISP button                                                                                                                            | S1         | Live View (with DP1) | Off        |   E   | E / N / M |
+| 347  | S1             | Close LCD monitor                                                                                                                            | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 348  | S0             | Press [i] button                                                                                                                             | S4         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 349  | S4             | Open LCD monitor                                                                                                                             | S5         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 350  | S5             | Close LCD monitor                                                                                                                            | S4         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 351  | S4             | Open LCD monitor                                                                                                                             | S5         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 352  | S5             | Close LCD monitor                                                                                                                            | S4         | Info display (non-DP5 route; DP5 ON)<br> with [i] menu | Off        |   E   | E / N / M |
+| 353  | S4             | Press [i] button                                                                                                                             | S7         | Info display (non-DP5 route; DP5 ON)  | Off        |   E   | E / N / M |
+| 354  | S7             | Power off, then on; wait 10 s                                                                                                                | S0         | Nothing display                    | Off        |   E   | E / N / M |
+| 355  | S0             | Open LCD monitor                                                                                                                             | S38        | Info display (persistent fixation)   | Off        | **N** | E / N / M |
+
 
 
 ---
@@ -523,7 +538,7 @@ This figure summarizes the observed relation between the Info display and LCD-ac
 
 #### ▼ Context PV(OD; DP1-4=1,2,3,4; DP5=ON): LCD Close → [Operations] → Power OFF → ON → LCD Open
 
-Steps 25–61 and 75–94
+Steps 25–61, 75–94, and 338–355
 
 **Fixation did not occur**
 
@@ -539,6 +554,10 @@ Steps 25–61 and 75–94
 * LCD Close → Press [i] button → Press [i] button → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 38–43)
 * LCD Close → Press [i] button → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 48–52)
 * LCD Close → Press DISP button once → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 57–61)
+* LCD Close → Press [i] button →　LCD Open + Press [i] button  → LCD Close → LCD Open → LCD Close → Power off, then on → LCD Open (Steps 338–345)
+* LCD Close → Press [i] button →　LCD Open → LCD Close → LCD Open → LCD Close  + Press [i] button → Power off, then on → LCD Open (Steps 348–355)
+
+
 
 
 ![Figure B3-2. Fixation after Info/LCD-active overlap from LCD-docked states](../../figures/Case_B3_Figure2.svg)
@@ -753,4 +772,15 @@ After this occurs, subsequent shooting, and repeating the Fn-held LCD-opening op
 For this reason, this behavior is best understood not as a recovery method, but as a one-shot bypass that temporarily exposes a Live View rendering path without clearing the underlying display-state problem.
 
 This state is particularly revealing because the Display 1 overlay remains active while the through-image itself is absent. This suggests that the Live View image pipeline and the shooting-display overlay layer can become separated.
+
+
+
+
+
+
+
+
+
+
+
 
