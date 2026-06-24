@@ -5,6 +5,7 @@
 ---
 
 The starting point of this repository was a personal experience with the Nikon Z f: the LCD monitor became fixed on the Info display, and recovering a composition-capable Live View became unexpectedly difficult.
+[![Reference Video for Z f.7.2](https://youtu.be/CgRiFayc5yQ)](https://youtu.be/CgRiFayc5yQ)
 
 At first, my goal was simply to understand the camera’s behavior — especially the behavior of the Info display — through detailed state-transition observations. 
 As the observations progressed, however, the issue began to appear broader than a single isolated anomaly. It seemed to touch on a wider question concerning the Nikon Z-series interface, the transition from DSLR-era operating assumptions to mirrorless display logic, and, ultimately, the identity of a camera as a photographic tool.
@@ -30,6 +31,21 @@ The concerns investigated in this repository all relate to the behavior of the I
 
 * **Loss of predictability**
   The outcome of an operation can be difficult to predict from the current visible screen alone. This is especially apparent in behaviors involving the Info display, where visually similar states may lead to different subsequent transitions.
+
+---
+
+## A Working Explanation
+
+The behaviors described above can be explained consistently by assuming that there are at least two functionally different kinds of Info-display states.
+
+One behaves as an Info state with persistent properties. The other appears visually similar, but does not initially possess those persistent traits. For example, the screen selectable as “Display 5 / Info” in the custom monitor shooting-display settings appears to be the Info state that carries this persistence.
+
+One major cause of the problem is that these nearly identical Info states can transition from a non-persistent state into the persistent Display 5 / Info state depending on the shooting mode, LCD open/closed state, and preceding operations, without showing any visible change on the surface.
+
+Another cause is that, under this model, Display 5 / Info appears to be treated as a shooting-display state. Because it can function as a valid retained shooting-display target even though it does not contain a through-image Live View, shutter-button half-press does not necessarily trigger a transition to a Live View display.
+As a result, it may appear to the user as if “nothing happens,” or as if the screen has become “fixed.” In this interpretation, however, the camera has not necessarily failed to respond.
+
+This working explanation can account for both the apparent fixation and the difficulty of predicting the next transition from the visible screen alone. The discussion below develops this interpretation in more detail, including its historical background, terminology issues, support-confirmed behaviors, and possible implications for future camera interface design.
 
 ---
 
@@ -690,9 +706,9 @@ At stake here is not only a display behavior, but the pride, responsibility, and
 
 ---
 
-## Instead of an Afterword: A Thought Experiment
+### Instead of an Afterword: A Thought Experiment
 
-## The Island of Z Paws
+#### The Island of Z Paws
 
 A certain island in the Far East is known as an island of cats. A photographer visited it, chasing the famous “flying cat” shot.
 
