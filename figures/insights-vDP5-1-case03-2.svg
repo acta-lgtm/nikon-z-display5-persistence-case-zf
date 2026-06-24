@@ -1,0 +1,337 @@
+<svg width="1570pt" height="363pt" viewBox="0.00 0.00 1570.00 363.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 358.8)">
+<title>TimeSeriesStyled</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-358.8 1566.22,-358.8 1566.22,4 -4,4"/>
+<!-- zf -->
+<g id="node1" class="node">
+<title>zf</title>
+<path fill="#eeeeee" stroke="#333333" stroke-width="1.5" d="M178.84,-354.8C178.84,-354.8 12,-354.8 12,-354.8 6,-354.8 0,-348.8 0,-342.8 0,-342.8 0,-308.4 0,-308.4 0,-302.4 6,-296.4 12,-296.4 12,-296.4 178.84,-296.4 178.84,-296.4 184.84,-296.4 190.84,-302.4 190.84,-308.4 190.84,-308.4 190.84,-342.8 190.84,-342.8 190.84,-348.8 184.84,-354.8 178.84,-354.8"/>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-338.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Z f.3.2</text>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-321.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">`Context AS</text>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-304.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">(O; DP1-4=1,2,3,4; DP5=ON)`</text>
+</g>
+<!-- row_real -->
+<g id="node2" class="node">
+<title>row_real</title>
+<path fill="#f5f5f5" stroke="#333333" stroke-width="1.5" d="M148.22,-260.6C148.22,-260.6 42.62,-260.6 42.62,-260.6 36.62,-260.6 30.62,-254.6 30.62,-248.6 30.62,-248.6 30.62,-236.6 30.62,-236.6 30.62,-230.6 36.62,-224.6 42.62,-224.6 42.62,-224.6 148.22,-224.6 148.22,-224.6 154.22,-224.6 160.22,-230.6 160.22,-236.6 160.22,-236.6 160.22,-248.6 160.22,-248.6 160.22,-254.6 154.22,-260.6 148.22,-260.6"/>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-238.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Real Info</text>
+</g>
+<!-- zf&#45;&gt;row_real -->
+<!-- t0 -->
+<g id="node5" class="node">
+<title>t0</title>
+<path fill="lightgrey" stroke="none" d="M307.71,-343.6C307.71,-343.6 256.57,-343.6 256.57,-343.6 250.57,-343.6 244.57,-337.6 244.57,-331.6 244.57,-331.6 244.57,-319.6 244.57,-319.6 244.57,-313.6 250.57,-307.6 256.57,-307.6 256.57,-307.6 307.71,-307.6 307.71,-307.6 313.71,-307.6 319.71,-313.6 319.71,-319.6 319.71,-319.6 319.71,-331.6 319.71,-331.6 319.71,-337.6 313.71,-343.6 307.71,-343.6"/>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-321.4" font-family="Helvetica,sans-Serif" font-size="14.00">Power on</text>
+</g>
+<!-- zf&#45;&gt;t0 -->
+<!-- row_virt -->
+<g id="node3" class="node">
+<title>row_virt</title>
+<path fill="#f5f5f5" stroke="#333333" stroke-width="1.5" d="M148.22,-169.4C148.22,-169.4 42.62,-169.4 42.62,-169.4 36.62,-169.4 30.62,-163.4 30.62,-157.4 30.62,-157.4 30.62,-139.8 30.62,-139.8 30.62,-133.8 36.62,-127.8 42.62,-127.8 42.62,-127.8 148.22,-127.8 148.22,-127.8 154.22,-127.8 160.22,-133.8 160.22,-139.8 160.22,-139.8 160.22,-157.4 160.22,-157.4 160.22,-163.4 154.22,-169.4 148.22,-169.4"/>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-152.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Virtual LV</text>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-136" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">model</text>
+</g>
+<!-- row_real&#45;&gt;row_virt -->
+<!-- real0 -->
+<g id="node11" class="node">
+<title>real0</title>
+<polygon fill="#e6f7ee" stroke="#2e8b57" stroke-width="3" points="336.44,-279.8 227.84,-279.8 227.84,-221.4 336.44,-221.4 336.44,-279.8"/>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-263.2" font-family="Helvetica,sans-Serif" font-size="14.00">Real Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-246.4" font-family="Helvetica,sans-Serif" font-size="14.00">(with DP1)</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-229.6" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+</g>
+<!-- row_real&#45;&gt;real0 -->
+<!-- row_ctrl -->
+<g id="node4" class="node">
+<title>row_ctrl</title>
+<path fill="#f5f5f5" stroke="#333333" stroke-width="1.5" d="M148.22,-84.4C148.22,-84.4 42.62,-84.4 42.62,-84.4 36.62,-84.4 30.62,-78.4 30.62,-72.4 30.62,-72.4 30.62,-54.8 30.62,-54.8 30.62,-48.8 36.62,-42.8 42.62,-42.8 42.62,-42.8 148.22,-42.8 148.22,-42.8 154.22,-42.8 160.22,-48.8 160.22,-54.8 160.22,-54.8 160.22,-72.4 160.22,-72.4 160.22,-78.4 154.22,-84.4 148.22,-84.4"/>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-67.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">Controlled</text>
+<text xml:space="preserve" text-anchor="middle" x="95.42" y="-51" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="14.00">experiment</text>
+</g>
+<!-- row_virt&#45;&gt;row_ctrl -->
+<!-- virt0 -->
+<g id="node17" class="node">
+<title>virt0</title>
+<polygon fill="#e6f7ee" stroke="#2e8b57" stroke-width="3" points="336.44,-186.2 227.84,-186.2 227.84,-111 336.44,-111 336.44,-186.2"/>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-169.6" font-family="Helvetica,sans-Serif" font-size="14.00">Real Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-152.8" font-family="Helvetica,sans-Serif" font-size="14.00">(with DP1)</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-136" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-119.2" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=1</text>
+</g>
+<!-- row_virt&#45;&gt;virt0 -->
+<!-- ctrl0 -->
+<g id="node23" class="node">
+<title>ctrl0</title>
+<polygon fill="#e6f7ee" stroke="#2e8b57" stroke-width="3" points="336.44,-75.2 227.84,-75.2 227.84,0 336.44,0 336.44,-75.2"/>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-58.6" font-family="Helvetica,sans-Serif" font-size="14.00">Real Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-41.8" font-family="Helvetica,sans-Serif" font-size="14.00">(with DP1)</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-25" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="282.14" y="-8.2" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=1</text>
+</g>
+<!-- row_ctrl&#45;&gt;ctrl0 -->
+<!-- t1 -->
+<g id="node6" class="node">
+<title>t1</title>
+<path fill="lightgrey" stroke="none" d="M547.64,-354.8C547.64,-354.8 414.79,-354.8 414.79,-354.8 408.79,-354.8 402.79,-348.8 402.79,-342.8 402.79,-342.8 402.79,-308.4 402.79,-308.4 402.79,-302.4 408.79,-296.4 414.79,-296.4 414.79,-296.4 547.64,-296.4 547.64,-296.4 553.64,-296.4 559.64,-302.4 559.64,-308.4 559.64,-308.4 559.64,-342.8 559.64,-342.8 559.64,-348.8 553.64,-354.8 547.64,-354.8"/>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-338.2" font-family="Helvetica,sans-Serif" font-size="14.00">Enter DP5 or</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-321.4" font-family="Helvetica,sans-Serif" font-size="14.00">reference display state</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-304.6" font-family="Helvetica,sans-Serif" font-size="14.00">via DISP</text>
+</g>
+<!-- t0&#45;&gt;t1 -->
+<!-- t2 -->
+<g id="node7" class="node">
+<title>t2</title>
+<path fill="lightgrey" stroke="none" d="M761.81,-346.4C761.81,-346.4 681.13,-346.4 681.13,-346.4 675.13,-346.4 669.13,-340.4 669.13,-334.4 669.13,-334.4 669.13,-316.8 669.13,-316.8 669.13,-310.8 675.13,-304.8 681.13,-304.8 681.13,-304.8 761.81,-304.8 761.81,-304.8 767.81,-304.8 773.81,-310.8 773.81,-316.8 773.81,-316.8 773.81,-334.4 773.81,-334.4 773.81,-340.4 767.81,-346.4 761.81,-346.4"/>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-329.8" font-family="Helvetica,sans-Serif" font-size="14.00">Press [MENU]</text>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-313" font-family="Helvetica,sans-Serif" font-size="14.00">button</text>
+</g>
+<!-- t1&#45;&gt;t2 -->
+<!-- t3 -->
+<g id="node8" class="node">
+<title>t3</title>
+<path fill="lightgrey" stroke="none" d="M997.03,-346.4C997.03,-346.4 948.21,-346.4 948.21,-346.4 942.21,-346.4 936.21,-340.4 936.21,-334.4 936.21,-334.4 936.21,-316.8 936.21,-316.8 936.21,-310.8 942.21,-304.8 948.21,-304.8 948.21,-304.8 997.03,-304.8 997.03,-304.8 1003.03,-304.8 1009.03,-310.8 1009.03,-316.8 1009.03,-316.8 1009.03,-334.4 1009.03,-334.4 1009.03,-340.4 1003.03,-346.4 997.03,-346.4"/>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-329.8" font-family="Helvetica,sans-Serif" font-size="14.00">Look into</text>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-313" font-family="Helvetica,sans-Serif" font-size="14.00">the EVF</text>
+</g>
+<!-- t2&#45;&gt;t3 -->
+<!-- t4 -->
+<g id="node9" class="node">
+<title>t4</title>
+<path fill="lightgrey" stroke="none" d="M1262.16,-343.6C1262.16,-343.6 1206.37,-343.6 1206.37,-343.6 1200.37,-343.6 1194.37,-337.6 1194.37,-331.6 1194.37,-331.6 1194.37,-319.6 1194.37,-319.6 1194.37,-313.6 1200.37,-307.6 1206.37,-307.6 1206.37,-307.6 1262.16,-307.6 1262.16,-307.6 1268.16,-307.6 1274.16,-313.6 1274.16,-319.6 1274.16,-319.6 1274.16,-331.6 1274.16,-331.6 1274.16,-337.6 1268.16,-343.6 1262.16,-343.6"/>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-321.4" font-family="Helvetica,sans-Serif" font-size="14.00">Half-press</text>
+</g>
+<!-- t3&#45;&gt;t4 -->
+<!-- t5 -->
+<g id="node10" class="node">
+<title>t5</title>
+<path fill="lightgrey" stroke="none" d="M1548.29,-346.4C1548.29,-346.4 1459.02,-346.4 1459.02,-346.4 1453.02,-346.4 1447.02,-340.4 1447.02,-334.4 1447.02,-334.4 1447.02,-316.8 1447.02,-316.8 1447.02,-310.8 1453.02,-304.8 1459.02,-304.8 1459.02,-304.8 1548.29,-304.8 1548.29,-304.8 1554.29,-304.8 1560.29,-310.8 1560.29,-316.8 1560.29,-316.8 1560.29,-334.4 1560.29,-334.4 1560.29,-340.4 1554.29,-346.4 1548.29,-346.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-329.8" font-family="Helvetica,sans-Serif" font-size="14.00">Move eye away</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-313" font-family="Helvetica,sans-Serif" font-size="14.00">from EVF</text>
+</g>
+<!-- t4&#45;&gt;t5 -->
+<!-- real1 -->
+<g id="node12" class="node">
+<title>real1</title>
+<polygon fill="#6e6e6e" stroke="#000000" stroke-width="3" points="524.62,-271.4 437.8,-271.4 437.8,-229.8 524.62,-229.8 524.62,-271.4"/>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-254.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#ffffff">Info display</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-238" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#ffffff">EVF: Off</text>
+</g>
+<!-- real0&#45;&gt;real1 -->
+<g id="edge10" class="edge">
+<title>real0-&gt;real1</title>
+<path fill="none" stroke="#000000" d="M337.78,-250.6C364.99,-250.6 397.81,-250.6 425.09,-250.6"/>
+<polygon fill="#000000" stroke="#000000" points="424.89,-254.1 434.89,-250.6 424.89,-247.1 424.89,-254.1"/>
+<text xml:space="preserve" text-anchor="middle" x="369.61" y="-254.8" font-family="Times,serif" font-size="14.00">DISP</text>
+</g>
+<!-- real0&#45;&gt;virt0 -->
+<!-- real2 -->
+<g id="node13" class="node">
+<title>real2</title>
+<polygon fill="#e8f1fb" stroke="#1f4e79" points="770.72,-271.4 672.23,-271.4 672.23,-229.8 770.72,-229.8 770.72,-271.4"/>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-254.8" font-family="Helvetica,sans-Serif" font-size="14.00">Menu display</text>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-238" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+</g>
+<!-- real1&#45;&gt;real2 -->
+<g id="edge11" class="edge">
+<title>real1-&gt;real2</title>
+<path fill="none" stroke="#1f4e79" d="M525.91,-250.6C563.74,-250.6 618.79,-250.6 660.69,-250.6"/>
+<polygon fill="#1f4e79" stroke="#1f4e79" points="660.62,-254.1 670.62,-250.6 660.62,-247.1 660.62,-254.1"/>
+<text xml:space="preserve" text-anchor="middle" x="614.39" y="-254.8" font-family="Times,serif" font-size="14.00">press MENU</text>
+</g>
+<!-- real3 -->
+<g id="node14" class="node">
+<title>real3</title>
+<polygon fill="#e8f1fb" stroke="#1f4e79" points="1055.31,-271.4 889.93,-271.4 889.93,-229.8 1055.31,-229.8 1055.31,-271.4"/>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-254.8" font-family="Helvetica,sans-Serif" font-size="14.00">No display</text>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-238" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: On (Menu display)</text>
+</g>
+<!-- real2&#45;&gt;real3 -->
+<g id="edge12" class="edge">
+<title>real2-&gt;real3</title>
+<path fill="none" stroke="#1f4e79" d="M771.1,-250.6C801.65,-250.6 842.04,-250.6 878.57,-250.6"/>
+<polygon fill="#1f4e79" stroke="#1f4e79" points="878.25,-254.1 888.25,-250.6 878.25,-247.1 878.25,-254.1"/>
+<text xml:space="preserve" text-anchor="middle" x="831.87" y="-254.8" font-family="Times,serif" font-size="14.00">look into EVF</text>
+</g>
+<!-- real4 -->
+<g id="node15" class="node">
+<title>real4</title>
+<polygon fill="#e6f7ff" stroke="#2e8b57" points="1322.01,-271.4 1146.51,-271.4 1146.51,-229.8 1322.01,-229.8 1322.01,-271.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-254.8" font-family="Helvetica,sans-Serif" font-size="14.00">No display</text>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-238" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: On (Real Live View)</text>
+</g>
+<!-- real3&#45;&gt;real4 -->
+<g id="edge13" class="edge">
+<title>real3-&gt;real4</title>
+<path fill="none" stroke="#2e8b57" d="M1055.77,-250.6C1080.88,-250.6 1108.75,-250.6 1134.82,-250.6"/>
+<polygon fill="#2e8b57" stroke="#2e8b57" points="1134.75,-254.1 1144.75,-250.6 1134.75,-247.1 1134.75,-254.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1100.91" y="-254.8" font-family="Times,serif" font-size="14.00">half-press</text>
+</g>
+<!-- real5 -->
+<g id="node16" class="node">
+<title>real5</title>
+<polygon fill="#6e6e6e" stroke="#000000" stroke-width="3" points="1547.06,-271.4 1460.24,-271.4 1460.24,-229.8 1547.06,-229.8 1547.06,-271.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-254.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#ffffff">Info display</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-238" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#ffffff">EVF: Off</text>
+</g>
+<!-- real4&#45;&gt;real5 -->
+<g id="edge14" class="edge">
+<title>real4-&gt;real5</title>
+<path fill="none" stroke="#000000" d="M1322.45,-250.6C1363.7,-250.6 1411.71,-250.6 1447.79,-250.6"/>
+<polygon fill="#000000" stroke="#000000" points="1447.55,-254.1 1457.55,-250.6 1447.55,-247.1 1447.55,-254.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1383.54" y="-254.8" font-family="Times,serif" font-size="14.00">move eye away</text>
+</g>
+<!-- virt1 -->
+<g id="node18" class="node">
+<title>virt1</title>
+<polygon fill="#f2f2f2" stroke="#ff8c00" stroke-width="3" points="539.79,-177.8 422.64,-177.8 422.64,-119.4 539.79,-119.4 539.79,-177.8"/>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-161.2" font-family="Helvetica,sans-Serif" font-size="14.00">Virtual LV (DP5)</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-144.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-127.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=5</text>
+</g>
+<!-- virt0&#45;&gt;virt1 -->
+<g id="edge15" class="edge">
+<title>virt0-&gt;virt1</title>
+<path fill="none" stroke="#ff8c00" d="M337.78,-148.6C360.1,-148.6 386.19,-148.6 409.91,-148.6"/>
+<polygon fill="#ff8c00" stroke="#ff8c00" points="409.82,-152.1 419.82,-148.6 409.82,-145.1 409.82,-152.1"/>
+<text xml:space="preserve" text-anchor="middle" x="369.61" y="-152.8" font-family="Times,serif" font-size="14.00">DISP</text>
+</g>
+<!-- virt0&#45;&gt;ctrl0 -->
+<!-- virt2 -->
+<g id="node19" class="node">
+<title>virt2</title>
+<polygon fill="#e8f1fb" stroke="#1f4e79" points="770.72,-177.8 672.23,-177.8 672.23,-119.4 770.72,-119.4 770.72,-177.8"/>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-161.2" font-family="Helvetica,sans-Serif" font-size="14.00">Menu display</text>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-144.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-127.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=5</text>
+</g>
+<!-- virt1&#45;&gt;virt2 -->
+<g id="edge16" class="edge">
+<title>virt1-&gt;virt2</title>
+<path fill="none" stroke="#1f4e79" d="M541.11,-148.6C577.42,-148.6 623.86,-148.6 660.39,-148.6"/>
+<polygon fill="#1f4e79" stroke="#1f4e79" points="660.36,-152.1 670.36,-148.6 660.36,-145.1 660.36,-152.1"/>
+<text xml:space="preserve" text-anchor="middle" x="614.39" y="-152.8" font-family="Times,serif" font-size="14.00">press MENU</text>
+</g>
+<!-- virt3 -->
+<g id="node20" class="node">
+<title>virt3</title>
+<polygon fill="#e8f1fb" stroke="#1f4e79" points="1055.31,-177.8 889.93,-177.8 889.93,-119.4 1055.31,-119.4 1055.31,-177.8"/>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-161.2" font-family="Helvetica,sans-Serif" font-size="14.00">No display</text>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-144.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: On (Menu display)</text>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-127.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=5</text>
+</g>
+<!-- virt2&#45;&gt;virt3 -->
+<g id="edge17" class="edge">
+<title>virt2-&gt;virt3</title>
+<path fill="none" stroke="#1f4e79" d="M771.1,-148.6C801.65,-148.6 842.04,-148.6 878.57,-148.6"/>
+<polygon fill="#1f4e79" stroke="#1f4e79" points="878.25,-152.1 888.25,-148.6 878.25,-145.1 878.25,-152.1"/>
+<text xml:space="preserve" text-anchor="middle" x="831.87" y="-152.8" font-family="Times,serif" font-size="14.00">look into EVF</text>
+</g>
+<!-- virt4 -->
+<g id="node21" class="node">
+<title>virt4</title>
+<polygon fill="#e6f7ff" stroke="#2e8b57" points="1322.01,-177.8 1146.51,-177.8 1146.51,-119.4 1322.01,-119.4 1322.01,-177.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-161.2" font-family="Helvetica,sans-Serif" font-size="14.00">No display</text>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-144.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: On (Real Live View)</text>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-127.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=5</text>
+</g>
+<!-- virt3&#45;&gt;virt4 -->
+<g id="edge18" class="edge">
+<title>virt3-&gt;virt4</title>
+<path fill="none" stroke="#2e8b57" d="M1055.77,-148.6C1080.88,-148.6 1108.75,-148.6 1134.82,-148.6"/>
+<polygon fill="#2e8b57" stroke="#2e8b57" points="1134.75,-152.1 1144.75,-148.6 1134.75,-145.1 1134.75,-152.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1100.91" y="-152.8" font-family="Times,serif" font-size="14.00">half-press</text>
+</g>
+<!-- virt5 -->
+<g id="node22" class="node">
+<title>virt5</title>
+<polygon fill="#f2f2f2" stroke="#ff8c00" stroke-width="3" points="1562.22,-177.8 1445.08,-177.8 1445.08,-119.4 1562.22,-119.4 1562.22,-177.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-161.2" font-family="Helvetica,sans-Serif" font-size="14.00">Virtual LV (DP5)</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-144.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-127.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=5</text>
+</g>
+<!-- virt4&#45;&gt;virt5 -->
+<g id="edge19" class="edge">
+<title>virt4-&gt;virt5</title>
+<path fill="none" stroke="#ff8c00" d="M1322.45,-148.6C1358.18,-148.6 1398.98,-148.6 1432.72,-148.6"/>
+<polygon fill="#ff8c00" stroke="#ff8c00" points="1432.35,-152.1 1442.35,-148.6 1432.35,-145.1 1432.35,-152.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1383.54" y="-152.8" font-family="Times,serif" font-size="14.00">move eye away</text>
+</g>
+<!-- ctrl1 -->
+<g id="node24" class="node">
+<title>ctrl1</title>
+<polygon fill="#e6f7ee" stroke="#2e8b57" stroke-width="3" points="535.51,-75.2 426.91,-75.2 426.91,0 535.51,0 535.51,-75.2"/>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-58.6" font-family="Helvetica,sans-Serif" font-size="14.00">Real Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-41.8" font-family="Helvetica,sans-Serif" font-size="14.00">(with DP3)</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-25" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="481.21" y="-8.2" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=3</text>
+</g>
+<!-- ctrl0&#45;&gt;ctrl1 -->
+<g id="edge20" class="edge">
+<title>ctrl0-&gt;ctrl1</title>
+<path fill="none" stroke="#2e8b57" d="M337.78,-37.6C361.38,-37.6 389.2,-37.6 413.97,-37.6"/>
+<polygon fill="#2e8b57" stroke="#2e8b57" points="413.96,-41.1 423.96,-37.6 413.96,-34.1 413.96,-41.1"/>
+<text xml:space="preserve" text-anchor="middle" x="369.61" y="-41.8" font-family="Times,serif" font-size="14.00">DISP</text>
+</g>
+<!-- ctrl2 -->
+<g id="node25" class="node">
+<title>ctrl2</title>
+<polygon fill="#e8f1fb" stroke="#1f4e79" points="770.72,-66.8 672.23,-66.8 672.23,-8.4 770.72,-8.4 770.72,-66.8"/>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-50.2" font-family="Helvetica,sans-Serif" font-size="14.00">Menu display</text>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-33.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="721.47" y="-16.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=3</text>
+</g>
+<!-- ctrl1&#45;&gt;ctrl2 -->
+<g id="edge21" class="edge">
+<title>ctrl1-&gt;ctrl2</title>
+<path fill="none" stroke="#1f4e79" d="M536.88,-37.6C573.85,-37.6 622.69,-37.6 660.7,-37.6"/>
+<polygon fill="#1f4e79" stroke="#1f4e79" points="660.61,-41.1 670.61,-37.6 660.61,-34.1 660.61,-41.1"/>
+<text xml:space="preserve" text-anchor="middle" x="614.39" y="-41.8" font-family="Times,serif" font-size="14.00">press MENU</text>
+</g>
+<!-- ctrl3 -->
+<g id="node26" class="node">
+<title>ctrl3</title>
+<polygon fill="#e8f1fb" stroke="#1f4e79" points="1055.31,-66.8 889.93,-66.8 889.93,-8.4 1055.31,-8.4 1055.31,-66.8"/>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-50.2" font-family="Helvetica,sans-Serif" font-size="14.00">No display</text>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-33.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: On (Menu display)</text>
+<text xml:space="preserve" text-anchor="middle" x="972.62" y="-16.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=3</text>
+</g>
+<!-- ctrl2&#45;&gt;ctrl3 -->
+<g id="edge22" class="edge">
+<title>ctrl2-&gt;ctrl3</title>
+<path fill="none" stroke="#1f4e79" d="M771.1,-37.6C801.65,-37.6 842.04,-37.6 878.57,-37.6"/>
+<polygon fill="#1f4e79" stroke="#1f4e79" points="878.25,-41.1 888.25,-37.6 878.25,-34.1 878.25,-41.1"/>
+<text xml:space="preserve" text-anchor="middle" x="831.87" y="-41.8" font-family="Times,serif" font-size="14.00">look into EVF</text>
+</g>
+<!-- ctrl4 -->
+<g id="node27" class="node">
+<title>ctrl4</title>
+<polygon fill="#e6f7ff" stroke="#2e8b57" points="1322.01,-66.8 1146.51,-66.8 1146.51,-8.4 1322.01,-8.4 1322.01,-66.8"/>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-50.2" font-family="Helvetica,sans-Serif" font-size="14.00">No display</text>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-33.4" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: On (Real Live View)</text>
+<text xml:space="preserve" text-anchor="middle" x="1234.26" y="-16.6" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=3</text>
+</g>
+<!-- ctrl3&#45;&gt;ctrl4 -->
+<g id="edge23" class="edge">
+<title>ctrl3-&gt;ctrl4</title>
+<path fill="none" stroke="#2e8b57" d="M1055.77,-37.6C1080.88,-37.6 1108.75,-37.6 1134.82,-37.6"/>
+<polygon fill="#2e8b57" stroke="#2e8b57" points="1134.75,-41.1 1144.75,-37.6 1134.75,-34.1 1134.75,-41.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1100.91" y="-41.8" font-family="Times,serif" font-size="14.00">half-press</text>
+</g>
+<!-- ctrl5 -->
+<g id="node28" class="node">
+<title>ctrl5</title>
+<polygon fill="#e6f7ee" stroke="#2e8b57" stroke-width="3" points="1557.95,-75.2 1449.35,-75.2 1449.35,0 1557.95,0 1557.95,-75.2"/>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-58.6" font-family="Helvetica,sans-Serif" font-size="14.00">Real Live View</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-41.8" font-family="Helvetica,sans-Serif" font-size="14.00">(with DP3)</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-25" font-family="Helvetica,sans-Serif" font-size="14.00">EVF: Off</text>
+<text xml:space="preserve" text-anchor="middle" x="1503.65" y="-8.2" font-family="Helvetica,sans-Serif" font-size="14.00">nDP=3</text>
+</g>
+<!-- ctrl4&#45;&gt;ctrl5 -->
+<g id="edge24" class="edge">
+<title>ctrl4-&gt;ctrl5</title>
+<path fill="none" stroke="#2e8b57" d="M1322.45,-37.6C1359.55,-37.6 1402.12,-37.6 1436.56,-37.6"/>
+<polygon fill="#2e8b57" stroke="#2e8b57" points="1436.4,-41.1 1446.4,-37.6 1436.4,-34.1 1436.4,-41.1"/>
+<text xml:space="preserve" text-anchor="middle" x="1383.54" y="-41.8" font-family="Times,serif" font-size="14.00">move eye away</text>
+</g>
+</g>
+</svg>

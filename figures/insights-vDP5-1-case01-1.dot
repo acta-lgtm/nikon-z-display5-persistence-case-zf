@@ -1,0 +1,91 @@
+digraph TimeSeriesStyled {
+  rankdir=LR;
+  node [shape=box, style="rounded,filled", fontname="Helvetica"];
+
+  // Left header / row labels
+  zf       [label="Z f.1.1\n`Context AS\n(O; DP1-4=1,2,3,4; DP5=ON)`", shape=box, style="rounded,filled", fontname="Helvetica-Bold", color="#333333", fillcolor="#eeeeee", penwidth=1.5];
+  row_real [label="Real Info", shape=box, style="rounded,filled", fontname="Helvetica-Bold", color="#333333", fillcolor="#f5f5f5", penwidth=1.5, width=1.8];
+  row_virt [label="Virtual LV\nmodel", shape=box, style="rounded,filled", fontname="Helvetica-Bold", color="#333333", fillcolor="#f5f5f5", penwidth=1.5, width=1.8];
+  row_ctrl [label="Controlled\nexperiment", shape=box, style="rounded,filled", fontname="Helvetica-Bold", color="#333333", fillcolor="#f5f5f5", penwidth=1.5, width=1.8];
+
+  // Time labels (plaintext)
+  t0 [label="Power on", shape=plaintext];
+  t1 [label="Power off", shape=plaintext];
+  t2 [label="Power on", shape=plaintext];
+  t3 [label="Enter DP5 or\nreference display state\nvia DISP", shape=plaintext];
+  t4 [label="Power off", shape=plaintext];
+  t5 [label="Power on", shape=plaintext];
+
+  // Real Info row
+  real0 [label="Real Live View\n(with DP1)\nEVF: Off", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  real1 [label="No display\nEVF: Off", style=filled, color="#333333", penwidth=1, fillcolor="#ffffff"];
+  real2 [label="Real Live View\n(with DP1)\nEVF: Off", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  real3 [label="Info display\nEVF: Off", style=filled, color="#000000", penwidth=3, fillcolor="#6e6e6e", fontcolor="#ffffff"];
+  real4 [label="No display\nEVF: Off", style=filled, color="#333333", penwidth=1, fillcolor="#ffffff"];
+  real5 [label="Info display\nEVF: Off", style=filled, color="#000000", penwidth=3, fillcolor="#6e6e6e", fontcolor="#ffffff"];
+
+  // Virtual LV model row
+  virt0 [label="Real Live View\n(with DP1)\nEVF: Off\nnDP=1", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  virt1 [label="No display\nEVF: Off\nnDP=1", style=filled, color="#333333", penwidth=1, fillcolor="#ffffff"];
+  virt2 [label="Real Live View\n(with DP1)\nEVF: Off\nnDP=1", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  virt3 [label="Virtual LV (DP5)\nEVF: Off\nnDP=5", style=filled, color="#ff8c00", penwidth=3, fillcolor="#f2f2f2"];
+  virt4 [label="No display\nEVF: Off\nnDP=5", style=filled, color="#333333", penwidth=1, fillcolor="#ffffff"];
+  virt5 [label="Virtual LV (DP5)\nEVF: Off\nnDP=5", style=filled, color="#ff8c00", penwidth=3, fillcolor="#f2f2f2"];
+
+  // Controlled experiment row
+  ctrl0 [label="Real Live View\n(with DP1)\nEVF: Off\nnDP=1", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  ctrl1 [label="No display\nEVF: Off\nnDP=1", style=filled, color="#333333", penwidth=1, fillcolor="#ffffff"];
+  ctrl2 [label="Real Live View\n(with DP1)\nEVF: Off\nnDP=1", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  ctrl3 [label="Real Live View\n(with DP3)\nEVF: Off\nnDP=3", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+  ctrl4 [label="No display\nEVF: Off\nnDP=3", style=filled, color="#333333", penwidth=1, fillcolor="#ffffff"];
+  ctrl5 [label="Real Live View\n(with DP3)\nEVF: Off\nnDP=3", style=filled, color="#2e8b57", penwidth=3, fillcolor="#e6f7ee"];
+
+  // Align columns
+  { rank=same; zf; row_real; row_virt; row_ctrl; }
+  { rank=same; t0; real0; virt0; ctrl0; }
+  { rank=same; t1; real1; virt1; ctrl1; }
+  { rank=same; t2; real2; virt2; ctrl2; }
+  { rank=same; t3; real3; virt3; ctrl3; }
+  { rank=same; t4; real4; virt4; ctrl4; }
+  { rank=same; t5; real5; virt5; ctrl5; }
+
+  // Invisible edges to enforce left-to-right order
+  zf -> t0 [style=invis];
+  t0 -> t1 [style=invis];
+  t1 -> t2 [style=invis];
+  t2 -> t3 [style=invis];
+  t3 -> t4 [style=invis];
+  t4 -> t5 [style=invis];
+
+  // Invisible edges from row labels to first state
+  row_real -> real0 [style=invis];
+  row_virt -> virt0 [style=invis];
+  row_ctrl -> ctrl0 [style=invis];
+
+  // Transitions (visible edges)
+  real0 -> real1 [label="power off", color="#333333"];
+  real1 -> real2 [label="power on", color="#2e8b57"];
+  real2 -> real3 [label="DISP", color="#000000"];
+  real3 -> real4 [label="power off", color="#333333"];
+  real4 -> real5 [label="power on", color="#000000"];
+
+  virt0 -> virt1 [label="power off", color="#333333"];
+  virt1 -> virt2 [label="power on", color="#2e8b57"];
+  virt2 -> virt3 [label="DISP", color="#ff8c00"];
+  virt3 -> virt4 [label="power off", color="#333333"];
+  virt4 -> virt5 [label="power on", color="#ff8c00"];
+
+  ctrl0 -> ctrl1 [label="power off", color="#333333"];
+  ctrl1 -> ctrl2 [label="power on", color="#2e8b57"];
+  ctrl2 -> ctrl3 [label="DISP", color="#2e8b57"];
+  ctrl3 -> ctrl4 [label="power off", color="#333333"];
+  ctrl4 -> ctrl5 [label="power on", color="#2e8b57"];
+
+  // Keep rows aligned
+  zf -> row_real [style=invis];
+  row_real -> row_virt [style=invis];
+  row_virt -> row_ctrl [style=invis];
+
+  real0 -> virt0 [style=invis];
+  virt0 -> ctrl0 [style=invis];
+}
