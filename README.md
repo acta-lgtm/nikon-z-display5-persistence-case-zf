@@ -27,7 +27,7 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 
 Readers who want the shortest path to the core issue may begin with:
 
-- [Nikon Support Confirmations](./nikon-support-confirmations/README.md)
+- [Nikon Support Confirmations](./Nikon_Support_Confirmation_Notes/README.md)
 - [Insights & Hypotheses](./insights.md)
 - [Post-Publication Updates](./post-publication-updates.md)
 
