@@ -620,7 +620,7 @@ The issue is the absence of a reliable, immediate, and predictable escape route 
 If the hypotheses in this document are broadly correct, the current issue can be summarized as follows:
 
 > The Info display appears to have been integrated into the mirrorless “shooting display” system in a way that is not fully aligned with traditional camera operation.
-> Hidden display-state transitions and retained display-index behavior can create a gap between the expectations placed on a photographic tool and the behavior of the camera as an electronic display system.
+> Hidden display-state transitions and retained display-index behavior can create a gap between the expectations placed on a photographic tool and the behavior of the product as an electronic display system.
 
 Based on this, I propose the following.
 
@@ -646,7 +646,8 @@ A simple list of button operations may not be enough. Some explanation of the di
 
 This would not be unprecedented. In DSLR manuals, such as those for the D6, Nikon published program diagrams for exposure mode P (Programmed Auto). In the Z-series manuals, such diagrams appear to have disappeared. That change itself may be understandable, given the increasing complexity of exposure control, including differences in mirrorless metering behavior, Auto ISO, subject detection, and other automated control systems.
 
-However, the broader principle remains important: technical information that helps users understand the logic of their equipment can form an essential foundation for confident operation.
+However, the essence remains the same.  
+Technical information that helps users understand the logic of their equipment can form an essential foundation for confident operation.
 
 The current Info / Display 5 behavior is precisely such a case.
 
