@@ -31,7 +31,7 @@ Readers who want the shortest path to the core issue may begin with:
 - [Insights & Hypotheses](./insights.md)
 - [Post-Publication Updates](./post-publication-updates.md)
 
-*For Japanese readers: 「考察および仮説」の日本語版はこちら:* [Insights & Hypotheses (Japanese Version)](./insights_ja.md)
+*For Japanese readers: 「考察および仮説」の日本語版はこちら:* [考察および仮説 (日本語版)](./insights_ja.md)
 
 The detailed observation tables are the primary evidence base for this repository and provide traceability for the conclusions discussed here.
 
