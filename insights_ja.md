@@ -322,7 +322,7 @@ Display 5 を無効にすると、インフォ画面の固着そのものは回�
 
 同じ仮説は、ニコンのサポート確認、および次の観察とも照合した。
 
-[Case B3: Cornering the Shadow: A Trace from the Past](DB/Case_B3_Cornering/#caseb3)
+[Case B3: Cornering the Shadow: A Trace from the Past](docs/DB/Case_B3_Cornering.md) 
 
 追加の比較については、以下を参照されたい。
 
