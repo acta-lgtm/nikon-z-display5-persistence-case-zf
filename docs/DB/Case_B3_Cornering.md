@@ -1,3 +1,8 @@
+# <a id="caseb3"></a> Case B3: Cornering the Shadow: A Trace from the Past (Firmware Ver. 3.01)
+
+> Created: 2026-05-13 | Published: 2026-05-17 | Last Updated: 2026-06-22
+
+---
 
 Case B1 classified multiple visually similar Info states by route, Display 5 configuration, persistence, and overlay status. Case B3 builds on that classification and examines how those hidden route histories reappear through LCD activation thresholds, overlay transitions, and Live View display-index recovery.
 
