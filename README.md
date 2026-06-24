@@ -1,10 +1,13 @@
-> Published: 2026-05-17 | Last Updated: 2026-06-14
+> Published: 2026-05-17 | Last Updated: 2026-06-24
 
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
-Originally initiated as an investigation into unusual “Info” persistence on my personal Nikon Z f, this repository gradually expanded into a broader observational analysis of Display 5 (“Info”) behavior across Nikon Z-series cameras.
+Originally initiated as an investigation into unusual “Info” persistence on my personal Nikon Z f, this repository gradually expanded into a broader observational analysis of Display 5 (“Info”) behavior, which is featured on the Nikon Z9, Z8, and Z f among the Z-series.
 
-With this particular camera, pressing the shutter button halfway at times failed to immediately ready the camera for shooting. This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities. Furthermore, under default settings, the LCD could remain locked on the Information Display even during continuous shooting. To uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
+With this particular camera, pressing the shutter button halfway at times failed to immediately ready the camera for shooting. This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities. Furthermore, under default settings, the LCD could remain locked on the Information Display even during continuous shooting. 
+Several of these and other Info display behaviors have been confirmed by Nikon Support in Japan.   
+
+To uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
 
 I hypothesize that the phenomena observed here are closely tied to the “Information Display (Info)”—a feature inherited from the D-series DSLRs—and may represent a visible manifestation of the coexistence between legacy and modern system logic.
 
@@ -18,6 +21,19 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 
 *At the same time, this “fixation” does not necessarily always cause practical problems. For example, on models such as the Z f that lack a top-plate LCD, having the Info display appear immediately after power-on can be useful. Therefore, this repository also explores possible ways to coexist effectively with the new role of the Info display.*
 
+---
+
+## Quick Reading Guide
+
+Readers who want the shortest path to the core issue may begin with:
+
+- [Nikon Support Confirmations](./nikon-support-confirmations/README.md)
+- [Insights & Hypotheses](./insights.md)
+- [Post-Publication Updates](./post-publication-updates.md)
+
+*For Japanese readers: 「考察および仮説」の日本語版はこちら:* [Insights & Hypotheses (Japanese Version)](./insights_ja.md)
+
+The detailed observation tables are the primary evidence base for this repository and provide traceability for the conclusions discussed here.
 
 ---
 
@@ -26,8 +42,10 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 ### 1.1 Objective
 
 - Visualization of state transitions involving the "Information Display (Info)" on the Nikon Z f.
-- Logical analysis of "display priority" and "state persistence" occurring under specific operational conditions.
-- A study on the coexistence of legacy and modern architectures within the system.
+- Logical analysis of display priority, state persistence, and the coexistence of legacy and modern architectures within the system under specific operational conditions.
+- A comprehensive study based on operational confirmations from Nikon Support regarding the camera's display behavior and transition logic.
+- Supplementary observations utilizing a Nikon Z9 procured for testing.
+
 
 ### 1.2 Historical Context
 
@@ -67,8 +85,8 @@ However, the observed transition in documentation and device behavior appears to
 
 ### 1.4 Target Environment
 
-- **Device:** Nikon Z f
-- **Firmware:** [ C: Ver. 3.01 ]
+- **Primary Device:** Nikon Z f (Firmware: [ C: Ver. 3.01 ])
+- **Supplementary Device:** Nikon Z9 (Firmware: [ C: Ver. 4.00 ]) Procured for testing
 
 ### 1.5 Notes on the Observation Process
 
@@ -79,6 +97,8 @@ Over time, these observations revealed inconsistencies, hidden dependencies, and
 For this reason, earlier tables intentionally preserve the original coarse-grained observations, including ambiguities and apparent inconsistencies that later motivated finer-grained analyses.
 
 Ultimately, this repository is not merely a collection of transition tables, but also a chronological observational record documenting how the underlying display-state structure gradually became visible.
+
+
 
 ---
 
@@ -104,18 +124,35 @@ Ultimately, this repository is not merely a collection of transition tables, but
   This case investigates boundary conditions of the persistent Info behavior, including LCD activation thresholds, overlay routes, Display 5 ON/OFF differences, and cases where prior display history reappears through later recovery behavior.
 
 
+---
 
+## 3. Nikon Support Confirmation Notes
+Operational confirmations on the actual device were obtained from Nikon Support in Japan out of practical necessity.
+I am deeply grateful for their kind cooperation.
 
-
+- [Nikon Support Confirmation Notes README](./Nikon_Support_Confirmation_Notes/README.md)
+- [Nikon Support Confirmation Notes](./Nikon_Support_Confirmation_Notes/Nikon_Support_Confirmation_Notes.md)
 
 ---
 
-## 3. Insights & Hypotheses
-- [Analysis and Hypothesis](./insights.md): Work in progress
+## 4. Insights & Hypotheses
+- [Insights & Hypotheses](./insights.md)
+- [考察および仮説 (日本語版)](./insights_ja.md)
+*A Japanese version of the Insights is also provided, because several aspects of this issue concern Nikon’s historical camera-design culture and may be better expressed in Japanese.*
 
 ---
 
-## 4. Visual Appendix
+## 5. Post-Publication Updates
+
+The main report reflects the information available at the time of initial publication.
+
+Any later Nikon support responses, additional model-specific confirmations, or follow-up analysis will be recorded separately in:
+
+- [Post-Publication Updates](./post-publication-updates.md)
+
+---
+
+## 6. Visual Appendix
 
 ### Zf observation: Case B2
 - [![Reference Video for Case B2](https://www.youtube.com/watch?v=Linzjau-Ucg)](https://www.youtube.com/watch?v=Linzjau-Ucg)
@@ -141,7 +178,7 @@ A supplementary check using a particular Nikon Z9 showed the same core Display 5
 
 
 
-## 5. Appendix: Reference Definitions
+## 7. Appendix: Reference Definitions
 
 ### Display Control Context Notation
 
@@ -188,7 +225,7 @@ However, the currently observed Display 5 persistence behavior — including the
 
 It is hoped that these observations may contribute to further discussion regarding the operational semantics of Display 5 ("Info") in Nikon Z-series cameras.
 
-
+Furthermore, although I have found certain points that warrant revision during my verification and analysis, I have deliberately kept them as they are to respect the chronological flow of the observations.
 
 ---
 
