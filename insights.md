@@ -248,7 +248,7 @@ The following comparisons use the three hypotheses above, together with the conc
 
 ---
 
-## Virtual LV (DP5)
+### Virtual LV (DP5)
 
 The actual Display 5 Info screen contains no through-image. It is a full-screen graphical display.
 
