@@ -32,7 +32,7 @@ This phenomenon was also observed on the Z9.
 
 ---
 
-## <a id="case0２"></a> CASE 02. MENU Half-Press Returns to Display 5
+## <a id="case02"></a> CASE 02. MENU Half-Press Returns to Display 5
 
 ### Confirmation Results
 
