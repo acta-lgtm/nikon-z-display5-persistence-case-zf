@@ -1,3 +1,0 @@
-# media
-
- Work in progress
