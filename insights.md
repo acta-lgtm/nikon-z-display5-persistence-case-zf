@@ -331,7 +331,7 @@ In other words, disabling Display 5 prevents fixation, but it does not necessari
 ### Verification 2
 
 The same hypotheses were also compared against Nikon support confirmations and the observations in:
-[Case B3: Cornering the Shadow: A Trace from the Past](DB/Case_B3_Cornering/#caseb3).
+[Case B3: Cornering the Shadow: A Trace from the Past](DB/Case_B3_Cornering).
 
 For additional comparisons, see:
 
