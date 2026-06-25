@@ -1,6 +1,6 @@
 # Insights & Hypotheses
 
-> Published: 2026-06-24
+> Published: 2026-06-24 | Last Updated: 2026-06-26
 
 ---
 
@@ -40,7 +40,7 @@ The behaviors described above can be explained consistently by assuming that the
 
 One behaves as an Info state with persistent properties. The other appears visually similar, but does not initially possess those persistent traits. For example, the screen selectable as “Display 5 / Info” in the custom monitor shooting-display settings appears to be the Info state that carries this persistence.
 
-One major cause of the problem is that these nearly identical Info states can transition from a non-persistent state into the persistent Display 5 / Info state depending on the shooting mode, LCD open/closed state, and preceding operations, without showing any visible change on the surface.
+One major cause of the problem is that these nearly identical Info states can transition from a non-persistent state into the persistent Display 5 / Info state depending on the display settings, LCD open/closed state, and preceding operations, without showing any visible change on the surface.
 
 Another cause is that, under this model, Display 5 / Info appears to be treated as a shooting-display state. Because it can function as a valid retained shooting-display target even though it does not contain a through-image Live View, shutter-button half-press does not necessarily trigger a transition to a Live View display.
 As a result, it may appear to the user as if “nothing happens,” or as if the screen has become “fixed.” In this interpretation, however, the camera has not necessarily failed to respond.
@@ -685,20 +685,19 @@ At minimum, the camera should warn the user.
 
 ### 2. Long-Term Measures
 
-Cameras, like all tools, should evolve with and benefit from the technology of their time.  
-The Nikon Z f, and more broadly the current Z-series generation, exists in the historical transition from DSLR cameras to mirrorless systems.
+The Nikon Z f, and more broadly the current Z-series generation, exists in the historical transition from DSLR to mirrorless.
 
-The peculiar handling of the Info display may well be a visible consequence of this transition.
+The peculiar handling of the info display may be a manifestation of this transition period, and the current shutter button half-press behavior might be a transitional solution: one that preserves display-system consistency but sacrifices some of the immediacy expected of a camera.
 
-Nikon has faced similar interface questions before. For example, the SB-800 Speedlight used a long-press, software-style power operation. With the SB-900, Nikon returned to a more direct physical power switch, and that approach has continued through the current SB-5000.  
-This suggests that Nikon has historically recognized the importance of immediate, tactile operation in photographic tools.
+Nikon has faced similar interface questions in the past.
+With the Speedlight SB-800, the power operation relied on a long press. In contrast, the subsequent SB-900 returned to a direct switch operation—where, of course, software processing is performed internally, but improvements in operability and immediacy were achieved—and that method has continued through the current SB-5000.
+This historically shows that Nikon has recognized the importance of immediacy and intuitive operability in photographic tools.
 
-It is possible that the current shutter half-press behavior represents a transitional solution: one that preserves display-system consistency but sacrifices some of the immediacy expected of a camera.
+If that is the case, now that each lineup seems to be somewhat complete, is it not time to reconsider the handling of the info display and the half-press?
 
-If that is the case, is it not now time to reconsider it? 
-
-This does not necessarily mean that Display 5 itself is bad. The issue is how Display 5 is integrated into the camera’s shooting-display system, and whether that integration preserves the camera’s identity as a responsive photographic tool.  
-A camera must never be treated as a mere electronic display device. It should preserve the trust, predictability, and immediacy that photographers expect from a camera.
+I do not deny change. Like all tools, cameras too evolve with the technology of the times, and I believe they should receive its benefits.
+Nor do I claim that there is a fault in Display 5 itself. The issue is how Display 5 is integrated into the camera’s shooting-display system, and whether that integration preserves the camera’s identity as a photographic tool.
+A camera should not be treated as a mere electronic display device. It should be a tool that embodies the trust, predictability, and immediacy that photographers expect.
 
 At stake here is not only a display behavior, but the pride, responsibility, and craft of Nikon as a camera manufacturer.
 
