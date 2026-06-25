@@ -38,9 +38,11 @@ The concerns investigated in this repository all relate to the behavior of the I
 
 The behaviors described above can be explained consistently by assuming that there are at least two functionally different kinds of Info-display states.
 
-One behaves as an Info state with persistent properties. The other appears visually similar, but does not initially possess those persistent traits. For example, the screen selectable as “Display 5 / Info” in the custom monitor shooting-display settings appears to be the Info state that carries this persistence.
+One behaves as an Info state with persistent properties. The other appears visually similar, but does not initially possess those persistent traits.   
+For example, the screen selectable as “Display 5 / Info” in the custom monitor shooting-display settings appears to be the Info state that carries this persistence. In addition to the Z f, models equipped with this Display 5 / Info include the Z9 and Z8, and it can be described as a new Info screen.   
+On the other hand, the Info screen that does not initially possess persistent traits exhibits behavior similar to the Info screen adopted in DSLR cameras, representing the legacy Info screen.
 
-One major cause of the problem is that these nearly identical Info states can transition from a non-persistent state into the persistent Display 5 / Info state depending on the display settings, LCD open/closed state, and preceding operations, without showing any visible change on the surface.
+One major cause of the problem is that these nearly identical Info states transition from a non-persistent state into the persistent Display 5 / Info state depending on the display settings, LCD open/closed state, and preceding operations, and that this transition occurs without showing any visible change on the surface.
 
 Another cause is that, under this model, Display 5 / Info appears to be treated as a shooting-display state. Because it can function as a valid retained shooting-display target even though it does not contain a through-image Live View, shutter-button half-press does not necessarily trigger a transition to a Live View display.
 As a result, it may appear to the user as if “nothing happens,” or as if the screen has become “fixed.” In this interpretation, however, the camera has not necessarily failed to respond.
