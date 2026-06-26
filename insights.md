@@ -707,6 +707,10 @@ At stake here is not only a display behavior, but the pride, responsibility, and
 
 ### Instead of an Afterword: A Thought Experiment
 
+A related visual summary of Case A1 is available here:
+
+- [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) [Download PDF version](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf)
+
 #### The Island of Z Paws
 
 A certain island in the Far East is known as an island of cats. A photographer visited it, chasing the famous “flying cat” shot.
