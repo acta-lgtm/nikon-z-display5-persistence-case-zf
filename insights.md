@@ -44,8 +44,8 @@ On the other hand, the Info screen that does not initially possess persistent tr
 
 One major cause of the problem is that these nearly identical Info states transition from a non-persistent state into the persistent Display 5 / Info state depending on the display settings, LCD open/closed state, and preceding operations, and that this transition occurs without showing any visible change on the surface.
 
-Another cause is that, under this model, Display 5 / Info appears to be treated as a shooting-display state. Because it can function as a valid retained shooting-display target even though it does not contain a through-image Live View, shutter-button half-press does not necessarily trigger a transition to a Live View display.
-As a result, it may appear to the user as if “nothing happens,” or as if the screen has become “fixed.” In this interpretation, however, the camera has not necessarily failed to respond.
+Another cause is that Display 5 / Info appears to be treated as one of the shooting-display states.   
+Because it is treated as a shooting-display state within the system despite not containing a through-image (Live View), a shutter-button half-press does not necessarily trigger a transition to the Live View display, and as a result, it feels to the user as if it has become fixed. This is the persistent characteristic seen in Display 5 / Info, and according to this interpretation, the camera's response has not disappeared (frozen).
 
 This working explanation can account for both the apparent fixation and the difficulty of predicting the next transition from the visible screen alone. The discussion below develops this interpretation in more detail, including its historical background, terminology issues, support-confirmed behaviors, and possible implications for future camera interface design.
 
@@ -173,9 +173,7 @@ This leads to the second hypothesis:
 > Half-press does not necessarily mean “return to Live View.”
 > Instead, it means “return to one of the shooting displays from Display 1 through Display 5 indicated by nDP, including its associated background display if one exists.”
 
-Under this model, the act of a half-press is not considered an operation to return to a Live View accompanied by the layers specified in Display 1 through Display 4.  
-Instead, it is treated as an operation to return to the retained shooting-display index—anywhere from Display 1 through Display 5. 
-Whether or not that specific display index is accompanied by a through-image is a separate matter.
+In other words, under this model, the act of a half-press is not considered an operation to "return to Live View" with that Live View accompanied by the layers specified in Display 1 through Display 4.Instead, it is considered an operation to "return to any of the retained shooting-display indices from Display 1 through Display 5," with that display index sometimes accompanied by a Live View.
 
 Based on this Hypothesis 2, the previously discussed priority relationship can be rewritten as follows:
 
