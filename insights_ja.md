@@ -699,18 +699,20 @@ Nikon Z f、そしてより広く現在のZシリーズ世代は、DSLRからミ
 
 ## あとがきに代えて：ひとつの思考実験
 
+関連概念図: [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) ( [Download PDF](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf) )
+
 ## The Island of Z Paws
 
-極東に、猫島と呼ばれる島がある。
+極東に、猫島と呼ばれる島がある。  
 一人の写真家が、世に知られた「飛び猫」の決定的な瞬間を追い求め、その島を訪れていた。
-二台の最新型カメラが、同じメニュー画面を表示したまま、置かれている。
+
+二台の最新型カメラが、同じメニュー画面を表示したまま、置かれていた。
 
 一匹の猫が駆け出した。
 
 彼は片方のカメラをつかみ、シャッターボタンに手をかけた。
 
-猫は跳んだ。  
-確率は収束した。
+猫は跳び、確率は収束した。
 
 一台は、奇跡を捉えていた。
 一台は、時間に置き去りにされていた。
