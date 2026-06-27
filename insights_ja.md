@@ -1,6 +1,6 @@
 # 考察および仮説
 
-> 公開: 2026-06-24 | 更新: 2026.06.26
+> 公開: 2026-06-24 | 更新: 2026.06.27
 
 ---
 
@@ -699,12 +699,15 @@ Nikon Z f、そしてより広く現在のZシリーズ世代は、DSLRからミ
 
 ## あとがきに代えて：ひとつの思考実験
 
-関連概念図: [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) ( [Download PDF](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf) )
+関連概念図および比較動画: 
+
+- [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) ( [Download PDF](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf) )
+- [Nikon Z9 side-by-side video: same MENU screen, different half-press result depending on prior Info state](https://youtu.be/9tlzDSAOhXs)
 
 ## The Island of Z Paws
 
 極東に、猫島と呼ばれる島がある。  
-一人の写真家が、世に知られた「飛び猫」の決定的な瞬間を追い求め、その島を訪れていた。
+一人の写真家が、世に知られた「飛び猫」の決定的な瞬間を追い求め、島を訪れていた。
 
 二台の最新型カメラが、同じメニュー画面を表示したまま、置かれていた。
 
