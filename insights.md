@@ -1,6 +1,6 @@
 # Insights & Hypotheses
 
-> Published: 2026-06-24 | Last Updated: 2026-06-26
+> Published: 2026-06-24 | Last Updated: 2026-06-27
 
 ---
 
@@ -707,7 +707,10 @@ At stake here is not only a display behavior, but the pride, responsibility, and
 
 ### Instead of an Afterword: A Thought Experiment
 
-A related visual summary is available here: [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) ( [Download PDF](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf) )
+A related visual summary and comparison video are available here:
+
+- [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) ( [Download PDF](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260617/case-a1-concept-map-cat.pdf) )
+- [Nikon Z9 side-by-side video: same MENU screen, different half-press result depending on prior Info state](https://youtu.be/9tlzDSAOhXs)
 
 #### The Island of Z Paws
 
