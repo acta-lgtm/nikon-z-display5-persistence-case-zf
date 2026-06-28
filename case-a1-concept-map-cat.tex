@@ -332,6 +332,10 @@ at (9,-11) {
     \draw (-0.5,-0.8) arc (200:340:0.4);
 \end{scope}
 
+\node[inner sep=0pt, minimum width=2.0cm, minimum height=0.6cm] at (-5.75, -4.45) {
+        {\hypersetup{pdfborder={0 0 0}}\href{https://youtu.be/9tlzDSAOhXs}{\phantom{\rule{2.0cm}{0.65cm}}}}
+    };
+    
 \newcommand{\mylscale}{0.26}
 \newcommand{\mylx}{-5.2}
 \newcommand{\myly}{-4.5}
@@ -432,65 +436,79 @@ represent an exhaustive or formally complete state model.
 
 \section*{Technical Observations}
 
+
 \begin{itemize}
-    \item This diagram is based on the observed behavior of a specific Nikon Z f
-    unit (firmware v3.01) and represents a non-exhaustive set of
-    user-observable state transitions. Consistent behavior across all units or
-    environments is not guaranteed. Actual transitions may depend on previous
-    interaction history and cannot be fully determined by visible states alone.
+\item This diagram is based on the observed behavior of a specific Nikon Z f
+unit (firmware v3.01) and represents a non-exhaustive set of
+user-observable state transitions. Consistent behavior across all units or
+environments is not guaranteed. Actual transitions may depend on previous
+interaction history and cannot be fully determined by visible states alone.
 
-    \item As of firmware version 3.00, Nikon has confirmed that when
-    transitioning from S5 to S6 via Step 9, recovery is only possible via the
-    DISP button or by performing a reset, and that this behavior is considered
-    part of the product specification.
+\item Nikon has repeatedly described the relevant Info-display behavior as
+part of the product specification. In addition, through later support
+correspondence, Nikon support confirmed several individual real-camera
+behaviors related to Display 5 / Info persistence, including cases in which
+shutter-button half-press does not restore Live View, cases in which the
+Info display persists across power cycling, and cases in which disabling
+the DISP recovery path can leave the camera without an ordinary immediate
+recovery operation.
 
-    \item \textbf{Reproduction parameters:}
-    For the specific menu settings required to reproduce each transition
-    (e.g., Step 9, 28, 37, 45), please refer to
-    \href{https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/blob/main/docs/DA/Case_A1_Schrodinger.md}
-    {\textbf{Case A1: Schrödinger's Sisyphean Loop}}.
+\item \textbf{Reproduction parameters:}
+For the specific menu settings required to reproduce each transition
+(e.g., Step 9, 28, 37, 45), please refer to
+\href{https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/blob/main/docs/DA/Case_A1_Schrodinger.md}
+{\textbf{Case A1: Schrödinger's Sisyphean Loop}}.
+For later Nikon support confirmations, please refer to the support
+confirmation documents in the repository.
 
-    \item \textbf{Indeterminacy of state transitions:}
-    The transition from Step 3 is not uniquely determined by the external input
-    alone; it is dependent on internal state history that is not externally
-    observable. Under these conditions, even if two cameras appear to have
-    identical settings and display states, their behavior may diverge due to
-    differences in internal state. As a result, when encountering a shooting
-    opportunity that requires Live View, it is not possible to determine in
-    advance which camera will reliably allow capture.
+\item \textbf{Indeterminacy of state transitions:}
+The transition from Step 3 is not uniquely determined by the external input
+alone; it is dependent on internal state history that is not externally
+observable. Under these conditions, even if two cameras appear to have
+identical settings and display states, their behavior may diverge due to
+differences in internal state. As a result, when encountering a shooting
+opportunity that requires Live View, it is not possible to determine in
+advance which camera will reliably allow capture.
 
-    For example, in Step 5 the system transitions to S1 (Live View), whereas
-    in Step 28 it transitions into the S6 (Info display) loop. Thus, the
-    outcome is not uniquely determined for the same input, meaning that whether
-    shooting is possible cannot be known prior to operation.
+For example, in Step 5 the system transitions to S1 (Live View), whereas
+in Step 28 it transitions into the S6 (Info display) loop. Thus, the
+outcome is not uniquely determined for the same input, meaning that whether
+shooting is possible cannot be known prior to operation.
 
-    \item \textbf{Loop behavior and priority:}
-    This camera provides several monitor modes, including ``Automatic display
-    switching,'' ``Viewfinder only,'' ``Monitor only,'' and ``Prioritize
-    viewfinder (1, 2).'' However, once the system enters the dashed loop region
-    centered on S6, it cannot return to Live View through the standard user
-    input path defined within the normal state transition graph. In this state,
-    even if the user has selected ``Prioritize viewfinder,'' the behavior
-    effectively becomes equivalent to ``Viewfinder only,'' and Live View on the
-    monitor is no longer available.
+\item \textbf{Loop behavior and priority:}
+This camera provides several monitor modes, including ``Automatic display
+switching,'' ``Viewfinder only,'' ``Monitor only,'' and ``Prioritize
+viewfinder (1, 2).'' However, once the system enters the dashed loop region
+centered on S6, it cannot return to Live View through the standard user
+input path defined within the normal state transition graph. In this state,
+even if the user has selected ``Prioritize viewfinder,'' the behavior
+effectively becomes equivalent to ``Viewfinder only,'' and Live View on the
+monitor is no longer available.
 
-    \item \textbf{Recovery paths (Step 67):}
-    Recovery from the persistent Info-display state was observed through
-    DISP-related display cycling while the LCD monitor remained active
-    (e.g., S6 with the LCD open). When the LCD was closed (S7), the same input
-    did not produce a recovery transition.
+\item \textbf{Recovery paths and practical lock behavior:}
+Recovery from the persistent Info-display state was observed through
+DISP-related display cycling while the LCD monitor remained active
+(e.g., S6 with the LCD open). When the LCD was closed (S7), the same input
+did not produce a recovery transition.
 
-    Additional recovery paths were later observed, including:
-    (i) reassigning the ``DISP Cycle view info display'' function to a custom
-    button and then pressing it, and
-    (ii) disabling ``Display 5'' in the custom monitor shooting display
-    settings.
+Additional recovery paths were later observed, including:
+(i) reassigning the ``DISP Cycle view info display'' function to a custom
+button and then pressing it, and
+(ii) disabling ``Display 5'' in the custom monitor shooting display
+settings.
 
-    However, under configurations where no DISP-related recovery path remained
-    accessible through ordinary shooting operations, the persistent state could
-    not be cleared through standard UI interaction alone. Power cycling or
-    removing and reinserting the battery was not observed to reliably terminate
-    this state.\href{https://youtu.be/CgRiFayc5yQ}{\textbf{Reference Video: zf info lock (YouTube)}}
+However, these are mitigation paths rather than a complete resolution of
+the underlying display-state behavior. In particular, under configurations
+where no DISP-related recovery path remains accessible through ordinary
+shooting operations, Nikon support confirmed an extended sequence in which
+the camera remained on the Info display through repeated half-press
+operations, MENU return, and power cycling.
+
+Power cycling or removing and reinserting the battery was not observed to
+reliably terminate this state.
+\href{https://youtu.be/CgRiFayc5yQ}{\textbf{Reference Video: zf info lock (YouTube)}}
+
+
 \end{itemize}
 
 \end{document}
