@@ -1,6 +1,6 @@
 # Insights & Hypotheses
 
-> Published: 2026-06-24 | Last Updated: 2026-06-27
+> Published: 2026-06-24 | Last Updated: 2026-06-28
 
 ---
 
@@ -39,7 +39,7 @@ The concerns investigated in this repository all relate to the behavior of the I
 The behaviors described above can be explained consistently by assuming that there are at least two functionally different kinds of Info-display states.
 
 One behaves as an Info state with persistent properties. The other appears visually similar, but does not initially possess those persistent traits.   
-For example, the screen selectable as “Display 5 / Info” in the custom monitor shooting-display settings appears to be the Info state that carries this persistence. In addition to the Z f, models equipped with this Display 5 / Info include the Z9 and Z8, and it can be described as a new Info screen.   
+For example, the screen selectable as “Display 5 / Info” in the custom monitor shooting-display settings appears to be the Info state that carries this persistence. In addition to the Z f, models equipped with this Display 5 / Info include the Z9 and Z8, and others, and it can be described as a new Info screen.   
 On the other hand, the Info screen that does not initially possess persistent traits exhibits behavior similar to the Info screen adopted in DSLR cameras, representing the legacy Info screen.
 
 One major cause of the problem is that these nearly identical Info states transition from a non-persistent state into the persistent Display 5 / Info state depending on the display settings, LCD open/closed state, and preceding operations, and that this transition occurs without showing any visible change on the surface.
@@ -61,7 +61,8 @@ At the same time, the term **“shooting display”** became central in Z-series
 
 > Throughout this document, the display in the camera monitor and viewfinder during shooting is referred to as the “shooting display”.
 
-In the Z-series, at least part of what appears as the Info display seems to have been incorporated into this broader category of “shooting display”.
+While the term “shooting display” itself appears in the manuals for DSLRs, the Nikon 1 series, and compact digital cameras, a definition sentence like the one found in the Z-series could not be confirmed. Therefore, it is reasonable to assume that before the Z-series, the term “shooting display” was used synonymously with its conventional meaning.  
+In contrast, what is the case with the Z-series? In the Z-series, at least part of what appears as the Info display seems to have been incorporated into this broader category of “shooting display”.
 
 This shift is central to the hypotheses below.
 
