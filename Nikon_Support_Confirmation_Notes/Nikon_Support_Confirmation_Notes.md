@@ -295,7 +295,7 @@ A supplementary video record was also made using both the Nikon Z f and the Z9.
 
 Additionally, it was observed on the specific Z9 as well that it becomes impossible to exit the Info display during continuous shooting. This has been made into videos along with the Z f.
 - [![Reference Video for Z f.8.2](https://youtu.be/Linzjau-Ucg)](https://youtu.be/Linzjau-Ucg)
-- [![Reference Video for the specificr Z9](https://youtu.be/_l8WBW9vs6I)](https://youtu.be/_l8WBW9vs6I)
+- [![Reference Video for the specific Z9](https://youtu.be/_l8WBW9vs6I)](https://youtu.be/_l8WBW9vs6I)
 
 
 
