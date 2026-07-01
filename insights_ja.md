@@ -705,6 +705,7 @@ Nikon Z f、そしてより広く現在のZシリーズ世代は、DSLRからミ
 
 - [Case A1 Concept Map PDF](./case-a1-concept-map-cat.svg) ( [Download PDF](https://github.com/acta-lgtm/nikon-z-display5-persistence-case-zf/releases/download/260701/case-a1-concept-map-cat.pdf) )
 - [Nikon Z9 side-by-side video: same MENU screen, different half-press result depending on prior Info state](https://youtu.be/9tlzDSAOhXs)
+- [Nikon D6 reference video: MENU half-press behavior remains history-independent](https://youtu.be/Ndy7IIHObnc)
 
 ## The Island of Z Paws
 
