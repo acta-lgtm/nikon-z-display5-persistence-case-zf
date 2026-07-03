@@ -1,6 +1,6 @@
 # Insights & Hypotheses
 
-> Published: 2026-06-24 | Last Updated: 2026-07-01
+> Published: 2026-06-24 | Last Updated: 2026-07-03
 
 ---
 
@@ -614,6 +614,15 @@ Immediate corrective action is highly desirable.
 Additionally, Nikon has repeatedly explained the observed behavior as a specification. 
 If this is indeed an intended specification, one must question how the operational risks associated with it were evaluated.
 Furthermore, even after the issue and its provisional workarounds became clear through support channels, the absolute absence of any public announcements, FAQs, or warnings leaves significant questions from the perspective of product communication.
+
+---
+
+### 5. Proactive Risk Mitigation for Future Feature Extensions
+
+If the underlying ambiguity remains in place, future features added to the display-state system may inherit the same unresolved assumptions, potentially leading to unexpected behavior in increasingly complex shooting scenarios.
+
+Addressing this issue early would likely be more efficient than allowing it to persist across future generations. 
+In the long term, clarifying the role of Display 5 / Info may contribute positively to development cost, product reliability, and Nikon’s brand trust as a camera manufacturer.
 
 ---
 
