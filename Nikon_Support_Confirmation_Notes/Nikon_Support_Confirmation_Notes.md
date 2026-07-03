@@ -1,6 +1,6 @@
 # Nikon Support Confirmation Notes
 
-> Published: 2026-06-24　
+> Published: 2026-06-24　| Last Updated: 2026-07-03
 
 ## Display 5 (“Info”) Persistence and Recovery Behavior on the Nikon Z f
 
@@ -14,9 +14,22 @@ Supplementary observations made on the owned Z f and D6, as well as the  Z9 proc
   
 ## <a id="case01"></a> CASE 01. Power-Cycle Persistence of Display 5
 
-### Confirmation Results
+### 1.1
 
-  | Sequence | Power on |  Power off  | Power on | Press DISP button repeatedly<br> until Display 5 is shown | Power off | Power on |
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor, starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Turn the power off.
+
+</details>
+
+#### Confirmation Results
+
+| Sequence | Power on |  Power off  | Power on | Press DISP button repeatedly<br> until Display 5 is shown | Power off | Power on |
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 | Z f.1.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off  | LCD: No display<br>EVF: Off    | LCD: Live View (with DP1)<br>EVF: Off  | LCD: Info display <br>EVF: Off | LCD: No display<br>EVF: Off  | LCD: Info display <br>EVF: Off |  
 
@@ -34,12 +47,39 @@ This phenomenon was also observed on the Z9.
 
 ## <a id="case02"></a> CASE 02. MENU Half-Press Returns to Display 5
 
-### Confirmation Results
+### 2.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor (dock it against the camera body), starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                                   | Open LCD                                   | Press [MENU] button           | Half-press                                 |
 | :------- | :------- | :------- | :------------------ | :--------- |
 | Z f.2.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off | LCD: Menu display<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
 
+### 2.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor (dock it against the camera body), starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                                   | Open LCD                                   | Press DISP button repeatedly<br> until Display 5 is shown | Press [MENU] button           | Half-press                                  | Half-press                                  |
 | :------- | :------- | :------- | :-------------------------------------------------------- | :------------------ | :--------- | :--------- |
@@ -47,8 +87,8 @@ This phenomenon was also observed on the Z9.
 
 This confirmation was made under default settings when the MENU screen is displayed on the LCD and the shutter button is half-pressed.
 
-- If the Info was not displayed prior to displaying the MENU screen, a half-press returns to the Live View (Z f.3.1).
-- On the other hand, if the Info was displayed prior to displaying the MENU screen, a half-press does not return to the Live View but returns to the Info display (Z f.3.2).  
+- Z f.2.1: If the Info was not displayed prior to displaying the MENU screen, a half-press returns to the Live View.
+- Z f.2.2: On the other hand, if the Info was displayed prior to displaying the MENU screen, a half-press does not return to the Live View but returns to the Info display.  
 
 Therefore, it was confirmed that **a half-press does not necessarily return to the Live View**, but returns to the state immediately preceding the MENU screen, meaning that the transition outcome depends on the history.  
 This is exactly the transition Step 5 or Step 28 from S3 shown in [case-a1-concept-map-cat.svg](../case-a1-concept-map-cat.svg).  
@@ -67,12 +107,39 @@ In addition, on the D6, it has been observed that whether the Info was displayed
 
 ## <a id="case03"></a> CASE 03. EVF Live View Appears Temporarily, but LCD Returns to Info
 
-### Confirmation Results
+### 3.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor (dock it against the camera body), starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                                   | Press [MENU] button           | Look into the EVF                         | Half-press                                  | Move eye away from EVF                     |
 | :------- | :------- | :------------------ | :---------------- | :--------- | :--------------------- |
 | Z f.3.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` | LCD: Live View (with DP1)<br>EVF: Off | LCD: Menu display<br>EVF: Off | LCD: No display<br>EVF: On (Menu display) | LCD: No display<br>EVF: On (Live View) | LCD: Live View (with DP1)<br>EVF: Off |
 
+### 3.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor (dock it against the camera body), starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                                   | Press DISP button repeatedly  <br> until Display 5 is shown | Press [MENU] button           | Look into the EVF                         | Half-press                                  | Move eye away from EVF                      |
 | :------- | :------- | :--------------------------------------------------------- | :------------------ | :---------------- | :--------- | :--------------------- |
@@ -80,8 +147,8 @@ In addition, on the D6, it has been observed that whether the Info was displayed
 
 This confirmation covers the state after removing the eye from the EVF, following a sequence where the MENU screen is displayed under default settings, the user looks through the EVF, and a half-press is performed.
 
-- If the Info  was not displayed prior to displaying the MENU screen, the LCD returns to the Live View (Z f.3.1).  
-- On the other hand, if the Info was displayed prior to displaying the MENU screen, the LCD does not return to the Live View but returns to the Info display (Z f.3.2).  
+- Z f.3.1: If the Info  was not displayed prior to displaying the MENU screen, the LCD returns to the Live View.  
+- Z f.3.2: On the other hand, if the Info was displayed prior to displaying the MENU screen, the LCD does not return to the Live View but returns to the Info display.  
 
 In other words, it was confirmed that a half-press does not necessarily return to the Live View, but returns to the screen immediately preceding the MENU screen; in this case as well, similar to CASE-02, the **transition outcome depends on the history**.
 
@@ -93,16 +160,61 @@ This phenomenon was also observed on the Z9.
 
 ## <a id="case04"></a> CASE 04. LCD Opening Changes Info Recovery: DISP Route
 
+### 4.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor, starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Turn the power off
+
+</details>
+
 ### Confirmation Results
 
 | Sequence | Power on                                   | Press DISP button repeatedly <br> until Display 5 is shown | Half-press                                  | Press DISP button repeatedly<br> until Display 5 is shown | Open LCD                                    | Half-press                                  |
 | :------- | :------- | :---------------------------------------------------- | :--------- | :---------------------------------------------------- | :------- | :--------- |
 | Z f.4.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` | LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
+### 4.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+4. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+5. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+6. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Press DISP button                           | Half-press                  | Press DISP button                           | Open LCD                                    | Half-press                                  |
 | :------- | :------- | :---------------- | :--------- | :---------------- | :------- | :--------- |
 | Z f.4.2 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Off<br>EVF: On when eye sensor is active | LCD: Info display <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Info display<br>EVF: Off |
+
+### 4.3
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+4. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+5. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+6. Go to [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display] and uncheck "Display 5".
+7. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Press DISP button                           | Half-press                  | Press DISP button                           | Open LCD                                   | Half-press                                 |
 | :------- | :------- | :---------------- | :--------- | :---------------- | :------- | :--------- |
@@ -123,22 +235,19 @@ In addition, other routes to display the Info display include pressing the DISP 
 In CASE-04, we focus on the Info display when the DISP button is pressed once among these routes, and the others will be handled in CASE-05.
 
 
-#### Z f.4.1 is the case under default settings `Context AS(O; DP1-4=1,2,3,4; DP5=ON)`.  
+- Z f.4.1 is the case under default settings `Context AS(O; DP1-4=1,2,3,4; DP5=ON)`.  
 Both before and after opening the LCD, it is the Info display as Display 5, and Nikon confirmed that **the Info display fixates** on the monitor in both cases.
 
-#### Z f.4.2 is the case in Prioritize viewfinder & Auto monitor switch (docked only) `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`.  
+- Z f.4.2 is the case in Prioritize viewfinder & Auto monitor switch (docked only) `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`.  
 Nikon Support has clearly stated that while the Info display before opening the LCD turns off with a half-press to provide Live View inside the EVF, **the Info display after passing through the action of opening the LCD does not turn off with a half-press** and instead fixates.  
-
-- The Info display before opening the LCD is reached by pressing the DISP button only once, so it is considered not to be Display 5. Since it does not fixate and Live View is obtained inside the EVF, this behavior is considered consistent with the Info display behavior from DSLRs.
-- On the other hand, the Info display immediately prior to opening the LCD is also considered not to be Display 5, but it is reasonable to view that opening the LCD transforms it into a fixated Info display. Regarding the state at this moment, Nikon explicitly states in their response:
+ The Info display before opening the LCD is reached by pressing the DISP button only once, so it is considered not to be Display 5. Since it does not fixate and Live View is obtained inside the EVF, this behavior is considered consistent with the Info display behavior from DSLRs.  
+On the other hand, the Info display immediately prior to opening the LCD is also considered not to be Display 5, but it is reasonable to view that opening the LCD transforms it into a fixated Info display. Regarding the state at this moment, Nikon explicitly states in their response:
 "Even if you keep pressing it halfway, it does not become a live view display. Also, because the monitor is open, the EVF display does not become active. (Literal translation)"  
-
 This suggests that the critical transition is not merely entering the Info display, but entering the LCD active shooting-display context while an Info-related display is present.
 
-#### Z f.4.3 is the case in Prioritize viewfinder & Auto monitor switch (docked only) `Context PV(OD; DP1-4=1,2,3,4; DP5=OFF)`, which means that the Display 5 display is disabled in Z f.4.2.
+- Z f.4.3 is the case in Prioritize viewfinder & Auto monitor switch (docked only) `Context PV(OD; DP1-4=1,2,3,4; DP5=OFF)`, which means that the Display 5 display is disabled in Z f.4.2.
 Disabling was possible via [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display].  
-The comparison with Z f.4.2 is noteworthy;
-while the Info display before opening the LCD exhibits the same behavior as Z f.4.2, it was confirmed that the Info display after passing through the action of opening the LCD also turns off with a half-press.  
+The comparison with Z f.4.2 is noteworthy; while the Info display before opening the LCD exhibits the same behavior as Z f.4.2, it was confirmed that the Info display after passing through the action of opening the LCD also turns off with a half-press.  
 The Info display observed in Z f.4.3 turns off with a half-press and immediately transitions the camera to a shooting-ready state, which can be said to be consistent with the behavior of the Info display since the DSLR era.
 Based on these points, in Z f.4.2, although the Info display immediately prior to opening the LCD is not Display 5, is it not fair to say that opening the LCD transforms it into an Info display that possesses fixation characteristics, namely Display 5.
 
@@ -159,12 +268,43 @@ This phenomenon was also observed on the Z9.
 
 ## <a id="case05"></a> CASE 05. LCD Opening Changes Info Recovery: [i] / Fn Routes
 
-### Confirmation Results
+### 5.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (no lens-specific differences were observed within the scope of our validation).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+7. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Press [i] button                            | Half-press                  | Press [i] button                            | Open LCD                                    | Half-press                                  | Half-press                                  |
 | :------- | :------- | :--------------- | :--------- | :--------------- | :------- | :--------- | :--------- |
 | Z f.5.1 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Off<br> EVF: On when eye sensor is active | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
+### 5.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (no lens-specific differences were observed within the scope of our validation).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+7. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Press and Release the Fn button            | Half-press                  |Press and Release the Fn button             | Open LCD                                    | Half-press                                  |
 | :------- | :------- | :------------------------------ | :--------- | :------------------------------ | :------- | :--------- |
@@ -190,7 +330,23 @@ This phenomenon was also observed on the Z9. However, to adjust the white balanc
 
 ## <a id="case06"></a> CASE 06. Display 5 Disabled: Info No Longer Fixates, but Display Index Resets
 
-### Confirmation Results
+### 6.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor, starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+7. Go to [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display] and uncheck "Display 5".
+8. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Open LCD                     | Press DISP button ,once   | Close LCD             | Open LCD            | Close LCD           | Press [i] button             | Open LCD          |Half-press        |
 | :------- | :------- | :------- | :---------------------- | :-------- | :------- | :-------- | :--------------- | :------- | :--------- |
@@ -212,12 +368,44 @@ In addition, it has also been observed on the D6 in my possession that when the 
 
 ## <a id="case07"></a> CASE 07. DISP Disabled: Practical Lock / Recovery Failure
 
-### Confirmation Results
+### 7.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (no lens-specific differences were observed within the scope of our validation).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+7. Go to [CUSTOM SETTINGS MENU] > [f2 Custom controls (shooting)] and assign "None" (OFF) to the DISP button.
+8. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Press [i] button                           | Open LCD                                     | Half-press                  | Press DISP button        |
 | :------- | :------- | :--------------- | :------- | :--------- | :---------------- |
 | Z f.7.1 `DISP button = "OFF None"`<br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off |  LCD: Info display <br>EVF: Off  | LCD: Info display <br>EVF: Off|
 
+### 7.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+4. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+5. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+6. Go to [CUSTOM SETTINGS MENU] > [f2 Custom controls (shooting)] and assign "None" (OFF) to the DISP button.
+7. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on                    | Press [i] button                           | Open LCD                                     | Half-press                  | Press [i] button                            | Press DISP button, once                            | Press [MENU] button        | Half-press                                  | Power off, then on                     |
 | :------- | :------- | :--------------- | :------- | :--------- | :--------------- | :---------------------- | :------------------ | :--------- | :----------------- |
@@ -255,12 +443,45 @@ The Z9 observation is not a Nikon support confirmation. However, it is important
 
 ## <a id="case08"></a> CASE 08. Info Display During Burst Shooting
 
-### Confirmation Results
+### 8.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor (dock it against the camera body), starting with the screen facing toward you.
+2. Insert a writable memory card capable of high-speed continuous shooting. Format it in advance if necessary.
+3. Initialize the camera.
+4. Attach an appropriate lens and remove the lens cap (no lens-specific differences were observed within the scope of our validation).
+5. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+6. The exposure mode can be any mode, such as Manual or Aperture Priority. However, since continuous shooting will be performed, adjust settings appropriately so that the shutter speed is faster than approximately 1/60 sec.
+7. Go to [PHOTO SHOOTING MENU] > [Release mode] and select "Continuous H".
+8. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on | Look into the EVF, Half-press shutter button | Press the shutter button to initiate continuous release <br> for the initial five seconds | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds |  Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds  | Lift finger from the shutter button and  move eye away from EVF |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
 | Z f.8.1 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: No display<br>EVF: On (Live View) |LCD: No display<br>EVF: On (Live View)*Burst flickering|LCD: Live View (with DP1)*Burst flickering<br>EVF: Off |LCD: No display<br>EVF: On (Live View)*Burst flickering|LCD: Live View (with DP1)<br>EVF: Off |
 
+### 8.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor (dock it against the camera body), starting with the screen facing toward you.
+2. Insert a writable memory card capable of high-speed continuous shooting. Format it in advance if necessary.
+3. Initialize the camera.
+4. Attach an appropriate lens and remove the lens cap (no lens-specific differences were observed within the scope of our validation).
+5. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+6. The exposure mode can be any mode, such as Manual or Aperture Priority. However, since there is a step where continuous shooting is performed, adjust settings appropriately so that the shutter speed is faster than approximately 1/60 sec.
+7. Go to [PHOTO SHOOTING MENU] > [Release mode] and select "Continuous H".
+8. Turn the power off.
+
+</details>
+
+#### Confirmation Results
 
 | Sequence | Power on |Press DISP button repeatedly until Display 5 is shown | Look into the EVF, Half-press shutter button | Press the shutter button to initiate continuous release <br> for the initial five seconds | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds |  Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds  | Lift finger from the shutter button and  move eye away from EVF |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
@@ -298,8 +519,101 @@ Additionally, it was observed on the specific Z9 as well that it becomes impossi
 - [![Reference Video for the specific Z9](https://youtu.be/_l8WBW9vs6I)](https://youtu.be/_l8WBW9vs6I)
 
 
+---
 
-  
+## <a id="case09"></a> CASE 09. Info Display During Multiple-Exposure Overlay Shooting
 
-  
-  
+### 9.1
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor, starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [PHOTO SHOOTING MENU] > [Multiple exposure] > [Multiple exposure mode] and select "On (series)".
+6. Turn the power off.
+
+</details>
+
+#### Confirmation Results
+
+| Sequence | Power on | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
+| :------- | :-------- | :-------- | :-------- | :-------- | :-------- |
+| Z f.9.1 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: The 1st shot is superimposed on the live View (with DP1), and the multiple exposure icon flashes<br>EVF: Off | LCD: No display<br>EVF: The 1st shot is superimposed on the live View, and the multiple exposure icon flashes| LCD: The 1st shot is superimposed on the live View (with DP1), and the multiple exposure icon flashes<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
+
+
+### 9.2
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor, starting with the screen facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [PHOTO SHOOTING MENU] > [Multiple exposure] > [Multiple exposure mode] and select "On (series)".
+6. Turn the power off.
+
+</details>
+
+#### Confirmation Results
+
+| Sequence | Power on | Press DISP button repeatedly <br> until Display 5 is shown | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
+| :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
+| Z f.9.2 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: No display<br>EVF: The 1st shot is superimposed on the live View, and the multiple exposure icon flashes | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+
+### 9.3
+
+<details>
+<summary><i>Settings for Reproduction (Click to expand)</i></summary>
+
+1. Close the LCD monitor so that the screen is facing toward you.
+2. Initialize the camera.
+3. Attach an appropriate lens and remove the lens cap (any lens is acceptable).
+4. To prevent the camera from powering off unexpectedly during validation, go to [CUSTOM SETTINGS MENU] > [c3 Power off delay] and set each item to the maximum time.
+5. Go to [SETUP MENU] > [Limit monitor mode selection] and select only "Prioritize viewfinder (1)".
+6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
+7. Go to [PHOTO SHOOTING MENU] > [Multiple exposure] > [Multiple exposure mode] and select "On (series)".
+8. Turn the power off.
+
+</details>
+
+#### Confirmation Results
+
+| Sequence | Power on |  Press and Release the Fn button | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
+| :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
+| Z f.9.3 <br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+
+- Z f.9.1 is the baseline multiple-exposure overlay shooting behavior.  
+Nikon support confirmed the baseline behavior of multiple-exposure overlay shooting when Display 5 / Info had not been selected beforehand.  
+The camera started with the LCD monitor Live View  and after the first exposure, the LCD monitor displayed the through-image with the first captured frame superimposed faintly.  
+When the photographer looked into the EVF, the LCD monitor turned off and the EVF displayed the same superimposed through-image, and when  the photographer moved their eye away, it switched back to the LCD monitor.  
+After the second exposure was taken, the camera returned to LCD Live View.  
+This confirms the normal baseline behavior as described in the manual.
+
+- Z f.9.2 is the multiple-exposure overlay shooting after Display 5 / Info.  
+Nikon support  confirmed that the LCD monitor does not display the superimposed image when Display 5 / Info has been selected beforehand.  
+The camera started with the LCD monitor Live View, and the DISP button was pressed repeatedly until the Info display was shown on the LCD monitor.  
+After the first exposure, the LCD monitor remained on the Info display.  
+When the photographer looked into the EVF, the LCD monitor turned off and the EVF displayed the superimposed through-image, but when  the photographer moved their eye away, the LCD monitor returned to the Info display.  
+After the second exposure was taken, the LCD monitor still displayed the Info screen.  
+This confirmation is important because it contrasts directly with Z f.9.1, where both devices displayed the superimposed through-image when Display 5 had not been selected.  
+This indicates that the retained Display 5 / Info state can affect the LCD display even during multiple-exposure overlay shooting, a mode whose purpose is to aid composition by superimposing earlier exposures.
+
+- Z f.9.3 is the multiple-exposure overlay shooting after Fn / Info route and LCD Opening.  
+Nikon support confirmed an additional multiple-exposure overlay shooting sequence under `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`, involving the Fn-button route and LCD opening. 
+The camera started with both the LCD monitor and EVF off.  
+After the Fn button was pressed and released, the LCD monitor displayed the Info screen, and even when the LCD monitor was then opened, the LCD continued to display the Info screen.   
+After the first exposure was taken, the LCD monitor still remained on the Info display.  
+Since this confirmation was performed under the Viewfinder Priority setting, the EVF did not turn on even when the photographer looked into it, and the LCD monitor continued to display the Info screen.  
+Moving the eye away afterwards did not change the display state.  
+After the second exposure was taken, the LCD monitor still displayed the Info screen.  
+This means that, under this route, the expected multiple-exposure overlay view was not available at all during the tested sequence.
+
+It may be argued that the Info display can still be useful for changing camera settings. However, this does not resolve the issue.  
+The purpose of overlay shooting, as described in the manual, is to aid composition by superimposing earlier exposures on the view through the lens. An Info display without a through-image cannot provide that compositional aid.
+
+Moreover, the manual also warns that changing camera settings during multiple-exposure shooting may end multiple-exposure shooting. 
+For that reason, the ability to view or change settings on the Info display cannot be treated as an equivalent substitute for the intended overlay shooting display.
