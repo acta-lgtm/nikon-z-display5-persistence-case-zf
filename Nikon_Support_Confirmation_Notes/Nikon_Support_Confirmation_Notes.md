@@ -8,7 +8,7 @@ This document summarizes operational confirmations received from Nikon support r
 
 The purpose of this document is not to reproduce the entire support correspondence, but to extract the confirmations most relevant to Display 5 persistence, shutter-button half-press recovery, LCD/EVF transition behavior, and shooting-display recovery.
 
-Supplementary observations made on the owned Z f and D6, as well as the  Z9 procured　for testing, are also noted separately, and are clearly distinguished from the official confirmations provided by Nikon support.
+Supplementary observations made on the owned Z f and D6, as well as the  Z9 procured for testing, are also noted separately, and are clearly distinguished from the official confirmations provided by Nikon support.
 
 --- 
   
