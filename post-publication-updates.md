@@ -1,1 +1,17 @@
-# Post-Publication UpdatesThis file records updates received or added after the initial publication of this repository.The main report reflects the information available at the time of initial publication. Later Nikon support responses, additional model-specific confirmations, supplementary observations, and follow-up analysis will be recorded here as they become available.## Current StatusAs of the initial publication, there are no post-publication updates.Additional updates will be added to this file if further responses are received from Nikon support or if new relevant observations are added.
+# post-publication-updates
+
+> Published: 2026-07-04 
+
+---
+
+## 2026-07-03 - Nikon support response regarding terminology definition
+
+### Inquiry
+
+The manual contains the following statement:
+> Throughout this document, the display in the camera monitor and viewfinder during shooting is referred to as the “shooting display”.
+
+Regarding this statement, a request was made to Nikon to provide detailed internal and manual-specific definitions, as well as concrete examples, for the terms "during shooting" / 「撮影時」 and "shooting display" / 「撮影画面」.
+
+### Relevant response
+After checking with the relevant department, Nikon stated that no publicly available definition could be provided for the relevant terminology. 
