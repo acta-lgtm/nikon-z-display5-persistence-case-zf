@@ -1,3 +1,4 @@
+> Published: 2026-06-24　 | Last Updated: 2026-07-03
 
 This document summarizes operational confirmations received from Nikon support regarding Display 5 (“Info”) behavior on the Nikon Z f.
 
@@ -23,7 +24,7 @@ This document summarizes operational confirmations received from Nikon support r
 > Confirmation of the phenomenon where disabling the DISP button function makes it difficult to clear the persisted Info screen.
 
 ## [CASE 08](Nikon_Support_Confirmation_Notes.md#case08). Info Display During Burst Shooting
-> Confirmation of the phenomenon where Display 5 (“Info”) continues to persist during continuous shooting under default settings.
+> Confirmation of the phenomenon where Display 5 (“Info”) continues to persist during continuous shooting under default settings, while the EVF displays the expected through-image.
 
-
-
+## [CASE 09](Nikon_Support_Confirmation_Notes.md#case09). Info Display During Multiple-Exposure Overlay Shooting
+> Confirmation of the phenomenon where Display 5 (“Info”) continues to persist during multiple-exposure overlay shooting, while the EVF displays the expected through-image with the previous exposure superimposed.
