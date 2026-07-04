@@ -156,7 +156,8 @@ Any later Nikon support responses, additional model-specific confirmations, or f
 
 ### Zf observation: Case B2
 - [![Reference Video for Case B2](https://www.youtube.com/watch?v=Linzjau-Ucg)](https://www.youtube.com/watch?v=Linzjau-Ucg)
-*Note: This video does not completely reproduce the steps for Case B2.*
+
+  *Note: This video does not completely reproduce the steps for Case B2.*
 
 - ![Animated illustration of Case B2](./Case_B2_mov1.gif)
   
