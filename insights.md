@@ -1,6 +1,6 @@
 # Insights & Hypotheses
 
-> Published: 2026-06-24 | Last Updated: 2026-07-03
+> Published: 2026-06-24 | Last Updated: 2026-07-07
 
 ---
 
