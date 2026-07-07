@@ -430,9 +430,10 @@ Moreover, the camera’s active shooting-display state can change depending on t
 
 This makes it possible for non-DP5 Info to cross into an active LCD shooting-display context and become Display 5-like in behavior. This is where fixation and display-index reset become most apparent.
 
-This issue is particularly likely to manifest when a user frequently changes exposure, white balance, AF, and other settings manually via the Info display, or when they constantly switch between the LCD and the viewfinder. However, standard users are unlikely to operate the camera in this manner.  
+This issue is particularly likely to manifest when a user frequently changes exposure, white balance, AF, and other settings manually via the Info display, or when they constantly switch between the LCD and the viewfinder. However, standard users are unlikely to operate the camera in this manner on a daily basis.
 Furthermore, the “On (when monitor docked)” option is a relatively new feature, introduced in Firmware C Version 3.00 released in October 2025.
-It was only after this option became available that I began using the Z f extensively with this setting, which ultimately brought the Info-fixation behavior to light.  
+It was only after this option became available that I began using the Z f extensively with this setting, which ultimately brought the Info-fixation behavior to light.   
+In addition, for the Z9, Nikon Support has confirmed that the behavior of its LCD monitor is identical to the "On (when monitor docked)" state of the Z f. A shooting style that requires frequent setting adjustments is considered to be primarily used by professionals. However, because the Z9's plentiful buttons and dial inputs make performing these adjustments natural and easy, using the Info screen instead is not necessarily required.
 
 ---
 
