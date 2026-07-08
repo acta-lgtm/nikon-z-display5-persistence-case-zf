@@ -1,6 +1,12 @@
-> Published: 2026-06-24　 | Last Updated: 2026-07-03
+> Published: 2026-06-24　 | Last Updated: 2026-07-07
 
-This document summarizes operational confirmations received from Nikon support regarding Display 5 (“Info”) behavior on the Nikon Z f.
+This document summarizes operational confirmations received from Nikon support regarding Display 5 (“Info”) behavior on Nikon Z-series cameras.
+
+The investigation initially focused on the Nikon Z f. Nikon support later confirmed that the sequences described in CASE 01 through CASE 09 produced the same results on the Nikon Z8 and Z9 under the specified test conditions.
+
+For the Z8 and Z9, Nikon support also confirmed that the relevant LCD-monitor behavior corresponds to the Nikon Z f behavior when `[Automatic monitor display switch]` is set to `"On (when monitor docked)"`.
+
+For operations that use the Fn button on the Nikon Z f, Nikon support performed corresponding operations on the Z8 and Z9 using controls that provide equivalent functionality, such as the WB button where appropriate.
 
 ## [CASE 01](Nikon_Support_Confirmation_Notes.md#case01). Power-Cycle Persistence of Display 5
 > Confirmation that the Display 5 (“Info”) display persists across power cycles.
