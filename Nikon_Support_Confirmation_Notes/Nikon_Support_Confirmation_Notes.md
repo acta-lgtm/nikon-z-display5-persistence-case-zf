@@ -1,14 +1,20 @@
 # Nikon Support Confirmation Notes
 
-> Published: 2026-06-24　| Last Updated: 2026-07-03
+> Published: 2026-06-24　| Last Updated: 2026-07-07
 
-## Display 5 (“Info”) Persistence and Recovery Behavior on the Nikon Z f
+## Display 5 (“Info”) Persistence and Recovery Behavior on the Nikon Z f, Z8, and Z9
 
-This document summarizes operational confirmations received from Nikon support regarding Display 5 (“Info”) behavior on the Nikon Z f.
+This document summarizes operational confirmations received from Nikon support regarding Display 5 (“Info”) behavior on Nikon Z-series cameras.
 
-The purpose of this document is not to reproduce the entire support correspondence, but to extract the confirmations most relevant to Display 5 persistence, shutter-button half-press recovery, LCD/EVF transition behavior, and shooting-display recovery.
+The investigation initially focused on the Nikon Z f. Nikon support later confirmed that the sequences described in CASE 02 through CASE 09 produced the same results on the Nikon Z8 and Z9 under the specified test conditions.
 
-Supplementary observations made on the owned Z f and D6, as well as the  Z9 procured for testing, are also noted separately, and are clearly distinguished from the official confirmations provided by Nikon support.
+For the Z8 and Z9, Nikon support also confirmed that the relevant LCD-monitor behavior corresponds to the behavior observed on the Nikon Z f when [Automatic monitor display switch] is set to "On (when monitor docked)" on the Z f.
+
+For operations that use the Fn button on the Nikon Z f, Nikon support performed corresponding operations on the Z8 and Z9 using controls that provide equivalent functionality, such as the WB button where appropriate.
+
+The purpose of this document is not to reproduce the entire support correspondence, but to extract the confirmations most relevant to Display 5 / Info persistence, shutter-button half-press recovery, LCD / EVF transition behavior, shooting-display recovery, burst shooting behavior, and multiple-exposure overlay shooting behavior.
+
+Supplementary observations made independently on the owned Nikon Z f and D6, as well as on a separately tested Z9, are also noted where relevant. These supplementary observations are clearly distinguished from the operational confirmations provided by Nikon support.
 
 --- 
   
