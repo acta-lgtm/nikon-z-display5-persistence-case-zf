@@ -49,6 +49,7 @@ This leads to the lock issue described later.
 This phenomenon was also observed on the Z9.
 
 
+
 ---
 
 ## <a id="case02"></a> CASE 02. MENU Half-Press Returns to Display 5
@@ -100,10 +101,9 @@ Therefore, it was confirmed that **a half-press does not necessarily return to t
 This is exactly the transition Step 5 or Step 28 from S3 shown in [case-a1-concept-map-cat.svg](../case-a1-concept-map-cat.svg).  
 This means that support has confirmed one of the characteristics of this camera: that subsequent states cannot be predicted without considering not only the current state but also past history.
 
+### Nikon Support Confirmation and Supplementary Observation
 
-### Supplementary Observation
-
-This phenomenon was also observed on the Z9.
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
 
 In addition, on the D6, it has been observed that whether the Info was displayed beforehand or not, a half-press on the MENU screen clears both the MENU screen and the Info display to transition to the shooting state.
 
@@ -158,9 +158,10 @@ This confirmation covers the state after removing the eye from the EVF, followin
 
 In other words, it was confirmed that a half-press does not necessarily return to the Live View, but returns to the screen immediately preceding the MENU screen; in this case as well, similar to CASE-02, the **transition outcome depends on the history**.
 
-### Supplementary Observation
 
-This phenomenon was also observed on the Z9.
+### Nikon Support Confirmation and Supplementary Observation
+
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
 
 ---
 
@@ -263,12 +264,11 @@ Furthermore, regarding the deadlock issue (CASE-07 below) that triggered the lau
 
 It is reasonable to view this response as symbolic of the fact that Display 5 holds the key to the fixation phenomenon.
 
-
-### Supplementary Observation
+### Nikon Support Confirmation and Supplementary Observation
 
 Regarding Z f.4.1, it has been observed on the Z f in my possession that both before and after opening the LCD, looking through the EVF turns off the monitor at that moment to provide Live View, and removing the eye from the EVF displays the Info display on the monitor again.
 
-This phenomenon was also observed on the Z9.
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
 
 ---
 
@@ -326,11 +326,11 @@ Both Z f.5.1 and Z f.5.2 are the case in Prioritize viewfinder & Auto monitor sw
 It was confirmed that in both cases, while the Info display before opening the LCD turns off with a half-press to provide Live View inside the EVF, **the Info display after passing through the action of opening the LCD does not turn off with a half-press** and instead fixates.  
 In this case as well, although the Info display immediately prior to opening the LCD is not Display 5, it is reasonable to view that opening the LCD transforms it into a fixating Info display.
 
-### Supplementary Observation
+### Nikon Support Confirmation and Supplementary Observation
+
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
 
 It has also been observed on the D6 in my possession that when the [i] button is pressed once, the Info display is displayed in the background of the [i] menu, and pressing the [i] button once more causes the [i] menu to disappear, leaving only the Info display.
-
-This phenomenon was also observed on the Z9. However, to adjust the white balance, I used the dedicated WB button instead of the Fn button.
 
 ---
 
@@ -362,10 +362,9 @@ This is a transition confirmation after displaying the Info display with Display
 
 It was confirmed that the Display 2 layer, which was displayed before displaying the Info display, is **reset to the Display 1 layer after passing through the Info display** reached by pressing the [i] button once.
 
+### Nikon Support Confirmation and Supplementary Observation
 
-### Supplementary Observation
-
-This phenomenon was also observed on the Z9.
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
 
 In addition, it has also been observed on the D6 in my possession that when the [i] button is pressed once, the Info display is displayed in the background of the [i] menu, and pressing the [i] button once more causes the [i] menu to disappear, leaving only the Info display.
 
@@ -433,14 +432,15 @@ This confirmation is important because it shows that the problem is not merely a
 
 CASE 07 confirms the practical consequence of disabling the DISP recovery path: once the Info display has entered the persistent state, the camera can remain trapped in Info across menu operations, shutter-button half-press, and power cycling.
 
-### Supplementary Video Observation: Z f and Z9
 
-A supplementary video record was also made using both the Nikon Z f and the Z9.
+### Nikon Support Confirmation and Supplementary Observation
+
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
+
+This phenomenon was also observed independently on a separately tested Nikon Z9, as shown in the supplementary video.
 
 The sequence corresponds closely to Z f.7.2, except that in the video the final power-cycle step was performed by removing and reinserting the battery. 
 In both cameras, the same core behavior was observed: after the Info display entered the persistent state, ordinary recovery operations did not restore a composition-capable Live View display.
-
-The Z9 observation is not a Nikon support confirmation. However, it is important supplementary evidence suggesting that this behavior may not be limited to a single Z f unit.
 
 - [![Reference Video for Z f.7.2](https://youtu.be/CgRiFayc5yQ)](https://youtu.be/CgRiFayc5yQ)
 - [![Reference Video for the specific Z9](https://youtu.be/JXYC30shRI8)](https://youtu.be/JXYC30shRI8)
@@ -516,13 +516,16 @@ I could not identify a practical photographic advantage in continuing to display
 During this condition, the Info display also did not appear to function as an active shooting-control display. While continuous shooting was in progress and the Info display was shown on the LCD monitor, attempts were made to change shutter speed and other shooting settings, but no response was observed.  
 That is, because the LCD monitor during continuous shooting neither shows a Live View image nor functions as an operational display, it is difficult to consider this a meaningful continuous shooting display.
 
-### Supplementary Video Observation: Z f and Z9
 
-A supplementary video record was also made using both the Nikon Z f and the Z9.
+### Nikon Support Confirmation and Supplementary Observation
 
-Additionally, it was observed on the specific Z9 as well that it becomes impossible to exit the Info display during continuous shooting. This has been made into videos along with the Z f.
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
+
+This phenomenon was also observed independently on a separately tested Nikon Z9, as shown in the supplementary video.
+
 - [![Reference Video for Z f.8.2](https://youtu.be/Linzjau-Ucg)](https://youtu.be/Linzjau-Ucg)
 - [![Reference Video for the specific Z9](https://youtu.be/_l8WBW9vs6I)](https://youtu.be/_l8WBW9vs6I)
+
 
 
 ---
@@ -623,3 +626,7 @@ The purpose of overlay shooting, as described in the manual, is to aid compositi
 
 Moreover, the manual also warns that changing camera settings during multiple-exposure shooting may end multiple-exposure shooting. 
 For that reason, the ability to view or change settings on the Info display cannot be treated as an equivalent substitute for the intended overlay shooting display.
+
+### Nikon Support Confirmation and Supplementary Observation
+
+Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
