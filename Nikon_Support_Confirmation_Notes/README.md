@@ -2,7 +2,7 @@
 
 This document summarizes operational confirmations received from Nikon support regarding Display 5 (“Info”) behavior on Nikon Z-series cameras.
 
-The investigation initially focused on the Nikon Z f. Nikon support later confirmed that the sequences described in CASE 01 through CASE 09 produced the same results on the Nikon Z8 and Z9 under the specified test conditions.
+The investigation initially focused on the Nikon Z f. Nikon support later confirmed that the sequences described in CASE 02 through CASE 09 produced the same results on the Nikon Z8 and Z9 under the specified test conditions.
 
 For the Z8 and Z9, Nikon support also confirmed that the relevant LCD-monitor behavior corresponds to the Nikon Z f behavior when `[Automatic monitor display switch]` is set to `"On (when monitor docked)"`.
 
