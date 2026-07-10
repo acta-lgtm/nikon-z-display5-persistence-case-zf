@@ -1,6 +1,6 @@
 # Nikon Support Confirmation Notes
 
-> Published: 2026-06-24　| Last Updated: 2026-07-07
+> Published: 2026-06-24　| Last Updated: 2026-07-11
 
 ## Display 5 (“Info”) Persistence and Recovery Behavior on the Nikon Z f, Z8, and Z9
 
@@ -198,6 +198,8 @@ Nikon support later confirmed that the same sequence produced the same result on
 5. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
 6. Turn the power off.
 
+   *Note: For Step 4, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
+
 </details>
 
 #### Confirmation Results
@@ -219,6 +221,8 @@ Nikon support later confirmed that the same sequence produced the same result on
 6. Go to [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display] and uncheck "Display 5".
 7. Turn the power off.
 
+   *Note: For Step 4, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
+   
 </details>
 
 #### Confirmation Results
@@ -287,6 +291,8 @@ Nikon support later confirmed that the same sequence produced the same result on
 6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
 7. Turn the power off.
 
+   *Note: For Step 5, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
+
 </details>
 
 #### Confirmation Results
@@ -308,6 +314,8 @@ Nikon support later confirmed that the same sequence produced the same result on
 6. Go to [SETUP MENU] > [Automatic monitor display switch] and select "On (when monitor docked)".
 7. Turn the power off.
 
+   *Note: For Step 5, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
+   
 </details>
 
 #### Confirmation Results
@@ -350,6 +358,7 @@ It has also been observed on the D6 in my possession that when the [i] button is
 7. Go to [CUSTOM SETTINGS MENU] > [d19 Custom monitor shooting display] and uncheck "Display 5".
 8. Turn the power off.
 
+   *Note: For Step 5, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
 </details>
 
 #### Confirmation Results
@@ -387,6 +396,7 @@ In addition, it has also been observed on the D6 in my possession that when the 
 7. Go to [CUSTOM SETTINGS MENU] > [f2 Custom controls (shooting)] and assign "None" (OFF) to the DISP button.
 8. Turn the power off.
 
+   *Note: For Step 5, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
 </details>
 
 #### Confirmation Results
@@ -408,6 +418,8 @@ In addition, it has also been observed on the D6 in my possession that when the 
 6. Go to [CUSTOM SETTINGS MENU] > [f2 Custom controls (shooting)] and assign "None" (OFF) to the DISP button.
 7. Turn the power off.
 
+   *Note: For Step 4, while I requested Nikon Support to limit the selection via the [SETUP MENU], I have observed that the same result is obtained by simply choosing "Prioritize viewfinder (1)" using the Monitor mode button.*
+   
 </details>
 
 #### Confirmation Results
