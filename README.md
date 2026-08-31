@@ -16,10 +16,10 @@ Although I am a complete layman in the field of systems engineering, I hold a de
 As this analysis was conducted independently by a non-specialist, some terminology or interpretations may be incomplete.
 
 *In this repository, the term “fixation” is used operationally to describe a state in which the camera remains on, or repeatedly returns to, the Info display despite ordinary shooting-recovery operations.*
-
 *The term does not by itself imply a conclusion regarding Nikon’s internal firmware intent. It reflects behavior that appears unnatural from the standpoint of consistency with long-standing Nikon shooting-operation expectations—particularly the expectation that a shutter-button half-press should promptly restore a shooting-ready view—as well as from the behavior of MENU screen transitions.*
-
 *At the same time, this “fixation” does not necessarily always cause practical problems. For example, on models such as the Z f that lack a top-plate LCD, having the Info display appear immediately after power-on can be useful. Therefore, this repository also explores possible ways to coexist effectively with the new role of the Info display.*
+
+*“None-DP5” is used as an operational label for an Info-like display state that does not behave as retained Display 5 / Info. It is not intended as a claim that Nikon’s firmware internally implements a separate display type named “None-DP5.” If Nikon’s official explanation later identifies this state as Display 5 / Info with different retention or recovery attributes, the term “None-DP5” should be understood as referring to that non-retained DP5 / Info state.*
 
 ---
 
