@@ -1,4 +1,4 @@
-> Published: 2026-05-17 | Last Updated: 2026-07-07
+> Published: 2026-05-17 | Last Updated: 2026-08-31
 
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
