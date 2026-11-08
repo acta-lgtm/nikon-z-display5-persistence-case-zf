@@ -1,25 +1,22 @@
-> Published: 2026-05-17 | Last Updated: 2026-08-31
+> Published: 2026-05-17 | Last Updated: 2026-11-08
 
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
-Originally initiated as an investigation into unusual “Info” persistence on my personal Nikon Z f, this repository gradually expanded into a broader observational analysis of Display 5 (“Info”) behavior, which is featured on the Nikon Z9, Z8, and Z f among the Z-series.
+On my personal mirrorless camera, the Nikon Z f, while the Info display is on the LCD monitor, I encountered the following situations:
 
-With this particular camera, pressing the shutter button halfway at times failed to immediately ready the camera for shooting. This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities. Furthermore, under default settings, the LCD could remain locked on the Information Display even during continuous shooting. 
-Several of these and other Info display behaviors have been confirmed by Nikon Support in Japan to be exactly the same not only on the Z f but also on the Z9 and Z8. 
+* **A shutter-release button half-press fails to switch the display back to the through-the-lens image.**
+* **This state is maintained even after turning the power on/off or disconnecting the power.**
 
-To uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
+This behavior can depart from a photographer’s natural expectations and may lead to missed photo opportunities.
 
-I hypothesize that the phenomena observed here are closely tied to the “Information Display (Info)”—a feature inherited from the D-series DSLRs—and may represent a visible manifestation of the coexistence between legacy and modern system logic, as well as the relationship between software consistency and human-expected behavior.
+ Initially, I suspected this was simply a bug unique to this camera. However, following formal inquiries with Nikon Support in Japan, several of these and other Info display behaviors have been officially confirmed by the manufacturer to be exactly the same not only on the Z f but also on the Z9 and Z8. Therefore, to uncover the specific triggering conditions and identify potential workarounds, I conducted detailed behavioral observations.
 
-Although I am a complete layman in the field of systems engineering, I hold a deep interest in user interfaces and the integration of legacy and modern technology. I share this report in the hope that it will spark meaningful discussions among experts and specialists in the community.
+I hypothesize that the phenomena observed here represent the challenges of carrying over the “Information Display (Info)”—a feature inherited from the D-series DSLRs—into mirrorless cameras. Specifically, it may be a visible manifestation of the conflict between legacy and modern system logic, as well as the discrepancy between software consistency and human-expected behavior.
 
+Although I am a complete layman in the field of systems engineering, I share this report in the hope that it will spark meaningful discussions among experts and specialists in the community.
 As this analysis was conducted independently by a non-specialist, some terminology or interpretations may be incomplete.
 
-*In this repository, the term “fixation” is used operationally to describe a state in which the camera remains on, or repeatedly returns to, the Info display despite ordinary shooting-recovery operations.*
-*The term does not by itself imply a conclusion regarding Nikon’s internal firmware intent. It reflects behavior that appears unnatural from the standpoint of consistency with long-standing Nikon shooting-operation expectations—particularly the expectation that a shutter-button half-press should promptly restore a shooting-ready view—as well as from the behavior of MENU screen transitions.*
-*At the same time, this “fixation” does not necessarily always cause practical problems. For example, on models such as the Z f that lack a top-plate LCD, having the Info display appear immediately after power-on can be useful. Therefore, this repository also explores possible ways to coexist effectively with the new role of the Info display.*
-
-*“None-DP5” is used as an operational label for an Info-like display state that does not behave as retained Display 5 / Info. It is not intended as a claim that Nikon’s firmware internally implements a separate display type named “None-DP5.” If Nikon’s official explanation later identifies this state as Display 5 / Info with different retention or recovery attributes, the term “None-DP5” should be understood as referring to that non-retained DP5 / Info state.*
+*In this repository, the term “persistence” is used operationally to describe a state in which the camera remains on, or repeatedly returns to, the Info display despite ordinary shooting-recovery operations.It reflects behavior that appears unnatural from the standpoint of consistency with long-standing Nikon shooting-operation expectations—particularly the expectation that a half-press should promptly restore a shooting-ready view.The term does not by itself imply a conclusion regarding Nikon’s internal firmware intent. *
 
 ---
 
@@ -27,13 +24,15 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 
 Readers who want the shortest path to the core issue may begin with:
 
+- [Mechanism via State Transition Diagram](./Mechanism_via_State_Transition/README.md)
 - [Nikon Support Confirmations](./Nikon_Support_Confirmation_Notes/README.md)
 - [Insights & Hypotheses](./insights.md)
 - [Post-Publication Updates](./post-publication-updates.md)
 
 *For Japanese readers: 「考察および仮説」の日本語版はこちら:* [考察および仮説 (日本語版)](./insights_ja.md)
 
-The detailed observation tables are the primary evidence base for this repository and provide traceability for the conclusions discussed here.
+These documents provide the main route through the issue: transition diagrams focusing on the problematic areas along with the observed phenomena, the interpretive models for understanding the behavior on-site during shooting, extensive discussions on topics such as the role of the equipment, and subsequent updates to the analysis.
+
 
 ---
 
@@ -52,8 +51,8 @@ The detailed observation tables are the primary evidence base for this repositor
 The “Info” display in Nikon cameras historically functioned as a temporary shooting-information screen.
 
 Introduced prominently during the DSLR era (e.g., Nikon D3 generation), the Info display was accessed via a dedicated “INFO” button and Nikon manuals explicitly documented how to dismiss the screen, including:
-- half-pressing the shutter button,
-- pressing the INFO/R button again,
+- half-pressing the shutter-release button,
+- pressing the INFO button,
 - or waiting for timeout.
 
 This behavior and terminology remained consistently documented through multiple DSLR generations.
@@ -66,10 +65,10 @@ Nonetheless, the timing suggests that the role of the Info display may have been
 
 | Era                  | Info access method                     | Manual                                         | Actual behavior        |
 | -------------------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
-| D3–D3500             | Dedicated INFO/R button                | “Info can be turned off” explicitly documented | half-press clears Info |
+| D3(EXPEED),  D4(EXPEED3),  D5(EXPEED5) | Dedicated INFO button                | “Info can be turned off” explicitly documented | half-press clears Info |
 | Z7/Z6(EXPEED 6)      | Integrated into DISP cycle             | documentation removed                          | unknown                |
-| D780 (EXPEED 6)      | Dedicated INFO/R button                | documentation removed                          | unknown                |
-| D6 (EXPEED 6)        | Dedicated INFO/R button                | documentation removed                          | half-press still works |
+| D780 (EXPEED 6)      | Dedicated INFO button                | documentation removed                          | unknown                |
+| D6 (EXPEED 6)        | Dedicated INFO button                | documentation removed                          | half-press still works |
 | Z9/Z8/Zf (EXPEED 7)  | Integrated into DISP cycle <br> (Display 5) | documentation removed                     | Display5 persistence   |
 
 This repository does not attempt to infer Nikon’s internal design intentions.
@@ -102,31 +101,52 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 ---
 
-## 2. Structure of Data 
+## 2. Structure of Data
+
+The detailed observation tables serve as the reference layer for this repository.
+
+They provide the raw observation records, the state definitions, and the step-by-step transition data used to support the analysis. 
+They are included for traceability and reproducibility rather than as the main narrative.
+Note that these transition tables and state definitions also serve as a chronological record, reflecting how an individual user perceived and analyzed this phenomenon over time.
+
+For the current interpretation of the issue, readers should refer first to the mechanism via state transition diagram, support confirmations, and insights documents.
+
+For the underlying test sequences and state labels, refer to the tables below.
 
 ### Phase 1: Definition A (Coarse-grained)
 - [DA README](./docs/DA/README.md)
-- [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md)  
-  This case records the initial observations that motivated the repository: shutter-button half-press did not always restore Live View, and visually identical states could produce different outcomes depending on prior display history.
+<details><summary><i>Case A1, Case A2</i></summary>
 
-- [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md)  
+ [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md)
+  This case records the initial observations that motivated the repository: half-press did not always restore Live View, and visually identical states could produce different outcomes depending on prior display history.
+
+ [**Case A2:** Deterministic Loop: Immediate Transition from Default Settings](./docs/DA/Case_A2_Deterministic.md)
   This case records how a minimal operation under factory-default settings can transition the camera into persistent Info-display behavior, and how subsequent customization can unintentionally disable simple recovery routes without warning.
+</details>
 
 ### Phase 2: Definition B (Fine-grained)
 - [DB README](./docs/DB/README.md)
-- [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md)  
+<details><summary><i>Case B1, Case B2, Case B3</i></summary>
+
+ [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md)
   This case examines multiple activation pathways into visually similar Info displays, including Display 5 as configured under [d19 Custom monitor shooting display] and non-Display 5 routes. It compares their behavior and identifies pathways that lead to persistent display states.
 
-- [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)  
+ [**Case B2:** In the Fray of the Focus](./docs/DB/Case_B2_Fray.md)
   While earlier cases focus mainly on pre-shooting display states, this case examines behavior during shooting operations. It records observations in which Info-display persistence remains active even during continuous shooting, depending on the display configuration.
 
-- [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md)  
+ [**Case B3:** Cornering the Shadow: A Trace from the Past](./docs/DB/Case_B3_Cornering.md)
   This case investigates boundary conditions of the persistent Info behavior, including LCD activation thresholds, overlay routes, Display 5 ON/OFF differences, and cases where prior display history reappears through later recovery behavior.
-
+</details>
 
 ---
 
-## 3. Nikon Support Confirmation Notes
+## 3. Mechanism via State Transition Diagram
+
+- [Mechanism via State Transition Diagram README](./Mechanism_via_State_Transition_Diagram/README.md)
+
+---
+
+## 4. Nikon Support Confirmation Notes
 Operational confirmations on the actual device were obtained from Nikon Support in Japan out of practical necessity.
 I am deeply grateful for their kind cooperation.
 
@@ -135,14 +155,14 @@ I am deeply grateful for their kind cooperation.
 
 ---
 
-## 4. Insights & Hypotheses
+## 5. Insights & Hypotheses
 - [Insights & Hypotheses](./insights.md)
 - [考察および仮説 (日本語版)](./insights_ja.md)
 *A Japanese version of the Insights is also provided, because several aspects of this issue concern Nikon’s historical camera-design culture and may be better expressed in Japanese.*
 
 ---
 
-## 5. Post-Publication Updates
+## 6. Post-Publication Updates
 
 The main report reflects the information available at the time of initial publication.
 
@@ -152,7 +172,7 @@ Any later Nikon support responses, additional model-specific confirmations, or f
 
 ---
 
-## 6. Visual Appendix
+## 7. Visual Appendix
 
 ### Zf observation: Case B2
 - [![Reference Video for Case B2](https://www.youtube.com/watch?v=Linzjau-Ucg)](https://www.youtube.com/watch?v=Linzjau-Ucg)
@@ -173,7 +193,7 @@ A supplementary check using a particular Nikon Z9 showed the same core Display 5
 
 ---
 
-## 7. Appendix: Reference Definitions
+## 8. Appendix: Reference Definitions
 
 ### Display Control Context Notation
 
@@ -210,7 +230,7 @@ Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
 - **N** = Not Expected
 - **M** = Mechanically consistent, but operationally/semantically notable
 
-The assessment labels used in this repository are primarily based on operational expectations historically associated with Nikon DSLR cameras, particularly the long-established behavior in which half-pressing the shutter button immediately restores a shooting-ready state from the Info display.
+The assessment labels used in this repository are primarily based on operational expectations historically associated with Nikon DSLR cameras, particularly the long-established behavior in which half-press immediately restores a shooting-ready state from the Info display.
 
 These assessments therefore reflect practical shooting responsiveness and user-observable operational consistency, rather than assumptions regarding internal firmware implementation.
 
