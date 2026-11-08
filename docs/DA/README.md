@@ -113,5 +113,5 @@ Observation of immediate Info-display persistence triggered by a minimal operati
 
 ## 3. Methodology
 - **Visualization Tool:** Graphviz (dot)
-- **Recording Method:** State transition tables generated from logs of various operation sequences.
+- **Recording Method:** State transition tables generated from logs of altered operation sequences and settings.
 
