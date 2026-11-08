@@ -1,2 +1,0 @@
-Under Construction
-Content for this case study is currently being prepared. Check back soon for the detailed analysis.
