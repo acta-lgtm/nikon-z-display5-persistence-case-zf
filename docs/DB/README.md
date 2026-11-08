@@ -346,5 +346,5 @@ Observation of how monitor routing conditions and LCD activity influence Info-di
 
 ## 3. Methodology
 - **Visualization Tool:** Graphviz (dot)
-- **Recording Methodology:** Generation of state transition tables based on empirical operation logs and repetitive stress testing to detect micro-transitions and internal flag mismatches.
+- **Recording Method:** Generation of state transition tables by varying operation sequences and settings to identify minor transitions and internal flag discrepancies.
 
