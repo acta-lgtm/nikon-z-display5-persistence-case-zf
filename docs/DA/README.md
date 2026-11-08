@@ -113,5 +113,5 @@ Observation of immediate Info-display persistence triggered by a minimal operati
 
 ## 3. Methodology
 - **Visualization Tool:** Graphviz (dot)
-- **Recording Methodology:** Generation of state transition tables based on empirical operation logs and repetitive stress testing.
+- **Recording Method:** State transition tables generated from logs of various operation sequences.
 
