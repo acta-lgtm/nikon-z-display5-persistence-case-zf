@@ -108,13 +108,14 @@ The detailed observation tables serve as the reference layer for this repository
 They provide the raw observation records, the state definitions, and the step-by-step transition data used to support the analysis. 
 They are included for traceability and reproducibility rather than as the main narrative.
 Note that these transition tables and state definitions also serve as a chronological record, reflecting how an individual user perceived and analyzed this phenomenon over time.
+**During the Phase 2 (Fine-grained) analysis, states of the Info display that are visually indistinguishable were separated by tracing their arrival paths and subsequent behaviors, and then consolidated into the Info-State Classification.**
 
 For the current interpretation of the issue, readers should refer first to the mechanism via state transition diagram, support confirmations, and insights documents.
 
 For the underlying test sequences and state labels, refer to the tables below.
 
 ### Phase 1: Definition A (Coarse-grained)
-- [DA README](./docs/DA/README.md)
+- [DA README with State Definition A (Coarse-grained Analysis)](./docs/DA/README.md)
 <details><summary><i>Case A1, Case A2</i></summary>
 
  [**Case A1:** Schrödinger's Sisyphean Loop](./docs/DA/Case_A1_Schrodinger.md)
@@ -125,7 +126,7 @@ For the underlying test sequences and state labels, refer to the tables below.
 </details>
 
 ### Phase 2: Definition B (Fine-grained)
-- [DB README](./docs/DB/README.md)
+- [DB README with State Definition B (Fine-grained Analysis) and Info-State Classification](./docs/DB/README.md)
 <details><summary><i>Case B1, Case B2, Case B3</i></summary>
 
  [**Case B1:** The Shadow Double](./docs/DB/Case_B1_Shadow.md)
