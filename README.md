@@ -110,7 +110,7 @@ They are included for traceability and reproducibility rather than as the main n
 Note that these transition tables and state definitions also serve as a chronological record, reflecting how an individual user perceived and analyzed this phenomenon over time.
 **During the Phase 2 (Fine-grained) analysis, states of the Info display that are visually indistinguishable were separated by tracing their arrival paths and subsequent behaviors, and then consolidated into the Info-State Classification.**
 
-For the current interpretation of the issue, readers should refer first to the mechanism via state transition diagram, support confirmations, and insights documents.
+For the current interpretation of the issue, readers should refer first to the mechanism via state transition diagram, support confirmations, insights documents, and post-publication-updates.
 
 For the underlying test sequences and state labels, refer to the tables below.
 
