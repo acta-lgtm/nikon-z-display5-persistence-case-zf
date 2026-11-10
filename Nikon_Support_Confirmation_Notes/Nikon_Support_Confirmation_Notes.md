@@ -1,6 +1,6 @@
 # Nikon Support Confirmation Notes
 
-> Published: 2026-06-24　| Last Updated: 2026-07-11
+> Published: 2026-06-24　| Last Updated: 2026-11-11
 
 ## Display 5 (“Info”) Persistence and Recovery Behavior on the Nikon Z f, Z8, and Z9
 
@@ -603,9 +603,9 @@ This phenomenon was also observed independently on a separately tested Nikon Z9,
 
 #### Confirmation Results
 
-| Sequence | Power on |  Press and Release the Fn button | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
-| :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Z f.9.3 <br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+| Sequence | Power on |  Press and Release the Fn button | Open LCD | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
+| :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
+| Z f.9.3 <br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: No display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
 - Z f.9.1 is the baseline multiple-exposure overlay shooting behavior.  
 Nikon support confirmed the baseline behavior of multiple-exposure overlay shooting when Display 5 / Info had not been selected beforehand.  
@@ -642,3 +642,6 @@ For that reason, the ability to view or change settings on the Info display cann
 ### Nikon Support Confirmation and Supplementary Observation
 
 Nikon support later confirmed that the same sequence produced the same result on the Nikon Z8 and Z9 under the specified test conditions.
+
+
+
