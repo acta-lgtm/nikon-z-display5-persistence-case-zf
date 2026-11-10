@@ -37,7 +37,7 @@ Supplementary observations made independently on the owned Nikon Z f and D6, as 
 
 | Sequence | Power on |  Power off  | Power on | Press DISP button repeatedly<br> until Display 5 is shown | Power off | Power on |
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| Z f.1.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off  | LCD: No display<br>EVF: Off    | LCD: Live View (with DP1)<br>EVF: Off  | LCD: Info display <br>EVF: Off | LCD: No display<br>EVF: Off  | LCD: Info display <br>EVF: Off |  
+| Z f.1.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off  | LCD: Off <br>EVF: Off    | LCD: Live View (with DP1)<br>EVF: Off  | LCD: Info display <br>EVF: Off | LCD: Off <br>EVF: Off  | LCD: Info display <br>EVF: Off |  
 
 This confirmation was made under default settings. 
 
@@ -130,7 +130,7 @@ In addition, on the D6, it has been observed that whether the Info was displayed
 
 | Sequence | Power on                                   | Press [MENU] button           | Look into the EVF                         | Half-press                                  | Move eye away from EVF                     |
 | :------- | :------- | :------------------ | :---------------- | :--------- | :--------------------- |
-| Z f.3.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` | LCD: Live View (with DP1)<br>EVF: Off | LCD: Menu display<br>EVF: Off | LCD: No display<br>EVF: On (Menu display) | LCD: No display<br>EVF: On (Live View) | LCD: Live View (with DP1)<br>EVF: Off |
+| Z f.3.1 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` | LCD: Live View (with DP1)<br>EVF: Off | LCD: Menu display<br>EVF: Off | LCD: Off <br>EVF: On (Menu display) | LCD: Off <br>EVF: On (Live View) | LCD: Live View (with DP1)<br>EVF: Off |
 
 ### 3.2
 
@@ -149,7 +149,7 @@ In addition, on the D6, it has been observed that whether the Info was displayed
 
 | Sequence | Power on                                   | Press DISP button repeatedly  <br> until Display 5 is shown | Press [MENU] button           | Look into the EVF                         | Half-press                                  | Move eye away from EVF                      |
 | :------- | :------- | :--------------------------------------------------------- | :------------------ | :---------------- | :--------- | :--------------------- |
-| Z f.3.2 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` | LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Menu display<br>EVF: Off | LCD: No display<br>EVF: On (Menu display) | LCD: No display<br>EVF: On (Live View) | LCD: Info display <br>EVF: Off |
+| Z f.3.2 <br> `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` | LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Menu display<br>EVF: Off | LCD: Off <br>EVF: On (Menu display) | LCD: Off <br>EVF: On (Live View) | LCD: Info display <br>EVF: Off |
 
 This confirmation covers the state after removing the eye from the EVF, following a sequence where the MENU screen is displayed under default settings, the user looks through the EVF, and a half-press is performed.
 
@@ -206,7 +206,7 @@ Nikon support later confirmed that the same sequence produced the same result on
 
 | Sequence | Power on                    | Press DISP button                           | Half-press                  | Press DISP button                           | Open LCD                                    | Half-press                                  |
 | :------- | :------- | :---------------- | :--------- | :---------------- | :------- | :--------- |
-| Z f.4.2 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Off<br>EVF: On when eye sensor is active | LCD: Info display <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Info display<br>EVF: Off |
+| Z f.4.2 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: Off <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Off<br>EVF: On when eye sensor is active | LCD: Info display <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Info display<br>EVF: Off |
 
 ### 4.3
 
@@ -229,7 +229,7 @@ Nikon support later confirmed that the same sequence produced the same result on
 
 | Sequence | Power on                    | Press DISP button                           | Half-press                  | Press DISP button                           | Open LCD                                   | Half-press                                 |
 | :------- | :------- | :---------------- | :--------- | :---------------- | :------- | :--------- |
-| Z f.4.3 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=OFF)` | LCD: No display<br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: No display<br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
+| Z f.4.3 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=OFF)` | LCD: Off <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Off <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
 
 
 The Info display can be displayed through various routes.  
@@ -299,7 +299,7 @@ Nikon support later confirmed that the same sequence produced the same result on
 
 | Sequence | Power on                    | Press [i] button                            | Half-press                  | Press [i] button                            | Open LCD                                    | Half-press                                  | Half-press                                  |
 | :------- | :------- | :--------------- | :--------- | :--------------- | :------- | :--------- | :--------- |
-| Z f.5.1 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Off<br> EVF: On when eye sensor is active | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+| Z f.5.1 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: Off <br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Off<br> EVF: On when eye sensor is active | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
 ### 5.2
 
@@ -322,7 +322,7 @@ Nikon support later confirmed that the same sequence produced the same result on
 
 | Sequence | Power on                    | Press and Release the Fn button            | Half-press                  |Press and Release the Fn button             | Open LCD                                    | Half-press                                  |
 | :------- | :------- | :------------------------------ | :--------- | :------------------------------ | :------- | :--------- |
-| Z f.5.2 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Off<br>EVF: On when eye sensor is active | LCD: Info display <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Info display <br>EVF: Off |
+| Z f.5.2 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: Off <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Off<br>EVF: On when eye sensor is active | LCD: Info display <br>EVF: Off | LCD: Info display<br>EVF: Off | LCD: Info display <br>EVF: Off |
 
 As stated in CASE-04, the Info display can be displayed through various routes.  
 Since the Info display reached by pressing the DISP button once when the "LCD is not in the active state" was confirmed in CASE-04, in CASE-05 I requested confirmation for the other cases.
@@ -365,7 +365,7 @@ It has also been observed on the D6 in my possession that when the [i] button is
 
 | Sequence | Power on                    | Open LCD                     | Press DISP button ,once   | Close LCD             | Open LCD            | Close LCD           | Press [i] button             | Open LCD          |Half-press        |
 | :------- | :------- | :------- | :---------------------- | :-------- | :------- | :-------- | :--------------- | :------- | :--------- |
-| Z f.6.1 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=OFF)` | LCD: No display<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off| LCD: Live View (with DP2)<br>EVF: Off| LCD: No display<br>EVF: Off | LCD: Live View (with DP2)<br>EVF: Off| LCD: No display<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Live View with [i] menu<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
+| Z f.6.1 <br> `Context PV(OD; DP1-4=1,2,3,4; DP5=OFF)` | LCD: Off <br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off| LCD: Live View (with DP2)<br>EVF: Off| LCD: Off <br>EVF: Off | LCD: Live View (with DP2)<br>EVF: Off| LCD: Off <br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Live View with [i] menu<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
 
 This is a transition confirmation after displaying the Info display with Display 5 disabled.
 
@@ -403,7 +403,7 @@ In addition, it has also been observed on the D6 in my possession that when the 
 
 | Sequence | Power on                    | Press [i] button                           | Open LCD                                     | Half-press                  | Press DISP button        |
 | :------- | :------- | :--------------- | :------- | :--------- | :---------------- |
-| Z f.7.1 `DISP button = "OFF None"`<br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: No display<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off |  LCD: Info display <br>EVF: Off  | LCD: Info display <br>EVF: Off|
+| Z f.7.1 `DISP button = "OFF None"`<br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` | LCD: Off <br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off |  LCD: Info display <br>EVF: Off  | LCD: Info display <br>EVF: Off|
 
 ### 7.2
 
@@ -426,7 +426,7 @@ In addition, it has also been observed on the D6 in my possession that when the 
 
 | Sequence | Power on                    | Press [i] button                           | Open LCD                                     | Half-press                  | Press [i] button                            | Press DISP button, once                            | Press [MENU] button        | Half-press                                  | Power off, then on                     |
 | :------- | :------- | :--------------- | :------- | :--------- | :--------------- | :---------------------- | :------------------ | :--------- | :----------------- |
-| Z f.7.2 `DISP button = "OFF None"`<br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: No display<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off |  LCD: Info display <br>EVF: Off  | LCD: Info display with [i] menu <br>EVF: Off   | LCD: Info display  with [i] menu <br>EVF: Off   | LCD: Menu display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+| Z f.7.2 `DISP button = "OFF None"`<br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: Off <br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off | LCD: Info display with [i] menu<br>EVF: Off |  LCD: Info display <br>EVF: Off  | LCD: Info display with [i] menu <br>EVF: Off   | LCD: Info display  with [i] menu <br>EVF: Off   | LCD: Menu display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
 This is a confirmation of a phenomenon where, under a certain setting, the Info fixates on the LCD after a specific operation, **making it impossible to obtain Live View, and furthermore, an immediate recovery path is severed without any warning due to customization**.
 
@@ -481,7 +481,7 @@ In both cameras, the same core behavior was observed: after the Info display ent
 
 | Sequence | Power on | Look into the EVF, Half-press shutter button | Press the shutter button to initiate continuous release <br> for the initial five seconds | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds |  Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds  | Lift finger from the shutter button and  move eye away from EVF |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Z f.8.1 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: No display<br>EVF: On (Live View) |LCD: No display<br>EVF: On (Live View)*Burst flickering|LCD: Live View (with DP1)*Burst flickering<br>EVF: Off |LCD: No display<br>EVF: On (Live View)*Burst flickering|LCD: Live View (with DP1)<br>EVF: Off |
+| Z f.8.1 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Off <br>EVF: On (Live View) |LCD: Off <br>EVF: On (Live View)*Burst flickering|LCD: Live View (with DP1)*Burst flickering<br>EVF: Off |LCD: Off <br>EVF: On (Live View)*Burst flickering|LCD: Live View (with DP1)<br>EVF: Off |
 
 ### 8.2
 
@@ -503,7 +503,7 @@ In both cameras, the same core behavior was observed: after the Info display ent
 
 | Sequence | Power on |Press DISP button repeatedly until Display 5 is shown | Look into the EVF, Half-press shutter button | Press the shutter button to initiate continuous release <br> for the initial five seconds | Without lifting finger from the shutter button, move eye away from EVF <br> and continue continuous release for an additional five seconds |  Without lifting finger from the shutter button, look into the EVF <br> for the final five seconds  | Lift finger from the shutter button and  move eye away from EVF |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Z f.8.2 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off| LCD: No display<br>EVF: On (Live View)|LCD: No display<br>EVF: On (Live View)*Burst flickering|LCD: Info display <br>EVF: Off |LCD: No display<br>EVF: On (Live View)*Burst flickering|LCD: Info display<br>EVF: Off |
+| Z f.8.2 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off| LCD: Off <br>EVF: On (Live View)|LCD: Off <br>EVF: On (Live View)*Burst flickering|LCD: Info display <br>EVF: Off |LCD: Off <br>EVF: On (Live View)*Burst flickering|LCD: Info display<br>EVF: Off |
 
 
 Up to CASE-07, confirmations have been made regarding the behavior of the Info display before shooting, but CASE-08 handled the situation during shooting under default settings.
@@ -562,7 +562,7 @@ This phenomenon was also observed independently on a separately tested Nikon Z9,
 
 | Sequence | Power on | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Z f.9.1 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: The 1st shot is superimposed on the live View (with DP1), and the multiple exposure icon flashes<br>EVF: Off | LCD: No display<br>EVF: The 1st shot is superimposed on the live View, and the multiple exposure icon flashes| LCD: The 1st shot is superimposed on the live View (with DP1), and the multiple exposure icon flashes<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
+| Z f.9.1 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: The 1st shot is superimposed on the live View (with DP1), and the multiple exposure icon flashes<br>EVF: Off | LCD: Off <br>EVF: The 1st shot is superimposed on the live View, and the multiple exposure icon flashes| LCD: The 1st shot is superimposed on the live View (with DP1), and the multiple exposure icon flashes<br>EVF: Off | LCD: Live View (with DP1)<br>EVF: Off |
 
 
 ### 9.2
@@ -583,7 +583,7 @@ This phenomenon was also observed independently on a separately tested Nikon Z9,
 
 | Sequence | Power on | Press DISP button repeatedly <br> until Display 5 is shown | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Z f.9.2 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: No display<br>EVF: The 1st shot is superimposed on the live View, and the multiple exposure icon flashes | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+| Z f.9.2 <br>`Context AS(O; DP1-4=1,2,3,4; DP5=ON)`| LCD: Live View (with DP1)<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Off <br>EVF: The 1st shot is superimposed on the live View, and the multiple exposure icon flashes | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
 ### 9.3
 
@@ -605,7 +605,7 @@ This phenomenon was also observed independently on a separately tested Nikon Z9,
 
 | Sequence | Power on |  Press and Release the Fn button | Open LCD | Press the shutter button<br> to take the 1st shot of multiple exposure | Look into the EVF | Move eye away from EVF | Press the shutter button<br> to take the 2nd shot of multiple exposure |
 | :------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Z f.9.3 <br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: No display<br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
+| Z f.9.3 <br>`Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`| LCD: Off <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off | LCD: Info display <br>EVF: Off |
 
 - Z f.9.1 is the baseline multiple-exposure overlay shooting behavior.  
 Nikon support confirmed the baseline behavior of multiple-exposure overlay shooting when Display 5 / Info had not been selected beforehand.  
