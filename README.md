@@ -223,7 +223,11 @@ Contexts are written in the following form:
 >- `DP5=ON/OFF` indicates whether Display 5 (“Info”) is enabled.
 
 
-Example: `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)`
+
+Examples:
+
+- `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` — This is the default setting.
+- `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` — This context appears frequently throughout this document (`OD` was introduced in Firmware Ver. 3.00).
 
 <a id="assessment-codes"></a>
 ### Assessment Codes
