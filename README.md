@@ -1,4 +1,4 @@
-> Published: 2026-05-17 | Last Updated: 2026-11-08
+> Published: 2026-05-17 | Last Updated: 2026-11-21
 
 # An Analysis of Display 5 (“Info”) Persistence in Nikon Z-Series Cameras: The Case of the Nikon Z f
 
@@ -24,9 +24,9 @@ As this analysis was conducted independently by a non-specialist, some terminolo
 
 Readers who want the shortest path to the core issue may begin with:
 
-- [Mechanism via State Transition Diagram](./Mechanism_via_State_Transition_Diagram/README.md)
-- [Nikon Support Confirmations](./Nikon_Support_Confirmation_Notes/README.md)
+- [Mechanism via State Transition Diagram](./Mechanism_via_State_Transition Diagram/README.md)
 - [Insights & Hypotheses](./insights.md)
+- [Nikon Support Confirmations](./Nikon_Support_Confirmation_Notes/README.md)
 - [Post-Publication Updates](./post-publication-updates.md)
 
 *For Japanese readers: 「考察および仮説」の日本語版はこちら:* [考察および仮説 (日本語版)](./insights_ja.md)
@@ -45,36 +45,7 @@ These documents provide the main route through the issue: transition diagrams fo
 - A comprehensive study based on operational confirmations from Nikon Support regarding the camera's display behavior and transition logic.
 - Supplementary observations utilizing a Nikon Z9 procured for testing.
 
-
-### 1.2 Historical Context
-
-The “Info” display in Nikon cameras historically functioned as a temporary shooting-information screen.
-
-Introduced prominently during the DSLR era (e.g., Nikon D3 generation), the Info display was accessed via a dedicated “INFO” button and Nikon manuals explicitly documented how to dismiss the screen, including:
-- half-pressing the shutter-release button,
-- pressing the INFO button,
-- or waiting for timeout.
-
-This behavior and terminology remained consistently documented through multiple DSLR generations.
-
-However, with the EXPEED 6 generation and the launch of the Nikon Z system, including the first Z-series cameras and later DSLRs such as the D780 and D6, such dismissal instructions appear to disappear from the manuals.
-
-This does not prove that EXPEED 6 itself caused the behavioral change. 
-Nonetheless, the timing suggests that the role of the Info display may have been reconsidered during the transition from DSLR-era temporary Info screens to the Display (“Info”) in EXPEED 6-generation Z-series cameras, which likely led to Display 5 (“Info”) as a persistent display mode in EXPEED 7.
-
-
-| Era                  | Info access method                     | Manual                                         | Actual behavior        |
-| -------------------- | -------------------------------------- | ---------------------------------------------- | ---------------------- |
-| D3(EXPEED),  D4(EXPEED3),  D5(EXPEED5) | Dedicated INFO button                | “Info can be turned off” explicitly documented | half-press clears Info |
-| Z7/Z6(EXPEED 6)      | Integrated into DISP cycle             | documentation removed                          | unknown                |
-| D780 (EXPEED 6)      | Dedicated INFO button                | documentation removed                          | unknown                |
-| D6 (EXPEED 6)        | Dedicated INFO button                | documentation removed                          | half-press still works |
-| Z9/Z8/Zf (EXPEED 7)  | Integrated into DISP cycle <br> (Display 5) | documentation removed                     | Display5 persistence   |
-
-This repository does not attempt to infer Nikon’s internal design intentions.
-However, the observed transition in documentation and device behavior appears to coincide with the introduction of the Z system and may be historically significant.
-
-### 1.3 Observed Phenomena 
+### 1.2 Observed Phenomena
 
 * **Display Priority Persistence:** The "Information Display (Info)" appears to preempt or retain display priority over other operational displays under certain conditions.
 * **Recovery Path Removal Through Configuration:** Certain customizations can make standard UI-level recovery paths inaccessible without any explicit system warning.
@@ -82,12 +53,12 @@ However, the observed transition in documentation and device behavior appears to
 * **Inconsistency of Internal States:** Even when the visual appearance remains identical, the system's response (output) to inputs varies depending on past display history.
 * **Persistent Info Display Under Specific Modes:** Under specific conditions such as continuous shooting mode, the "Information Display (Info)" persistently occupies the entire LCD when the user's eye is removed from the viewfinder.
 
-### 1.4 Target Environment
+### 1.3 Target Environment
 
 - **Primary Device:** Nikon Z f (Firmware: [ C: Ver. 3.01 ])
 - **Supplementary Device:** Nikon Z9 (Firmware: [ C: Ver. 4.00 ]) Procured for testing, Nikon D6
 
-### 1.5 Notes on the Observation Process
+### 1.4 Notes on the Observation Process
 
 The cases in this repository were developed chronologically through observation, rather than from a predefined state model.
 
@@ -97,7 +68,21 @@ For this reason, earlier tables intentionally preserve the original coarse-grain
 
 Ultimately, this repository is not merely a collection of transition tables, but also a chronological observational record documenting how the underlying display-state structure gradually became visible.
 
+### 1.5 Historical Context
 
+Nikon's “Info” display has a longer and more complex interaction history than a simple temporary shooting-information screen.
+
+Across successive DSLR generations, its role gradually evolved. Earlier implementations primarily presented shooting information, while later models allowed settings to be accessed and edited through the Info display itself. The interaction also changed over time—from repeated operation of the `INFO` button, to dedicated settings-access controls such as the `[i]` button, and eventually to customizable `[i]`-menu interfaces.
+
+By the D6 generation, the same `[i]`-menu layer could appear over either an Info display or Live View. In the Z system, Info, Live View, the DISP display cycle, and the `[i]` menu became still more closely related within the monitor-display interface.
+
+Another historical change concerns dismissal of the Info display. Earlier Nikon DSLR manuals explicitly described shutter-button half-press as one way to dismiss Info. On later generations, this behavior may remain available on the camera even though the corresponding explanation is no longer stated in the manual.
+
+These changes do not establish a direct implementation lineage, nor do they show that any particular EXPEED generation caused the behavior investigated in this report. They do, however, provide useful historical context for understanding how the meaning and interaction role of “Info” changed over successive Nikon camera generations.
+
+A more detailed comparison—including the evolution of Info-display interaction, settings-access methods, shutter-half-press dismissal, and a separate investigation of the unusual relationship between white-balance adjustment and Info—is provided here:
+
+**[Historical Evolution of Nikon Info and Setting-Adjustment Interfaces](info-display-history.md)**
 
 ---
 
@@ -110,7 +95,7 @@ They are included for traceability and reproducibility rather than as the main n
 Note that these transition tables and state definitions also serve as a chronological record, reflecting how an individual user perceived and analyzed this phenomenon over time.
 **During the Phase 2 (Fine-grained) analysis, states of the Info display that are visually indistinguishable were separated by tracing their arrival paths and subsequent behaviors, and then consolidated into the Info-State Classification.**
 
-For the current interpretation of the issue, readers should refer first to the mechanism via state transition diagram, support confirmations, insights documents, and post-publication-updates.
+For the current interpretation of the issue, readers should refer first to the mechanism via state transition diagram, insights documents, support confirmations, and post-publication-updates.
 
 For the underlying test sequences and state labels, refer to the tables below.
 
@@ -197,6 +182,7 @@ A supplementary check using a particular Nikon Z9 showed the same core Display 5
 
 ## 8. Appendix: Reference Definitions
 
+<a id="Display-Control-Context-Notation"></a>
 ### Display Control Context Notation
 
 Contexts are written in the following form:
@@ -222,12 +208,11 @@ Contexts are written in the following form:
 >- `DP1-4=none` means none of Display 1 through Display 4 is enabled.
 >- `DP5=ON/OFF` indicates whether Display 5 (“Info”) is enabled.
 
-
-
 Examples:
 
 - `Context AS(O; DP1-4=1,2,3,4; DP5=ON)` — This is the default setting.
 - `Context PV(OD; DP1-4=1,2,3,4; DP5=ON)` — This context appears frequently throughout this document (`OD` was introduced in Firmware Ver. 3.00).
+
 
 <a id="assessment-codes"></a>
 ### Assessment Codes
