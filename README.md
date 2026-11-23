@@ -70,17 +70,17 @@ Ultimately, this repository is not merely a collection of transition tables, but
 
 ### 1.5 Historical Context
 
-Nikon's “Info” display has a longer and more complex interaction history than a simple temporary shooting-information screen.
+The “Info” display in Nikon cameras has a longer and more complex interaction history than initially assumed.
 
-Across successive DSLR generations, its role gradually evolved. Earlier implementations primarily presented shooting information, while later models allowed settings to be accessed and edited through the Info display itself. The interaction also changed over time—from repeated operation of the `INFO` button, to dedicated settings-access controls such as the `[i]` button, and eventually to customizable `[i]`-menu interfaces.
+Early DSLR implementations already show that Info was not merely a passive shooting-information screen. For example, on the Nikon D40, the information display could also serve as an entry point for changing shooting settings, and it could be invoked automatically by several camera operations. Its relationship with the shutter button was also more nuanced than simple dismissal: the monitor was turned off while the shutter-release button was pressed, while under some settings the information display could appear again after the button was released.
 
-By the D6 generation, the same `[i]`-menu layer could appear over either an Info display or Live View. In the Z system, Info, Live View, the DISP display cycle, and the `[i]` menu became still more closely related within the monitor-display interface.
+Across later DSLR generations, the role and interaction structure of Info continued to change. Different models used repeated operation of the INFO button, dedicated settings-access controls, and eventually the [i] button. By the D6 generation, a customizable [i]-menu interface could be presented over either an Info display or Live View.
 
-Another historical change concerns dismissal of the Info display. Earlier Nikon DSLR manuals explicitly described shutter-button half-press as one way to dismiss Info. On later generations, this behavior may remain available on the camera even though the corresponding explanation is no longer stated in the manual.
+The relationship between Info and shutter-button half-press also changed in Nikon's documentation. Earlier manuals explicitly described shutter-button operation in connection with dismissing or suppressing the information display, whereas such explanations appear to become less explicit or disappear in later generations, even when similar behavior remains observable on the camera.
 
-These changes do not establish a direct implementation lineage, nor do they show that any particular EXPEED generation caused the behavior investigated in this report. They do, however, provide useful historical context for understanding how the meaning and interaction role of “Info” changed over successive Nikon camera generations.
+These historical observations do not establish a direct implementation lineage, nor do they show that any particular EXPEED generation caused the behavior investigated in this report. The historical survey is still in progress. What is already clear, however, is that Nikon's Info interface has evolved through multiple interaction models, and that its relationship with shooting settings, Live View, the [i] menu, and shutter-button operation cannot be described as a single continuous behavior.
 
-A more detailed comparison—including the evolution of Info-display interaction, settings-access methods, shutter-half-press dismissal, and a separate investigation of the unusual relationship between white-balance adjustment and Info—is provided here:
+A separate reference document summarizes the historical changes identified so far, including Info-display invocation, settings-access methods, interaction with shutter-button half-press, and a separate investigation of the unusual relationship between white-balance adjustment and Info:
 
 **[Historical Evolution of Nikon Info and Setting-Adjustment Interfaces](info-display-history.md)**
 
